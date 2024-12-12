@@ -1,0 +1,21 @@
+@use '../helpers' as *;
+
+/* Base Common */
+html {
+  font-size: 62.5%;
+}
+body {
+  color: $text1;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  // font-family: 'Open sans', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+@use '../helpers' as *;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.6rem;
+  white-space: nowrap;
+  $types: ('primary': $primary1,  'white': $white);
+
+  @each $type, $color in $types {
+    &-#{$type} {
+      padding: 0 5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: $fontSemiBold;
+      font-size: 1.2rem;
+      @if $type == 'primary' {
+        background-color: $color;
+        color: $white;
+      }
+      @if $type == 'white' {
+        background-color: $color;
+        color: $text2;
+      }
+    }
+  }
+}
