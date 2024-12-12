@@ -8,7 +8,7 @@ body {
   color: $text1;
   font-size: 1.5rem;
   line-height: 1.5;
-  // font-family: 'Open sans', sans-serif;
+  font-family: $fontOpen;
 }
 
 html,
@@ -18,4 +18,5 @@ body {
 
 button {
   cursor: pointer;
+  font-family: $fontOpen;
 }

@@ -163,6 +163,7 @@ body {
   color: #8A8A8A;
   font-size: 1.5rem;
   line-height: 1.5;
+  font-family: "Open sans", sans-serif;
 }
 
 html,
@@ -172,8 +173,57 @@ body {
 
 button {
   cursor: pointer;
+  font-family: "Open sans", sans-serif;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/OpenSans/OpenSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Catamaran/Catamaran-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Catamaran/Catamaran-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Catamaran/Catamaran-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Catamaran/Catamaran-Bold.woff") format("woff");
+}
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
