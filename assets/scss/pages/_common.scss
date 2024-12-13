@@ -1,12 +1,180 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
+
+a {
+  color: $black;
+}
 
 /* layout */
 // header
 .header {
-  
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 192rem;
+  height: 10rem;
+  padding: 0 3.2rem;
+
+  .gnb-pc {
+    ul {
+      display: flex;
+      gap: 4rem;
+      li {
+        width: 11.7rem;
+        a {
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          line-height: 10rem;
+          font-size: 1.4rem;
+          text-align: center;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.3rem;
+            background-color: $secondary1;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: 0.3s;
+          }
+          &:hover::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  a,
+  .btn-search {
+    color: $primary1;
+    letter-spacing: 0.26rem;
+    font-weight: $fontSemiBold;
+    box-sizing: border-box;
+    text-transform: uppercase;
+  }
+
+  .utility {
+    display: flex;
+    .btn-search {
+      font-size: 1.4rem;
+      line-height: 10rem;
+    }
+  }
+
+  // 햄버거 버튼
+  .btn-hamburger {
+    display: none;
+    width: 3.6rem;
+    aspect-ratio: 1;
+    background: url(./../images/ico_hamburger_primary.svg) no-repeat
+      center/cover;
+  }
+
+  // 모바일 사이드 메뉴
+  .moblie-menu {
+    display: none;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: $grayeee;
+    transition: 0.3s;
+    z-index: 1000;
+
+    .btn-mobile-menu-close {
+      width: 3.6rem;
+      margin: 3.2rem 2rem 2rem;
+      aspect-ratio: 1;
+      background: url(./../images/ico_close_primary.svg) no-repeat center/cover;
+    }
+
+    .input-wrap {
+      margin: 2rem;
+    }
+
+    .gnb-m {
+      ul {
+        li {
+          a {
+            display: block;
+            padding: 2rem;
+            font-size: 2rem;
+            letter-spacing: 0.18rem;
+          }
+          &:hover {
+            a {
+              background-color: $bg1;
+            }
+          }
+        }
+      }
+    }
+    &.active {
+      box-shadow: 0 4px 8px rgba($color: $black, $alpha: 0.2);
+      transform: translateX(-100%);
+    }
+  }
+
+  // 반응형 미디어 쿼리
+  @media (width <= 1024px) {
+    .gnb-pc {
+      display: none;
+    }
+    .utility {
+      margin-left: auto;
+      margin-right: 1.2rem;
+      .btn-search {
+        line-height: 1;
+        width: 2.4rem;
+        aspect-ratio: 1;
+        background: url(./../images/ico_search_primary.svg) no-repeat
+          center/cover;
+        span {
+          @include a11y-hidden;
+        }
+      }
+    }
+    .btn-hamburger {
+      display: flex;
+    }
+    .moblie-menu {
+      display: block;
+    }
+  }
 }
 
 // footer
 .footer {
- 
 }
+
+// 인풋 검색
+// .input-wrap {
+//   position: relative;
+//   input[type="search"] {
+//     padding: 1.8rem 4.8rem 1.8rem 1.4rem;
+//     width: 100%;
+//     font-size: 2rem;
+//     border: 0.2rem solid $border1;
+//     border-radius: 0.5rem;
+//     outline: 0;
+//     box-sizing: border-box;
+//     &:focus {
+//       border: 0.2rem solid $primary1;
+//     }
+//   }
+
+//   .btn-search {
+//     position: absolute;
+//     top: 50%;
+//     right: 1.2rem;
+//     width: 2.4rem;
+//     aspect-ratio: 1;
+//     background: url(./../images/ico_search_primary.svg) no-repeat center/cover;
+//     transform: translateY(-50%);
+//   }
+// }

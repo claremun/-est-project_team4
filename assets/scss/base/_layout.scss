@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 
 /* Base Common */
 html {
@@ -6,7 +6,7 @@ html {
 }
 body {
   color: $text1;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   font-family: $fontOpen;
 }
@@ -19,4 +19,8 @@ body {
 button {
   cursor: pointer;
   font-family: $fontOpen;
+}
+
+.a11y-hidden {
+  @include a11y-hidden;
 }

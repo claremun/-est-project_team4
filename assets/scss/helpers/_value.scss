@@ -1,5 +1,5 @@
 // images
-$img-path: '@/assets/img';
+$img-path: "@/assets/img";
 
 // font
 $fontLight: 300;
@@ -8,8 +8,8 @@ $fontMedium: 500;
 $fontSemiBold: 600;
 $fontBold: 700;
 
-$fontOpen:'Open sans', sans-serif;
-$fontCata:'Catamaran', sans-serif;
+$fontOpen: "Open sans", sans-serif;
+$fontCata: "Catamaran", sans-serif;
 
 // color
 // grayscale
@@ -25,24 +25,30 @@ $gray555: #555;
 $gray333: #333;
 $gray111: #111;
 $black: #000;
- 
+
 // primary
-$primary1: #2E3192;
+$primary1: #2e3192;
 $primary2: #488be2;
 
 // sub
-// $secondary1: #FDEAEA;
+$secondary1: #f4572e;
 
 // background
-$bg1: #EEF7FF;
-$bg2: #FDEAEA; 
+$bg1: #eef7ff;
+$bg2: #fdeaea;
 
 // text
-$text1: #8A8A8A;
-$text2: #1E2D78;
-$text3:#DD3333;
-$text4: #F4572E; 
- 
+$text1: #8a8a8a;
+$text2: #1e2d78;
+$text3: #dd3333;
+$text4: #f4572e;
+
+// line
+$line1: $secondary1;
+
+//border
+$border1: $grayddd;
+
 // media query
 // $breakpoint-mobile: 480px;
 // $breakpoint-tablet: 1024px;
