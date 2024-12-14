@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- 
@@ -21,13 +25,333 @@
       css 작업 시 중복 클래스 작성방법
       ex) .container.home 띄어쓰기 없이 붙여서 사용하면 됨
     -->
+    <!--
+         확인이 필요한 부분
+      1. 스와이퍼 next, prev 버튼 색 바꾸는 법
+      2. read more 버튼에 들어간 원형 라인 패턴
+      3. dental-health 섹션 영상 넣기
+      4. hover 스타일은 아직 미적용 (어디에 어떻게 넣을지 상의 후 넣을 예정)
+    -->
     <div class="container home">
-      <!-- main 태그는 페이지 상단의 스와이퍼나 페이지의 메인이라고 생각되는 부분에 사용 -->
-      <main></main>
-      <!-- section 별로 나눠서 작업 -->
-      <section></section>
+      <main class="main-swiper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-inner">
+                <div class="service-content">
+                  <div class="service-tag">dental practice</div>
+                  <h2 class="service-title">
+                    We provide the best services out there
+                  </h2>
+                  <button type="button" class="btn btn-primary">
+                    view more
+                  </button>
+                  <button type="button" class="btn btn-white">purchase</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-inner">
+                <div class="service-content">
+                  <div class="service-tag">dental practice</div>
+                  <h2 class="service-title">
+                    We provide the best services out there
+                  </h2>
+                  <button type="button" class="btn btn-primary">
+                    view more
+                  </button>
+                  <button type="button" class="btn btn-white">purchase</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-inner">
+                <div class="service-content">
+                  <div class="service-tag">dental practice</div>
+                  <h2 class="service-title">
+                    We provide the best services out there
+                  </h2>
+                  <button type="button" class="btn btn-primary">
+                    view more
+                  </button>
+                  <button type="button" class="btn btn-white">purchase</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-inner">
+                <div class="service-content">
+                  <div class="service-tag">dental practice</div>
+                  <h2 class="service-title">
+                    We provide the best services out there
+                  </h2>
+                  <button type="button" class="btn btn-primary">
+                    view more
+                  </button>
+                  <button type="button" class="btn btn-white">purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Q.swiper 버튼 색상 변경 어떻게 하는지!  -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </main>
+
+      <section class="section-intro">
+        <div class="intro-content">
+          <div class="intro-image"></div>
+          <h3 class="intro-content-title">
+            Pick the dentist that fits all your needs the best
+          </h3>
+          <p class="intro-content-text">
+            Lorem ipsum dolor sit amet, eu duo ferri labor. Mea ex modo reque
+            senserit, et sed hinc dolor, scaevola sum salutandi expetendis vix
+            ne. Eros dicat his sum mel quod mundi consequat sum.
+          </p>
+          <button type="button" class="btn btn-readmore">
+            read more
+            <div class="btn-readmore-ico"></div>
+          </button>
+        </div>
+        <div class="intro-history">
+          <div class="intro-image"></div>
+          <ul class="intro-history-list">
+            <li>Professional dental services 24/7</li>
+            <li>Oral hygiene advisory & assessment</li>
+            <li>Oral and maxillofacial surgery</li>
+            <li>Dental public health insurance</li>
+            <li>Free online appointment booking</li>
+            <li>Various cosmetic dentistry services</li>
+            <li>Special care dentistry services</li>
+          </ul>
+        </div>
+        <div class="intro-schedule">
+          <div class="intro-schedule-content">
+            <h2 class="intro-title">Working Hours</h2>
+            <div class="intro-schedule-list">
+              <!--list start-->
+              <div class="intro-schedule-list-line">
+                <div class="intro-list-day">Monday</div>
+                <span class="intro-list-underline"></span>
+                <div class="intro-list-time">8am-7pm</div>
+              </div>
+              <div class="intro-schedule-list-line">
+                <div class="intro-list-day">Tuesday</div>
+                <span class="intro-list-underline"></span>
+                <div class="intro-list-time">8am-7pm</div>
+              </div>
+              <div class="intro-schedule-list-line">
+                <div class="intro-list-day">Wednesday</div>
+                <span class="intro-list-underline"></span>
+                <div class="intro-list-time">8am-7pm</div>
+              </div>
+              <div class="intro-schedule-list-line">
+                <div class="intro-list-day">Thursday</div>
+                <span class="intro-list-underline"></span>
+                <div class="intro-list-time">8am-7pm</div>
+              </div>
+              <div class="intro-schedule-list-line">
+                <div class="intro-list-day">Friday</div>
+                <span class="intro-list-underline"></span>
+                <div class="intro-list-time">8am-7pm</div>
+              </div>
+              <div class="intro-schedule-list-line">
+                <div class="intro-list-day">Saturday</div>
+                <span class="intro-list-underline"></span>
+                <div class="intro-list-time">8am-7pm</div>
+              </div>
+              <div class="intro-schedule-list-line">
+                <div class="intro-list-day">Sunday</div>
+                <span class="intro-list-underline"></span>
+                <div class="intro-list-time">closed</div>
+              </div>
+            </div>
+            <!-- list end -->
+          </div>
+          <div class="intro-call">Call Us: +354/759-1675</div>
+        </div>
+      </section>
+
+      <section class="section-inspection">
+        <div class="inspection-list">
+          <div class="inspection-list-image">
+            <img src="./assets/images/main_inspection1.svg" alt="" />
+          </div>
+          <div class="inspection-list-content">
+            <h4>Root Canal Specialist</h4>
+            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+          </div>
+        </div>
+        <div class="inspection-list">
+          <div class="inspection-list-image">
+            <img src="./assets/images/main_inspection2.svg" alt="" />
+          </div>
+          <div class="inspection-list-content">
+            <h4>Alignment Specialist</h4>
+            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+          </div>
+        </div>
+        <div class="inspection-list">
+          <div class="inspection-list-image">
+            <img src="./assets/images/main_inspection3.svg" alt="" />
+          </div>
+          <div class="inspection-list-content">
+            <h4>Cosmetic Dentistry</h4>
+            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+          </div>
+        </div>
+        <div class="inspection-list">
+          <div class="inspection-list-image">
+            <img src="./assets/images/main_inspection4.svg" alt="" />
+          </div>
+          <div class="inspection-list-content">
+            <h4>Oral Hygiene Experts</h4>
+            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+          </div>
+        </div>
+        <div class="inspection-list">
+          <div class="inspection-list-image">
+            <img src="./assets/images/main_inspection5.svg" alt="" />
+          </div>
+          <div class="inspection-list-content">
+            <h4>Live Dental Advisory</h4>
+            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+          </div>
+        </div>
+        <div class="inspection-list">
+          <div class="inspection-list-image">
+            <img src="./assets/images/main_inspection6.svg" alt="" />
+          </div>
+          <div class="inspection-list-content">
+            <h4>Cavity Inspection</h4>
+            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-dental-health">
+        <div class="dental-health-content">
+          <span class="dental-practice">dental practice</span>
+          <h2>Fully dedicated to your dental health</h2>
+          <p>
+            Te veritus tractatos delicatissimi qui, justo diceret mentitum ut
+            sit. Qui sed reque dicam, qui veri nullam vituperatoribus in.
+            Tibique maiestatis sum quod sum ut alienum nec et, summo possim
+            persequeris vix mea. Adhuc quodsi qui, sit no tale essent electram.
+            Mei sum prodesset in pro, quo scripta feugait vidisse.
+          </p>
+          <span class="dental-health-content-name">Andrea McCollins</span>
+        </div>
+        <div class="dental-health-video">
+          <!-- 비디오 들어가는 영역 (임시 이미지로 대체함) 
+           Q. 어떤 비디오를 어떻게 넣으면 되는지! -->
+          <img src="./assets/images/@main_dental_health.png" alt="" />
+        </div>
+      </section>
+
+      <!-- //////////보영 님 작업이 들어갈 영역/////////// -->
+
+      <section class="section-news">
+        <div class="news-title">
+          <span class="dental-practice">dental practice</span>
+          <h2>Read Latest News</h2>
+          <p>
+            In sea viderer delicatissimi, urbanitas sententiae quo blandit
+            maiorum euripidis.
+          </p>
+        </div>
+        <div class="news-content">
+          <div class="news-content-card">
+            <div class="news-content-card-image"></div>
+            <div class="news-content-card-text">
+              <span class="news-content-card-text-date">
+                17th November 2020 Pediatric
+              </span>
+              <h3>All about invisalign</h3>
+              <p>
+                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                consequat ipsum, nec sagittis sem nibh mel integre facilis.
+              </p>
+              <button type="button" class="btn btn-readmore">
+                read more
+                <div class="btn-readmore-ico"></div>
+              </button>
+            </div>
+          </div>
+          <div class="news-content-card">
+            <div class="news-content-card-image"></div>
+            <div class="news-content-card-text">
+              <span class="news-content-card-text-date">
+                17th November 2020 Pediatric
+              </span>
+              <h3>Braces for teens</h3>
+              <p>
+                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                consequat ipsum, nec sagittis sem nibh mel integre facilis.
+              </p>
+              <button type="button" class="btn btn-readmore">
+                read more
+                <div class="btn-readmore-ico"></div>
+              </button>
+            </div>
+          </div>
+          <div class="news-content-card">
+            <div class="news-content-card-image"></div>
+            <div class="news-content-card-text">
+              <span class="news-content-card-text-date">
+                17th November 2020 Pediatric
+              </span>
+              <h3>Dental association</h3>
+              <p>
+                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                consequat ipsum, nec sagittis sem nibh mel integre facilis.
+              </p>
+              <button type="button" class="btn btn-readmore">
+                read more
+                <div class="btn-readmore-ico"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-symbols">
+        <div class="symbols-image">
+          <img src="./assets/images/main_symbols1.svg" alt="" />
+        </div>
+        <div class="symbols-image">
+          <img src="./assets/images/main_symbols2.svg" alt="" />
+        </div>
+        <div class="symbols-image">
+          <img src="./assets/images/main_symbols3.svg" alt="" />
+        </div>
+        <div class="symbols-image">
+          <img src="./assets/images/main_symbols4.svg" alt="" />
+        </div>
+        <div class="symbols-image">
+          <img src="./assets/images/main_symbols5.svg" alt="" />
+        </div>
+      </section>
     </div>
+
     <!-- footer 공통 사용 -->
     <footer></footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
