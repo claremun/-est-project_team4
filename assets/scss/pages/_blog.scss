@@ -2,5 +2,78 @@
 // 은혁
 
 .container.blog {
+  .selected-news {
+    display: flex;
+    margin-bottom: 20rem;
+    .news-image {
+      width: 53.33%;
+      margin-right: 4rem;
+      flex-shrink: 0;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .news-info {
+      .news-classification {
+        margin-bottom: 2.4rem;
+        span {
+          font-size: 2.2rem;
+          line-height: 3rem;
+          color: $black;
+          &:first-child {
+            position: relative;
+            padding-right: 7.6rem;
+            &::after {
+              content: '';
+              position: absolute;
+              width: 4.4rem;
+              height: .1rem;
+              background-color: $black;
+              top: calc(50% - 0.05rem);
+              right: 1.4rem;
+            }
+          }
+        }
+      }
+      .news-title {
+        margin-bottom: 0.4rem;
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+        font-family: $fontCata;
+        color: $text2;
+        font-weight: $fontSemiBold;
+      }
 
+      .news-description {
+        margin: 0.8rem 0;
+        font-size: 2rem;
+        color: $text5;
+        line-height: 3rem;
+      }
+
+      .news-sub-description {
+        font-size: 1.6rem;
+        color: $text5;
+        line-height: 2.4rem;
+      }
+    }
+    @media (max-width: 1024px) {
+      display: block;
+      margin-bottom: 10rem;
+      .news-image {
+        width: 100%;
+        max-width: 70rem;
+        margin-right: 0;
+        margin: 0 auto 3.2rem;
+      }
+      .news-info {
+        width: 100%;
+        max-width: 70rem;
+        margin: 0 auto;
+      }
+    }
+  }
 }

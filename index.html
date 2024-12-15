@@ -16,7 +16,70 @@
       id 명은 카멜 케이스로 작업 ex) userName
     -->
     <!-- header 공통 사용 -->
-    <header></header>
+    <header class="header">
+      <h1>
+        <a href="#"
+          ><img src="./../assets/images/logo.svg" alt="ALLSMILES"
+        /></a>
+      </h1>
+      <h2 class="a11y-hidden">메뉴</h2>
+      <nav class="gnb-pc">
+        <ul>
+          <li class="active">
+            <a href=".">HOME</a>
+          </li>
+          <li>
+            <a href="./sub/doctors/doctors.html">DOCTORS</a>
+          </li>
+          <li>
+            <a href="./sub/about/about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="./sub/blog/blog.html">BLOG</a>
+          </li>
+          <li>
+            <a href="./sub/reservation/reservation.html">RESERVATION</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="utility">
+        <button type="button" class="btn-search"><span>Search</span></button>
+      </div>
+      <button type="button" class="btn-hamburger">
+        <span class="a11y-hidden">사이드 메뉴 보기</span>
+      </button>
+      <div class="moblie-menu">
+        <button type="button" class="btn-mobile-menu-close">
+          <span class="a11y-hidden">닫기</span>
+        </button>
+        <!-- <div class="input-wrap">
+          <input type="search" placeholder="serach" />
+          <button class="btn-search">
+            <span class="a11y-hidden"> 검색 </span>
+          </button>
+        </div> -->
+        <h2 class="a11y-hidden">메뉴</h2>
+        <nav class="gnb-m">
+          <ul>
+            <li class="active">
+              <a href=".">HOME</a>
+            </li>
+            <li>
+              <a href="./sub/doctors/doctors.html">DOCTORS</a>
+            </li>
+            <li>
+              <a href="./sub/about/about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="./sub/blog/blog.html">BLOG</a>
+            </li>
+            <li>
+              <a href="./sub/reservation/reservation.html">RESERVATION</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <!-- 
       페이지별 container 옆에 페이지 클래스 작성해서 작업
       ex) home 페이지 경우 <div class="container home">
@@ -422,5 +485,6 @@
         },
       });
     </script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
