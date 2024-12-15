@@ -6,6 +6,7 @@ a {
 
 /* layout */
 // header
+
 .header {
   position: fixed;
   display: flex;
@@ -148,8 +149,199 @@ a {
   }
 }
 
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 // footer
 .footer {
+    // bottom: 0px;
+    // position: absolute;
+    width: 100%;
+    background: $primary1;
+    color: $white;
+    .footer_top {
+        padding: 10rem 0;
+
+        .footer_top_inner{
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            @media (max-width:1024px) {
+                    justify-content: space-between;
+                }
+                @media (max-width:767px) {
+                   display: block;
+                  
+                }
+            .work_info {
+                display: flex;
+                justify-content: space-between;
+                flex-grow: 3;
+                @media (max-width:1024px) {
+                    justify-content: space-around;
+                }
+                 @media (max-width:480px) {
+                    display: block;
+                    text-align: center;
+                }
+               
+            }
+            .footer_item{
+                // width: 25%;
+                
+                & b{
+                    font-size: 1.6rem;
+                    font-weight: $fontBold;
+                    margin-bottom : 1rem
+                }
+                & li{
+                    font-size: 1.6rem;
+                    font-weight: $fontRegular;
+                }
+                
+            }
+
+                & .social{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.2rem;
+                    justify-content: space-between;
+                    
+                    img{
+                        max-width: 10.5rem;
+                    }
+                    p{word-wrap: break-word;}
+                    @media (max-width:767px) {
+                        align-items: center;
+                        margin-bottom: 4rem;
+                    }
+                }
+             
+                .work_hours {
+                    b {
+                        margin-bottom: 1.2rem;
+                        display: block;
+                    }
+
+                    ul {
+                        margin: 0;
+                    }
+
+                    li:not(:last-child) {
+                        margin-bottom: 1.2rem;
+                    }
+                }
+                
+                .social_ico {
+                        display: flex;
+                        gap: 1rem;
+                    span {
+                        display: inline-block;
+                        width: 3.8rem; 
+                        height: 3.8rem;
+                        border-radius: 0.5rem;
+                        &:nth-child(1) {
+                            background: url(./../images/ico-instar.svg) no-repeat;
+                        }
+                        &:nth-child(2) {
+                            background: url(./../images/ico-twitter.svg) no-repeat;
+                        }
+                        &:nth-child(3) {
+                            background: url(./../images/ico-facebook.svg) no-repeat;
+                        }
+                    }
+                }
+                .contact_info {
+                    @media (max-width:480px) {
+                        margin-top: 2rem;
+                        
+                    }
+                    b {
+                        margin-bottom: 1.2rem;
+                        display: block;
+                    }
+
+                   
+
+                    ul {
+                        margin: 0;
+                        position: relative;
+                        .work_phone span,.work_addr span{
+                            padding-left: 2.7rem;
+                            position: relative;
+                            @media (max-width:480px) {
+                                padding: 0;
+                            }
+                        }
+                        .work_phone,.work_addr{position: relative;}
+
+                       .work_phone span:first-child:before {
+                            content: "";
+                            display: inline-block;
+                            width: 1.6rem;
+                            height: 1.6rem;
+                            background: url(./../images/ico-phone.svg) no-repeat center center;
+                            position: absolute;
+                            top: 0.3rem;
+                            left: 0;
+                        }
+                        .work_addr span:first-child:before{
+                            content: "";
+                            display: inline-block;
+                            width: 1.6rem;
+                            height: 1.6rem;
+                            background: url(./../images/ico-addr.svg) no-repeat center center;
+                            margin-right: 1rem;
+                            position: absolute;
+                            top: 0.3rem;
+                            left: 0;
+                        }
+                        @media (max-width:480px) {
+                            .work_phone span:first-child:before,
+                            .work_addr span:first-child:before{
+                                left: -2.5rem;
+                            }
+                        }
+                    }
+                   
+                    li:not(:last-child) {
+                        margin-bottom: 2.5rem;
+                    }
+                     li:nth-child(2) {
+                        margin-left: 2.7rem;
+                    }
+                }
+
+
+                 .our_location{
+                    .footer_map{
+                        iframe{
+                            width: 100%;
+                            max-width: 30rem;
+                            height: 17rem;
+                        }
+                    }
+                    b{
+                        margin-bottom: 1.2rem;
+                    }
+                }
+                @media  (max-width: 1024px){
+                    .our_location.none{
+                        border: 1px solid #000;
+                        display: none;
+                    }
+                }
+        }
+    }
+    .footer_bottom{
+        text-align: center;
+        background-color: #1C1E74;
+        padding: 1rem 0;
+    }
 }
 
 // 인풋 검색
