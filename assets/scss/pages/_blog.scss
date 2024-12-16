@@ -60,7 +60,7 @@
         line-height: 2.4rem;
       }
     }
-    @media (max-width: 1024px) {
+    @media (width < 1024px) {
       display: block;
       margin-bottom: 10rem;
       .news-image {

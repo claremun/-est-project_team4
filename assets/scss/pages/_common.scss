@@ -137,7 +137,7 @@ a {
   }
 
   // 반응형 미디어 쿼리
-  @media (width <= 1024px) {
+  @media (width < 1024px) {
     height: 8rem;
     .gnb-pc {
       display: none;
@@ -164,7 +164,7 @@ a {
     }
   }
 
-  @media (width <= 600px) {
+  @media (width < 768px) {
     .moblie-menu {
       display: block;
       width: 100%;
@@ -175,7 +175,7 @@ a {
 .container {
   padding-top: 10rem !important;
   padding-bottom: 20rem !important;
-  @media (width <= 1024px) {
+  @media (width < 1024px) {
     padding-top: 8rem !important;
   }
 }
@@ -420,10 +420,10 @@ a {
     line-height: 3.2rem;
     margin: 0.8rem 0;
   }
-  @media (width <= 1024px) {
+  @media (width < 1024px) {
     margin: 6rem 0;
   }
-  @media (width <= 600px) {
+  @media (width < 768px) {
     .sub-title {
       font-size: 4.8rem;
       line-height: 6rem;
@@ -457,7 +457,7 @@ a {
     line-height: 3rem;
   }
 
-  @media (width <= 600px) {
+  @media (width < 768px) {
     .section-title {
       margin-top: 1.8rem;
       font-size: 4.2rem;
@@ -515,7 +515,7 @@ a {
       }
     }
   }
-  @media (max-width: 1024px) {
+  @media (width < 1024px) {
     .news-list {
       grid-template-columns: repeat(2, 1fr);
       li {
@@ -523,7 +523,7 @@ a {
       }
     }
   }
-  @media (max-width: 600px) {
+  @media (width < 768px) {
     .news-list {
       grid-template-columns: 1fr;
     }
