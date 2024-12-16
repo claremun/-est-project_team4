@@ -1390,6 +1390,242 @@ a {
   color: #fff;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.about_title h2 {
+  font-size: 7.2rem;
+  font-weight: 600;
+  color: #2e3192;
+}
+.about_title p {
+  color: #8a8a8a;
+}
+
+.about_visu img {
+  max-width: 100%;
+}
+
+.hospital_info {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  margin: 4rem auto 20rem;
+}
+
+.hospital_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hospital_inner {
+  position: relative;
+  width: 100%;
+}
+
+.hospital_inner div:first-child::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 2px solid #CCCAFF;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .hospital_inner div:first-child::after {
+    content: none;
+  }
+}
+
+.hospital_inner:last-child div:first-child::after {
+  content: none;
+}
+
+.hospital_inner div {
+  text-align: center;
+  font-family: "Catamaran", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #8a8a8a;
+}
+@media (max-width: 1024px) {
+  .hospital_inner div {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .hospital_inner div {
+    font-size: 1.2rem;
+  }
+}
+
+.hospital_inner div:first-child span {
+  font-family: "Catamaran", sans-serif;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 60.01px;
+  text-align: center;
+  color: #1e2d78;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .hospital_inner div:first-child span {
+    font-size: 4rem;
+  }
+}
+.hospital_inner div:first-child span b {
+  font-size: 4rem;
+  margin-left: 0.5rem;
+}
+@media (max-width: 600px) {
+  .hospital_inner div:first-child span b {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+  }
+}
+
+.hospital_inner:nth-child(2) div:first-child span b {
+  font-size: 5rem;
+}
+@media (max-width: 600px) {
+  .hospital_inner:nth-child(2) div:first-child span b {
+    font-size: 3rem;
+    margin-left: 0.5rem;
+  }
+}
+
+.hospital_inner div:last-child span {
+  font-family: "Catamaran", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 6rem;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .our_core {
+    padding: 0 2rem;
+  }
+}
+
+.sub_text p {
+  color: #8a8a8a;
+  text-align: center;
+  line-height: 2.5rem;
+  font-family: "Open sans", sans-serif;
+}
+.sub_text .practice {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: 0.6rem;
+  color: #dd3333;
+  text-transform: uppercase;
+}
+.sub_text .practice:last-child {
+  font-size: 1.4rem;
+  text-transform: none;
+  font-family: "Catamaran", sans-serif;
+}
+.sub_text h2 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 6.7rem;
+  text-align: center;
+  color: #2e3192;
+}
+
+.our_list_wrap {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.our_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem 0;
+  padding: 8rem 0 20rem 0;
+}
+@media (max-width: 1024px) {
+  .our_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .our_list {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+.list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list_item h3 {
+  font-family: "Open sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.list_item img {
+  width: 10rem;
+  height: 10rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 3.5rem;
+}
+
+.list_item h3 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.list_item p {
+  font-size: 1.6rem;
+  color: #666;
+  text-align: left;
+}
+
+.dental_video_wrapper {
+  padding: 8rem 9rem 20rem;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .dental_video_wrapper {
+    padding: 0 2rem;
+  }
+}
+
+.dental_wrap {
+  position: relative;
+}
+.dental_wrap .dental_video {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.play_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .container.blog .selected-news {
   display: -webkit-box;
   display: -ms-flexbox;
