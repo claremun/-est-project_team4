@@ -1145,7 +1145,6 @@ a {
   width: 50%;
 }
 .container.home .section-dental-health .dental-health-video-wrap .dental-health-video {
-  display: block;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1226,7 +1225,7 @@ a {
 }
 .container.home .section-symbols {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1234,7 +1233,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fdeaea;
-  padding: 6.5rem 8.8rem;
+  padding: 6.4rem 1.1%;
 }
 .container.home .section-symbols .symbols-image {
   justify-self: center;
@@ -1245,12 +1244,15 @@ a {
 }
 @media (max-width: 1024px) {
   .container.home .section-symbols {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
+    padding: 5.2rem 4rem;
   }
 }
 @media (max-width: 600px) {
   .container.home .section-symbols {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem 1rem;
     padding: 4rem 2rem;
@@ -1482,43 +1484,81 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container.reservation .section-reservation .reservation-form input, .container.reservation .section-reservation .reservation-form textarea {
+.container.reservation .section-reservation .reservation-form {
+  width: 100%;
+}
+.container.reservation .section-reservation .reservation-form .label-animation {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.container.reservation .section-reservation .reservation-form .label-animation .label {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.container.reservation .section-reservation .reservation-form .label-animation .label-focus-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #eef7ff;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+}
+.container.reservation .section-reservation .reservation-form .label-animation input, .container.reservation .section-reservation .reservation-form .label-animation textarea {
   color: #8a8a8a;
   font-family: "Open sans", sans-serif;
   font-size: 2rem;
   width: calc(100% - 4.8rem);
-  padding: 1.5rem 2.2rem;
+  padding: 2rem;
   margin-bottom: 1.6rem;
   border-radius: 0.4rem;
   border: 0.2rem solid #BFD9FF;
   outline: none;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
 }
-.container.reservation .section-reservation .reservation-form input::-webkit-input-placeholder, .container.reservation .section-reservation .reservation-form textarea::-webkit-input-placeholder {
-  color: #8a8a8a;
-  font-size: 2rem;
+.container.reservation .section-reservation .reservation-form .label-animation input:not(:-moz-placeholder-shown) + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:not(:-moz-placeholder-shown) + .label {
+  color: #2e3192;
+  transform: translate3d(-1rem, -2rem, 0) scale(0.75);
 }
-.container.reservation .section-reservation .reservation-form input::-moz-placeholder, .container.reservation .section-reservation .reservation-form textarea::-moz-placeholder {
-  color: #8a8a8a;
-  font-size: 2rem;
+.container.reservation .section-reservation .reservation-form .label-animation input:not(:-ms-input-placeholder) + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:not(:-ms-input-placeholder) + .label {
+  color: #2e3192;
+  transform: translate3d(-1rem, -2rem, 0) scale(0.75);
 }
-.container.reservation .section-reservation .reservation-form input:-ms-input-placeholder, .container.reservation .section-reservation .reservation-form textarea:-ms-input-placeholder {
-  color: #8a8a8a;
-  font-size: 2rem;
+.container.reservation .section-reservation .reservation-form .label-animation input:not(:placeholder-shown) + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:not(:placeholder-shown) + .label {
+  color: #2e3192;
+  -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+          transform: translate3d(-1rem, -2rem, 0) scale(0.75);
 }
-.container.reservation .section-reservation .reservation-form input::-ms-input-placeholder, .container.reservation .section-reservation .reservation-form textarea::-ms-input-placeholder {
-  color: #8a8a8a;
-  font-size: 2rem;
+.container.reservation .section-reservation .reservation-form .label-animation input:focus + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:focus + .label {
+  -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+          transform: translate3d(-1rem, -2rem, 0) scale(0.75);
 }
-.container.reservation .section-reservation .reservation-form input::placeholder, .container.reservation .section-reservation .reservation-form textarea::placeholder {
-  color: #8a8a8a;
-  font-size: 2rem;
+.container.reservation .section-reservation .reservation-form .label-animation input:focus + .label + .label-focus-bg, .container.reservation .section-reservation .reservation-form .label-animation textarea:focus + .label + .label-focus-bg {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 .container.reservation .section-reservation .reservation-form .btn-primary {
   letter-spacing: 0.24rem;
   text-transform: uppercase;
-  float: left;
 }
 @media (max-width: 1024px) {
+  .container.reservation .sub-description br {
+    display: none;
+  }
   .container.reservation .section-reservation {
     display: block;
     margin-bottom: 10rem;
@@ -1533,9 +1573,7 @@ a {
     max-width: 70rem;
     margin: 0 auto;
   }
-}
-@media (max-width: 1024px) {
-  .container.reservation .sub-description br {
-    display: none;
+  .container.reservation .section-reservation .reservation-form .btn-primary {
+    width: calc(100% - 0.4rem);
   }
 }
