@@ -138,6 +138,7 @@ a {
 
   // 반응형 미디어 쿼리
   @media (width <= 1024px) {
+    height: 8rem;
     .gnb-pc {
       display: none;
     }
@@ -174,6 +175,9 @@ a {
 .container {
   padding-top: 10rem !important;
   padding-bottom: 20rem !important;
+  @media (width <= 1024px) {
+    padding-top: 8rem !important;
+  }
 }
 
 .wrapper {
@@ -419,6 +423,16 @@ a {
   @media (width <= 1024px) {
     margin: 6rem 0;
   }
+  @media (width <= 600px) {
+    .sub-title {
+      font-size: 4.8rem;
+      line-height: 6rem;
+    }
+    .sub-description {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
 }
 
 .section-title-area {
@@ -441,6 +455,18 @@ a {
   .section-description {
     font-size: 2rem;
     line-height: 3rem;
+  }
+
+  @media (width <= 600px) {
+    .section-title {
+      margin-top: 1.8rem;
+      font-size: 4.2rem;
+      line-height: 5rem;
+    }
+    .section-description {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
   }
 }
 
@@ -514,4 +540,8 @@ a {
   letter-spacing: 0.24rem;
   line-height: 2.4rem;
   text-transform: uppercase;
+  transition: 0.4s;
+  &:hover {
+    padding-right: 5.6rem;
+  }
 }

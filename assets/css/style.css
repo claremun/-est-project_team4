@@ -388,6 +388,9 @@ a {
           transform: translateX(-100%);
 }
 @media (width <= 1024px) {
+  .header {
+    height: 8rem;
+  }
   .header .gnb-pc {
     display: none;
   }
@@ -427,6 +430,11 @@ a {
 .container {
   padding-top: 10rem !important;
   padding-bottom: 20rem !important;
+}
+@media (width <= 1024px) {
+  .container {
+    padding-top: 8rem !important;
+  }
 }
 
 .wrapper {
@@ -660,6 +668,16 @@ a {
     margin: 6rem 0;
   }
 }
+@media (width <= 600px) {
+  .sub-top .sub-title {
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+  .sub-top .sub-description {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
 
 .section-title-area {
   text-align: center;
@@ -680,6 +698,17 @@ a {
 .section-title-area .section-description {
   font-size: 2rem;
   line-height: 3rem;
+}
+@media (width <= 600px) {
+  .section-title-area .section-title {
+    margin-top: 1.8rem;
+    font-size: 4.2rem;
+    line-height: 5rem;
+  }
+  .section-title-area .section-description {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
 }
 
 .news {
@@ -752,6 +781,11 @@ a {
   letter-spacing: 0.24rem;
   line-height: 2.4rem;
   text-transform: uppercase;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.btn-readmore:hover {
+  padding-right: 5.6rem;
 }
 
 .container.home {
@@ -1111,6 +1145,7 @@ a {
   width: 50%;
 }
 .container.home .section-dental-health .dental-health-video-wrap .dental-health-video {
+  display: block;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1503,4 +1538,4 @@ a {
   .container.reservation .sub-description br {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}
