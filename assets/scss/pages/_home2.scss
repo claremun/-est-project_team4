@@ -4,3 +4,114 @@
 .container.home {
   
 }
+
+
+
+.request_form{
+    display: flex;
+    @media (max-width: 1024px) {
+            display: block;
+        }
+    .request_img{
+        width: 50%;
+          position: relative;
+        overflow: hidden;
+       @media (max-width: 1024px) {
+                display: none;
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        
+        }
+          &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            /* left: 0; */
+            right: -60px;
+            bottom: 0;
+            width: 10rem;
+            height: 121%;
+            background: #EEF7FF;
+            -webkit-transform: rotate(6deg);
+            -ms-transform: rotate(6deg);
+            transform: rotate(6deg);
+            overflow: hidden;
+        }
+    }
+
+    .request_right{
+        width: 50%;
+        background: #EEF7FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 1024px) {
+            width: 100%;
+            padding: 0 1rem;
+        }
+      
+        .request_right_wrap{
+
+            padding: 5rem 0 16rem 0;
+            @media (max-width: 1024px) {
+                max-width: 80rem;
+                width: 100%;
+            }
+        }
+        b{
+            font-size: 3.6rem;
+            color: $text2;
+        }
+        p{
+            font-size: 2.0rem;
+            color: $text5;
+            margin-bottom: 3.5rem;
+        }
+        form{
+            .request_ipt{
+                margin-bottom: 3rem;
+                @media (max-width: 1024px) {
+                margin-bottom: 0;
+            }
+            }
+            input{
+                padding: 1.5rem 2.2rem;
+                border: 2px solid #BFD9FF;
+                border-radius: 5px;
+                box-sizing: border-box;
+                @media (max-width: 1024px) {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 3rem;
+                }
+            }
+            textarea{
+                resize: none;
+                border: 2px solid #BFD9FF;
+                border-radius: 5px;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 1.5rem 2.2rem;
+                margin-bottom: 3rem;
+            }
+            input:first-child{
+                margin-right: 3.5rem;
+                   @media (max-width: 1024px) {
+                    margin-right: 0;
+                }
+            }
+            .request_form_btn{
+                text-align: center;
+                padding: 1.5rem 0;
+                background: $primary1;
+                border-radius: 5px;
+                width: 100%;
+                max-width: 21.5rem;
+                color: $white;
+            }
+        }
+    }
+}
