@@ -18,9 +18,7 @@
     <!-- header 공통 사용 -->
     <header class="header">
       <h1>
-        <a href="#"
-          ><img src="./../assets/images/logo.svg" alt="ALLSMILES"
-        /></a>
+        <a href="#"><img src="./assets/images/logo.svg" alt="ALLSMILES" /></a>
       </h1>
       <h2 class="a11y-hidden">메뉴</h2>
       <nav class="gnb-pc">
@@ -90,10 +88,13 @@
     -->
     <!--
          확인이 필요한 부분
-      1. 스와이퍼 next, prev 버튼 색 바꾸는 법
-      2. read more 버튼에 들어간 원형 라인 패턴
-      3. dental-health 섹션 영상 넣기
-      4. hover 스타일은 아직 미적용 (어디에 어떻게 넣을지 상의 후 넣을 예정)
+      1. .container에 공통으로 들어간 padding-bottom:20rem이 
+          container home에도 적용돼서 푸터 위쪽으로 공백이 생기는데
+          메인에서는 없애는 게 좋을지! (현재 없애둔 상태)
+      2. 스와이퍼 + 마지막섹션 모바일 호환성 아직!
+      3. hover 스타일은 아직 미적용 (어디에 어떻게 넣을지 상의 후 넣을 예정)
+      4. index.html에서 헤더의 logo.svg 경로 수정함
+      5. index.html footer 밑에 footer가 또 있는데 지워도 되는지!
     -->
     <div class="container home">
       <main class="main-swiper">
@@ -106,10 +107,14 @@
                   <h2 class="service-title">
                     We provide the best services out there
                   </h2>
-                  <button type="button" class="btn btn-primary">
-                    view more
-                  </button>
-                  <button type="button" class="btn btn-white">purchase</button>
+                  <div class="btn-wrap">
+                    <button type="button" class="btn btn-primary">
+                      view more
+                    </button>
+                    <button type="button" class="btn btn-white">
+                      purchase
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -156,31 +161,34 @@
               </div>
             </div>
           </div>
-          <!-- Q.swiper 버튼 색상 변경 어떻게 하는지!  -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
       </main>
 
-      <section class="section-intro">
+      <section class="section-intro wrapper">
         <div class="intro-content">
-          <div class="intro-image"></div>
-          <h3 class="intro-content-title">
+          <div class="intro-image">
+            <img
+              src="./assets/images/main_intro1.png"
+              alt="Pick the dentist that fits all your needs the best"
+            />
+          </div>
+          <h4 class="intro-title">
             Pick the dentist that fits all your needs the best
-          </h3>
-          <p class="intro-content-text">
+          </h4>
+          <p class="intro-description">
             Lorem ipsum dolor sit amet, eu duo ferri labor. Mea ex modo reque
             senserit, et sed hinc dolor, scaevola sum salutandi expetendis vix
             ne. Eros dicat his sum mel quod mundi consequat sum.
           </p>
-          <button type="button" class="btn btn-readmore">
-            read more
-            <div class="btn-readmore-ico"></div>
-          </button>
+          <button type="button" class="btn btn-readmore">read more</button>
         </div>
         <div class="intro-history">
-          <div class="intro-image"></div>
+          <div class="intro-image">
+            <img src="./assets/images/main_intro2.png" alt="Our history" />
+          </div>
           <ul class="intro-history-list">
             <li>Professional dental services 24/7</li>
             <li>Oral hygiene advisory & assessment</li>
@@ -193,112 +201,130 @@
         </div>
         <div class="intro-schedule">
           <div class="intro-schedule-content">
-            <h2 class="intro-title">Working Hours</h2>
-            <div class="intro-schedule-list">
-              <!--list start-->
-              <div class="intro-schedule-list-line">
-                <div class="intro-list-day">Monday</div>
+            <h3 class="intro-title">Working Hours</h3>
+            <ul class="intro-schedule-list">
+              <li>
+                <div class="intro-schedule-list-day">Monday</div>
                 <span class="intro-list-underline"></span>
-                <div class="intro-list-time">8am-7pm</div>
-              </div>
-              <div class="intro-schedule-list-line">
-                <div class="intro-list-day">Tuesday</div>
+                <div class="intro-schedule-list-day">8am-7pm</div>
+              </li>
+              <li>
+                <div class="intro-schedule-list-day">Tuesday</div>
                 <span class="intro-list-underline"></span>
-                <div class="intro-list-time">8am-7pm</div>
-              </div>
-              <div class="intro-schedule-list-line">
-                <div class="intro-list-day">Wednesday</div>
+                <div class="intro-schedule-list-day">8am-7pm</div>
+              </li>
+              <li>
+                <div class="intro-schedule-list-day">Wednesday</div>
                 <span class="intro-list-underline"></span>
-                <div class="intro-list-time">8am-7pm</div>
-              </div>
-              <div class="intro-schedule-list-line">
-                <div class="intro-list-day">Thursday</div>
+                <div class="intro-schedule-list-day">8am-7pm</div>
+              </li>
+              <li>
+                <div class="intro-schedule-list-day">Thursday</div>
                 <span class="intro-list-underline"></span>
-                <div class="intro-list-time">8am-7pm</div>
-              </div>
-              <div class="intro-schedule-list-line">
-                <div class="intro-list-day">Friday</div>
+                <div class="intro-schedule-list-day">8am-7pm</div>
+              </li>
+              <li>
+                <div class="intro-schedule-list-day">Friday</div>
                 <span class="intro-list-underline"></span>
-                <div class="intro-list-time">8am-7pm</div>
-              </div>
-              <div class="intro-schedule-list-line">
-                <div class="intro-list-day">Saturday</div>
+                <div class="intro-schedule-list-day">8am-7pm</div>
+              </li>
+              <li>
+                <div class="intro-schedule-list-day">Saturday</div>
                 <span class="intro-list-underline"></span>
-                <div class="intro-list-time">8am-7pm</div>
-              </div>
-              <div class="intro-schedule-list-line">
-                <div class="intro-list-day">Sunday</div>
+                <div class="intro-schedule-list-day">8am-7pm</div>
+              </li>
+              <li>
+                <div class="intro-schedule-list-day">Sunday</div>
                 <span class="intro-list-underline"></span>
-                <div class="intro-list-time">closed</div>
-              </div>
-            </div>
-            <!-- list end -->
+                <div class="intro-schedule-list-day">closed</div>
+              </li>
+            </ul>
           </div>
           <div class="intro-call">Call Us: +354/759-1675</div>
         </div>
       </section>
 
-      <section class="section-inspection">
-        <div class="inspection-list">
-          <div class="inspection-list-image">
-            <img src="./assets/images/main_inspection1.svg" alt="" />
-          </div>
-          <div class="inspection-list-content">
-            <h4>Root Canal Specialist</h4>
-            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
-          </div>
-        </div>
-        <div class="inspection-list">
-          <div class="inspection-list-image">
-            <img src="./assets/images/main_inspection2.svg" alt="" />
-          </div>
-          <div class="inspection-list-content">
-            <h4>Alignment Specialist</h4>
-            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+      <section class="section-inspection wrapper">
+        <div class="inspection-item">
+          <img
+            src="./assets/images/main_inspection1.svg"
+            alt="Root Canal Specialist"
+          />
+          <div class="inspection-item-content">
+            <h5 class="inspection-title">Root Canal Specialist</h5>
+            <p class="inspection-description">
+              Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+            </p>
           </div>
         </div>
-        <div class="inspection-list">
-          <div class="inspection-list-image">
-            <img src="./assets/images/main_inspection3.svg" alt="" />
-          </div>
-          <div class="inspection-list-content">
-            <h4>Cosmetic Dentistry</h4>
-            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
-          </div>
-        </div>
-        <div class="inspection-list">
-          <div class="inspection-list-image">
-            <img src="./assets/images/main_inspection4.svg" alt="" />
-          </div>
-          <div class="inspection-list-content">
-            <h4>Oral Hygiene Experts</h4>
-            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+        <div class="inspection-item">
+          <img
+            src="./assets/images/main_inspection2.svg"
+            alt="Alignment Specialist"
+          />
+          <div class="inspection-item-content">
+            <h5 class="inspection-title">Alignment Specialist</h5>
+            <p class="inspection-description">
+              Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+            </p>
           </div>
         </div>
-        <div class="inspection-list">
-          <div class="inspection-list-image">
-            <img src="./assets/images/main_inspection5.svg" alt="" />
-          </div>
-          <div class="inspection-list-content">
-            <h4>Live Dental Advisory</h4>
-            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+        <div class="inspection-item">
+          <img
+            src="./assets/images/main_inspection3.svg"
+            alt="Cosmetic Dentistry"
+          />
+          <div class="inspection-item-content">
+            <h5 class="inspection-title">Cosmetic Dentistry</h5>
+            <p class="inspection-description">
+              Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+            </p>
           </div>
         </div>
-        <div class="inspection-list">
-          <div class="inspection-list-image">
-            <img src="./assets/images/main_inspection6.svg" alt="" />
+        <div class="inspection-item">
+          <img
+            src="./assets/images/main_inspection4.svg"
+            alt="Oral Hygiene Experts"
+          />
+          <div class="inspection-item-content">
+            <h5 class="inspection-title">Oral Hygiene Experts</h5>
+            <p class="inspection-description">
+              Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+            </p>
           </div>
-          <div class="inspection-list-content">
-            <h4>Cavity Inspection</h4>
-            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
+        </div>
+        <div class="inspection-item">
+          <img
+            src="./assets/images/main_inspection5.svg"
+            alt="Live Dental Advisory"
+          />
+          <div class="inspection-item-content">
+            <h5 class="inspection-title">Live Dental Advisory</h5>
+            <p class="inspection-description">
+              Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+            </p>
+          </div>
+        </div>
+        <div class="inspection-item">
+          <img
+            src="./assets/images/main_inspection6.svg"
+            alt="Cavity Inspection"
+          />
+          <div class="inspection-item-content">
+            <h5 class="inspection-title">Cavity Inspection</h5>
+            <p class="inspection-description">
+              Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+            </p>
           </div>
         </div>
       </section>
-      <section class="section-dental-health">
+      <section class="section-dental-health wrapper">
         <div class="dental-health-content">
           <span class="dental-practice">dental practice</span>
-          <h2>Fully dedicated to your dental health</h2>
-          <p>
+          <h3 class="dental-health-title">
+            Fully dedicated to your dental health
+          </h3>
+          <p class="dental-health-description">
             Te veritus tractatos delicatissimi qui, justo diceret mentitum ut
             sit. Qui sed reque dicam, qui veri nullam vituperatoribus in.
             Tibique maiestatis sum quod sum ut alienum nec et, summo possim
@@ -307,166 +333,152 @@
           </p>
           <span class="dental-health-content-name">Andrea McCollins</span>
         </div>
-        <div class="dental-health-video">
-          <!-- 비디오 들어가는 영역 (임시 이미지로 대체함) 
-           Q. 어떤 비디오를 어떻게 넣으면 되는지! -->
-          <img src="./assets/images/@main_dental_health.png" alt="" />
+        <div class="dental-health-video-wrap">
+          <video class="dental-health-video">
+            <source src="./assets/images/dental_health.mp4" type="video/mp4" />
+          </video>
+          <button type="button" class="btn-play">
+            <img src="./assets/images/ico-video.svg" alt="play button" />
+            <span class="a11y-hidden">동영상 재생</span>
+          </button>
         </div>
       </section>
 
       <!-- //////////보영 님 작업이 들어갈 영역/////////// -->
 
-      <section class="section-news">
-        <div class="news-title">
+      <section class="section-news news wrapper">
+        <div class="news-top">
           <span class="dental-practice">dental practice</span>
-          <h2>Read Latest News</h2>
-          <p>
+          <h2 class="news-title">Read Latest News</h2>
+          <p class="news-description">
             In sea viderer delicatissimi, urbanitas sententiae quo blandit
             maiorum euripidis.
           </p>
         </div>
-        <div class="news-content">
-          <div class="news-content-card">
-            <div class="news-content-card-image"></div>
-            <div class="news-content-card-text">
-              <span class="news-content-card-text-date">
-                17th November 2020 Pediatric
-              </span>
-              <h3>All about invisalign</h3>
-              <p>
+        <ul class="news-list">
+          <li>
+            <div class="news-thumb">
+              <img src="./assets/images/news1.png" alt="All about invisalign" />
+            </div>
+            <div class="news-info">
+              <span class="news-date"> 17th November 2020 Pediatric </span>
+              <h3 class="news-title">All about invisalign</h3>
+              <p class="news-description">
                 Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
                 consequat ipsum, nec sagittis sem nibh mel integre facilis.
               </p>
-              <button type="button" class="btn btn-readmore">
-                read more
-                <div class="btn-readmore-ico"></div>
-              </button>
+              <button type="button" class="btn btn-readmore">read more</button>
             </div>
-          </div>
-          <div class="news-content-card">
-            <div class="news-content-card-image"></div>
-            <div class="news-content-card-text">
-              <span class="news-content-card-text-date">
-                17th November 2020 Pediatric
-              </span>
-              <h3>Braces for teens</h3>
-              <p>
+          </li>
+          <li>
+            <div class="news-thumb">
+              <img src="./assets/images/news2.png" alt="Braces for teens" />
+            </div>
+            <div class="news-info">
+              <span class="news-date"> 17th November 2020 Pediatric </span>
+              <h3 class="news-title">Braces for teens</h3>
+              <p class="news-description">
                 Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
                 consequat ipsum, nec sagittis sem nibh mel integre facilis.
               </p>
-              <button type="button" class="btn btn-readmore">
-                read more
-                <div class="btn-readmore-ico"></div>
-              </button>
+              <button type="button" class="btn btn-readmore">read more</button>
             </div>
-          </div>
-          <div class="news-content-card">
-            <div class="news-content-card-image"></div>
-            <div class="news-content-card-text">
-              <span class="news-content-card-text-date">
-                17th November 2020 Pediatric
-              </span>
-              <h3>Dental association</h3>
-              <p>
+          </li>
+          <li>
+            <div class="news-thumb">
+              <img src="./assets/images/news3.png" alt="Dental association" />
+            </div>
+            <div class="news-info">
+              <span class="news-date"> 17th November 2020 Pediatric </span>
+              <h3 class="news-title">Dental association</h3>
+              <p class="news-description">
                 Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
                 consequat ipsum, nec sagittis sem nibh mel integre facilis.
               </p>
-              <button type="button" class="btn btn-readmore">
-                read more
-                <div class="btn-readmore-ico"></div>
-              </button>
+              <button type="button" class="btn btn-readmore">read more</button>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="section-symbols">
         <div class="symbols-image">
-          <img src="./assets/images/main_symbols1.svg" alt="" />
+          <img src="./assets/images/main_symbols1.svg" alt="dental beach" />
         </div>
         <div class="symbols-image">
-          <img src="./assets/images/main_symbols2.svg" alt="" />
+          <img src="./assets/images/main_symbols2.svg" alt="dental angel" />
         </div>
         <div class="symbols-image">
-          <img src="./assets/images/main_symbols3.svg" alt="" />
+          <img src="./assets/images/main_symbols3.svg" alt="medident dental" />
         </div>
         <div class="symbols-image">
-          <img src="./assets/images/main_symbols4.svg" alt="" />
+          <img src="./assets/images/main_symbols4.svg" alt="smile" />
         </div>
         <div class="symbols-image">
-          <img src="./assets/images/main_symbols5.svg" alt="" />
+          <img src="./assets/images/main_symbols5.svg" alt="molar" />
         </div>
       </section>
     </div>
 
     <!-- footer 공통 사용 -->
-    <footer class=footer>
-
-    
-    <div class="footer_top wrapper">
-      <div class="footer_top_inner ">
-      <div class="footer_item social ">
-        <img src="./assets/images/footer-logo.png" alt="all samiles"/>
-        <p>This is AllSmiles, a place dedicated <br>
-      to clear, white & perfect smiles.</p>
-        <div class="social_ico">
-        <span></span>
-        <span></span>
-        <span></span>
+    <footer class="footer">
+      <div class="footer_top wrapper">
+        <div class="footer_top_inner">
+          <div class="footer_item social">
+            <img src="./assets/images/footer-logo.png" alt="all samiles" />
+            <p>
+              This is AllSmiles, a place dedicated <br />
+              to clear, white & perfect smiles.
+            </p>
+            <div class="social_ico">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="work_info">
+            <div class="footer_item work_hours">
+              <b>Work Hours</b>
+              <ul>
+                <li>Monday : 8am-7pm</li>
+                <li>Tuesday : 8am-7pm</li>
+                <li>Wednesday : 8am-7pm</li>
+                <li>Thursday : 8am-7pm</li>
+                <li>Friday : 8am-7pm</li>
+                <li>Saturday : 8am-7pm</li>
+                <li>Sunday : closed</li>
+              </ul>
+            </div>
+            <div class="footer_item contact_info">
+              <b>Contact Info</b>
+              <ul>
+                <li class="work_phone">
+                  <span>+654/4715-167</span><br /><span>+654/4715-167</span>
+                </li>
+                <li>allsmiles@qodeinteractive.com</li>
+                <li class="work_addr">
+                  <span>63 Wall St, New York,</span><br />
+                  <span>New York 10005</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_item our_location none">
+            <b>Our Location</b>
+            <div class="footer_map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.232654163779!2d126.9778709!3d37.5731389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eafa23602f%3A0x6eef5535fad5db7d!2z7KO87ZWcIOuvuOq1rSDrjIDsgqzqtIA!5e0!3m2!1sko!2skr!4v1734067989916!5m2!1sko!2skr"
+                style="border: 0"
+                dallowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="work_info">
-      <div class="footer_item work_hours">
-        <b>Work Hours</b>
-        <ul>
-          <li>Monday
-          :
-          8am-7pm</li>
-          <li>Tuesday
-          :
-          8am-7pm</li>
-          <li>Wednesday
-          :
-          8am-7pm</li>
-          <li>Thursday
-          :
-          8am-7pm</li>
-          <li>Friday
-          :
-          8am-7pm</li>
-          <li>Saturday
-          :
-          8am-7pm</li>
-          <li>Sunday
-          :
-          closed</li>
-        </ul>
+      <div class="footer_bottom">
+        <p>© 2021 Qode Interactive, All Rights Reserved</p>
       </div>
-      <div class="footer_item contact_info">
-        <b>Contact Info</b>
-        <ul>
-          <li class="work_phone"><span>+654/4715-167</span><br><span>+654/4715-167</span></li>
-          <li>allsmiles@qodeinteractive.com</li>
-          <li class="work_addr"><span>63 Wall St, New York,</span><br>
-          <span>New York 10005</span></li>
-      </ul>
-    </div>
-    </div>
-      <div class="footer_item our_location none">
-        <b>Our Location</b>
-        <div class="footer_map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.232654163779!2d126.9778709!3d37.5731389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eafa23602f%3A0x6eef5535fad5db7d!2z7KO87ZWcIOuvuOq1rSDrjIDsgqzqtIA!5e0!3m2!1sko!2skr!4v1734067989916!5m2!1sko!2skr"
-           style="border:0;"  dallowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-      </div>
-      </div>
-     
-    </div>
-  <div class="footer_bottom">
-    <p>© 2021 Qode Interactive, All Rights Reserved</p>
-  </div>
     </footer>
     <footer></footer>
 

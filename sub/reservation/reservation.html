@@ -48,7 +48,7 @@
         <button type="button" class="btn-mobile-menu-close">
           <span class="a11y-hidden">닫기</span>
         </button>
-        
+
         <h2 class="a11y-hidden">메뉴</h2>
         <nav class="gnb-m">
           <ul>
@@ -79,8 +79,52 @@
       css 작업 시 중복 클래스 작성방법
       ex) .container.home 띄어쓰기 없이 붙여서 사용하면 됨
     -->
-    <div class="container reservation">
-      <section></section>
+    <div class="container reservation wrapper">
+      <div class="sub-top">
+        <h2 class="sub-title">Reservation</h2>
+        <p class="sub-description">
+          We are a team of passionate dental professionals dedicated to<br />
+          offering care and enjoyable experience for our patients.
+        </p>
+      </div>
+      <section class="section-reservation">
+        <div class="reservation-image">
+          <img src="./../../assets/images/reservation.png" alt="reservation" />
+        </div>
+        <form class="reservation-form">
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Last Name"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-Mail Address"
+          />
+          <input
+            type="tel"
+            name="phonenumber"
+            id="phonenumber"
+            placeholder="Phone Number"
+          />
+          <textarea
+            name="message"
+            rows="8"
+            id="message"
+            placeholder="Your Message"
+          ></textarea>
+          <button type="button" class="btn btn-primary">Send Request</button>
+        </form>
+      </section>
     </div>
     <!-- footer 공통 사용 -->
     <footer></footer>
