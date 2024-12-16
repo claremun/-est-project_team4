@@ -91,37 +91,57 @@
         <div class="reservation-image">
           <img src="./../../assets/images/reservation.png" alt="reservation" />
         </div>
-        <form class="reservation-form">
-          <input
-            type="text"
-            name="firstname"
-            id="firstname"
-            placeholder="First Name"
-          />
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="Last Name"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="E-Mail Address"
-          />
-          <input
-            type="tel"
-            name="phonenumber"
-            id="phonenumber"
-            placeholder="Phone Number"
-          />
-          <textarea
-            name="message"
-            rows="8"
-            id="message"
-            placeholder="Your Message"
-          ></textarea>
+        <div class="reservation-form">
+          <label for="firstname" class="label-animation">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="&nbsp;"
+            />
+            <span class="label">First Name</span>
+            <span class="label-focus-bg"></span>
+          </label>
+          <label for="lastname" class="label-animation">
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="&nbsp;"
+            />
+            <span class="label">Last Name</span>
+            <span class="label-focus-bg"></span>
+          </label>
+          <label for="email" class="label-animation">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="&nbsp;"
+            />
+            <span class="label">E-Mail Address</span>
+            <span class="label-focus-bg"></span>
+          </label>
+          <label for="phonenumber" class="label-animation">
+            <input
+              type="tel"
+              name="phonenumber"
+              id="phonenumber"
+              placeholder="&nbsp;"
+            />
+            <span class="label">Phone Number</span>
+            <span class="label-focus-bg"></span>
+          </label>
+            <label for="message" class="label-animation">
+            <textarea
+              name="message"
+              rows="8"
+              id="message"
+              placeholder="&nbsp;"
+            ></textarea>
+            <span class="label">Your Message</span>
+            <span class="label-focus-bg"></span>
+          </label>
           <button type="button" class="btn btn-primary">Send Request</button>
         </form>
       </section>

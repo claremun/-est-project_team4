@@ -16,28 +16,65 @@
             }
         }
         .reservation-form {
-            input, textarea {
-                color: $text1;
-                font-family: $fontOpen;
-                font-size: 2rem;
-                width: calc(100% - 4.8rem);  
-                padding: 1.5rem 2.2rem;
-                margin-bottom: 1.6rem;
-                border-radius: 0.4rem;
-                border: 0.2rem solid #BFD9FF;
-                outline: none;
-                &::placeholder {
-                    color: $text1;
+            width: 100%;
+            .label-animation {
+                display: block;
+                position: relative;
+                width: 100%;    
+                .label {
+                    position: absolute;
+                    top: 2rem;
+                    left: 2rem;
                     font-size: 2rem;
+                    transition: all .2s;
+                }
+                .label-focus-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background: $bg1;
+                    z-index: -1;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                }
+                input, textarea {
+                    color: $text1;
+                    font-family: $fontOpen;
+                    font-size: 2rem;
+                    width: calc(100% - 4.8rem);  
+                    padding: 2rem;
+                    margin-bottom: 1.6rem;
+                    border-radius: 0.4rem;
+                    border: 0.2rem solid #BFD9FF;
+                    outline: none;
+                    transition: all .15s;
+                    &:not(:placeholder-shown) + .label {
+                            color: $primary1;
+                            transform: translate3d(-1rem,-2rem,0) scale(.75);
+                    }
+                    &:focus + .label {
+                        transform: translate3d(-1rem,-2rem,0) scale(.75);
+                    }
+                    &:focus + .label + .label-focus-bg {
+                        transform: scaleX(1);
+                        transition: all .1s;
+                    } 
                 }
             }
             .btn-primary {
                 letter-spacing: 0.24rem;
                 text-transform: uppercase;
-                float: left;
             }
         } 
-        @media (max-width: 1024px) {
+    }
+    @media (max-width: 1024px) {
+        .sub-description {
+            br {
+                display: none;
+            }
+        }
+        .section-reservation {
             display: block;
             margin-bottom: 10rem;
             .reservation-image {
@@ -46,16 +83,12 @@
               margin: 0 auto 3.2rem;
             }
             .reservation-form  {
-              width: 100%;
-              max-width: 70rem;
-              margin: 0 auto;
-            }
-          }
-    }
-    @media (max-width: 1024px) {
-        .sub-description {
-            br {
-                display: none;
+                width: 100%;
+                max-width: 70rem;
+                margin: 0 auto;
+                .btn-primary {
+                    width: calc(100% - 0.4rem);
+                }
             }
         }
     }
