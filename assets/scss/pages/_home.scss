@@ -95,11 +95,11 @@
                 }
             }
         }
-        @media (max-width: 1024px) {
+        @media (width < 1024px) {
             margin-bottom: 12rem;
 
         }
-        @media (max-width: 600px) {
+        @media (width < 768px) {
             margin-bottom: 10rem;
             .swiper {
                 .swiper-slide {
@@ -241,11 +241,11 @@
                 padding: 2.4rem;
             }
         }
-        @media (max-width: 1024px) {
+        @media (width < 1024px) {
             margin-bottom: 10rem;
             grid-template-columns: repeat(2, 1fr);
         }
-        @media (max-width: 600px) {
+        @media (width < 768px) {
             grid-template-columns: 1fr;
             gap: 3.6rem;
         }
@@ -278,7 +278,7 @@
                 }
             }
         }
-        @media (max-width: 1024px) {
+        @media (width < 1024px) {
             margin-bottom: 10rem;
             & {
               grid-template-columns: repeat(2, 1fr);
@@ -287,7 +287,7 @@
               }
             }
           }
-        @media (max-width: 600px) {
+        @media (width < 768px) {
         & {
             grid-template-columns: 1fr;
             gap: 4rem;
@@ -345,7 +345,7 @@
                 transform: translate(-50%, -50%);
             }
         }
-        @media (max-width: 1024px) {
+        @media (width < 1024px) {
             display: block;
             margin-bottom: 10rem;
             .dental-health-content {
@@ -406,7 +406,7 @@
                 }
             }
         }
-        @media (max-width: 600px) {
+        @media (width < 768px) {
             margin-bottom: 10rem;
         }
     }
@@ -425,13 +425,13 @@
                 width: 100%;
             }
         }
-        @media (max-width: 1024px) {
+        @media (width < 1024px) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 4rem;
             padding: 5.2rem 4rem;
           }
-        @media (max-width: 600px) {
+        @media (width < 768px) {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 2rem 1rem;
