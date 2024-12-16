@@ -891,12 +891,12 @@ a {
   opacity: 1;
   margin-inline: 1rem;
 }
-@media (max-width: 1024px) {
+@media (width < 1024px) {
   .container.home .main-swiper {
     margin-bottom: 12rem;
   }
 }
-@media (max-width: 600px) {
+@media (width < 768px) {
   .container.home .main-swiper {
     margin-bottom: 10rem;
   }
@@ -1042,13 +1042,13 @@ a {
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 2.4rem;
 }
-@media (max-width: 1024px) {
+@media (width < 1024px) {
   .container.home .section-intro {
     margin-bottom: 10rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 600px) {
+@media (width < 768px) {
   .container.home .section-intro {
     grid-template-columns: 1fr;
     gap: 3.6rem;
@@ -1082,7 +1082,7 @@ a {
   font-size: 1.6rem;
   line-height: 2.5rem;
 }
-@media (max-width: 1024px) {
+@media (width < 1024px) {
   .container.home .section-inspection {
     margin-bottom: 10rem;
   }
@@ -1093,7 +1093,7 @@ a {
     min-width: 50%;
   }
 }
-@media (max-width: 600px) {
+@media (width < 768px) {
   .container.home .section-inspection {
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -1157,7 +1157,7 @@ a {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-@media (max-width: 1024px) {
+@media (width < 1024px) {
   .container.home .section-dental-health {
     display: block;
     margin-bottom: 10rem;
@@ -1218,7 +1218,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 0.47rem;
 }
-@media (max-width: 600px) {
+@media (width < 768px) {
   .container.home .section-news {
     margin-bottom: 10rem;
   }
@@ -1242,7 +1242,7 @@ a {
 .container.home .section-symbols .symbols-image img {
   width: 100%;
 }
-@media (max-width: 1024px) {
+@media (width < 1024px) {
   .container.home .section-symbols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1250,7 +1250,7 @@ a {
     padding: 5.2rem 4rem;
   }
 }
-@media (max-width: 600px) {
+@media (width < 768px) {
   .container.home .section-symbols {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1555,7 +1555,7 @@ a {
   letter-spacing: 0.24rem;
   text-transform: uppercase;
 }
-@media (max-width: 1024px) {
+@media (width < 1024px) {
   .container.reservation .sub-description br {
     display: none;
   }
