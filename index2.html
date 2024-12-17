@@ -5,48 +5,351 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <!-- 
-      class 명은 케밥케이스 작업 ex) btn-primary
-      id 명은 카멜 케이스로 작업 ex) userName
-    -->
-    <!-- header 공통 사용 -->
     <header></header>
-    <!-- 
-      페이지별 container 옆에 페이지 클래스 작성해서 작업
-      ex) home 페이지 경우 <div class="container home">
-      ex) shop 페이지 경우 <div class="container shop">
-        
-      css 작업 시 중복 클래스 작성방법
-      ex) .container.home 띄어쓰기 없이 붙여서 사용하면 됨
-    -->
+
     <div class="container home">
-      <!-- main 태그는 페이지 상단의 스와이퍼나 페이지의 메인이라고 생각되는 부분에 사용 -->
       <main></main>
+
       <!-- section 별로 나눠서 작업 -->
+      <!-- Swiper -->
+      <section>
+        <div class="reviews">
+          <h2>What People Say</h2>
+          <p>
+            In sea viderer delicatissimi, urbanitas sententiae quo blandit
+            maiorum euripidis.
+          </p>
+        </div>
+
+        <div class="swiper-area">
+          <div class="swiper peopleSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="home-review-card">
+                  <div class="home-review-image">
+                    <img src="./assets/images/review1.png" alt="home-review" />
+                  </div>
+                  <h3>Quick, easy & reliable</h3>
+                  <p>
+                    Duis sed odio sit amet nibh vulputate cursus a sit am
+                    mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od
+                    tincidunt auctor.
+                  </p>
+                  <span> JENNA JOHNSON </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-review-card">
+                  <div class="home-review-image">
+                    <img src="./assets/images/review2.png" alt="home-review" />
+                  </div>
+                  <h3>The best clinic in town</h3>
+                  <p>
+                    Duis sed odio sit amet nibh vulputate cursus a sit am
+                    mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od
+                    tincidunt auctor.
+                  </p>
+                  <span> ROBERT ROGAN </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-review-card">
+                  <div class="home-review-image">
+                    <img src="./assets/images/review3.png" alt="home-review" />
+                  </div>
+                  <h3>The true professionals</h3>
+                  <p>
+                    Duis sed odio sit amet nibh vulputate cursus a sit am
+                    mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od
+                    tincidunt auctor.
+                  </p>
+                  <span> AUGUST JOHNS </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-review-card">
+                  <div class="home-review-image">
+                    <img src="./assets/images/review2.png" alt="home-review" />
+                  </div>
+                  <h3>Quick, easy & reliable</h3>
+                  <p>
+                    Duis sed odio sit amet nibh vulputate cursus a sit am
+                    mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od
+                    tincidunt auctor.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-review-card">
+                  <div class="home-review-image">
+                    <img src="./assets/images/review3.png" alt="home-review" />
+                  </div>
+                  <h3>Quick, easy & reliable</h3>
+                  <p>
+                    Duis sed odio sit amet nibh vulputate cursus a sit am
+                    mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od
+                    tincidunt auctor.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-review-card">
+                  <div class="home-review-image">
+                    <img src="./assets/images/review1.png" alt="home-review" />
+                  </div>
+                  <h3>Quick, easy & reliable</h3>
+                  <p>
+                    Duis sed odio sit amet nibh vulputate cursus a sit am
+                    mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od
+                    tincidunt auctor.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-review-card">
+                  <div class="home-review-image">
+                    <img src="./assets/images/review2.png" alt="home-review" />
+                  </div>
+                  <h3>Quick, easy & reliable</h3>
+                  <p>
+                    Duis sed odio sit amet nibh vulputate cursus a sit am
+                    mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od
+                    tincidunt auctor.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-review-card">
+                  <div class="home-review-image">
+                    <img src="./assets/images/review3.png" alt="home-review" />
+                  </div>
+                  <h3>Quick, easy & reliable</h3>
+                  <p>
+                    Duis sed odio sit amet nibh vulputate cursus a sit am
+                    mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od
+                    tincidunt auctor.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper -->
+        <!-- <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+      </section>
+
+      <!-- banner-->
+      <section>
+        <div class="banner">
+          <div class="banner-text">
+            <h2>Discount dental plans save you <span>up to 60%</span></h2>
+            <p>
+              Sea te illum euismod, ex dicta noluisse qui, sea an hinc pericula
+              imperdiet sum.
+            </p>
+          </div>
+          <button type="button" class="btn btn-white">learn more</button>
+        </div>
+      </section>
+
+      <!-- specialists -->
+      <section>
+        <div class="specialists-services">
+          <div class="specialists-services-item">
+            <h3>Root Canal Specialist</h3>
+          </div>
+          <div class="specialists-services-item">
+            <h3>Alignment Specialist</h3>
+          </div>
+          <div class="specialists-services-item">
+            <h3>Cosmetic Dentistry</h3>
+          </div>
+          <div class="specialists-services-item">
+            <h3>Live Dental Advisory</h3>
+          </div>
+        </div>
+
+        <div class="specialists-content">
+          <div class="specialists-content-text">
+            <h2>Fast & professional treatments for every patient</h2>
+            <p>
+              Proin gravida nibh vel velit auctor aliquet ert. Est vel sum
+              sollicitudin, sed ultrices nisi bibh et sit augue.
+            </p>
+            <p>
+              Nunc non orci ex amet velt vulputate cursus a sit amet lorem.
+              Morbi cursus sed ipsum sed. Nam nec tellus a odio tincidunt auctor
+              a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+              elit.
+            </p>
+          </div>
+          <div class="specialists-content-image">
+            <img src="./assets/images/specialist.png" alt="specialist" />
+          </div>
+        </div>
+      </section>
+
+      <!-- experts -->
+      <section class="section-experts wrapper">
+        <h3>THE ALLSMILES TEAM</h3>
+        <h2>Meet Our Experts</h2>
+        <p>
+          An tristique intrudas sea, vis equidem oporteat concludam mundi at.
+          Neo-nulla dolor labefacta ex, cu nec falli suavae. Per stet
+          eloquentiam an esse.
+        </p>
+
+        <div class="experts-grid">
+          <div class="experts-grid-member">
+            <div class="experts-image">
+              <img
+                src="./assets/images/ico_share.svg"
+                class="share-icon"
+                alt=""
+              />
+              <img
+                src="./assets/images/experts1.png"
+                class="share-experts"
+                alt="Howard Holmes"
+              />
+            </div>
+            <div class="experts-info">
+              <h4>Howard Holmes</h4>
+              <p>EXOTIC DENTIST</p>
+            </div>
+          </div>
+          <div class="experts-grid-member">
+            <div class="experts-image">
+              <img
+                src="./assets/images/ico_share.svg"
+                class="share-icon"
+                alt=""
+              />
+              <img
+                src="./assets/images/experts2.png"
+                class="share-experts"
+                alt="Ella Thompson"
+              />
+            </div>
+            <div class="experts-info">
+              <h4>Ella Thompson</h4>
+              <p>DENTAL TECHNICIAN</p>
+            </div>
+          </div>
+          <div class="experts-grid-member">
+            <div class="experts-image">
+              <img
+                src="./assets/images/ico_share.svg"
+                class="share-icon"
+                alt=""
+              />
+              <img
+                src="./assets/images/experts3.png"
+                class="share-experts"
+                alt="Vincent Cooper"
+              />
+            </div>
+            <div class="experts-info">
+              <h4>Vincent Cooper</h4>
+              <p>ESTHETIC DENTIST</p>
+            </div>
+          </div>
+          <div class="experts-grid-member">
+            <div class="experts-image">
+              <img
+                src="./assets/images/ico_share.svg"
+                class="share-icon"
+                alt=""
+              />
+              <img
+                src="./assets/images/experts4.png"
+                class="share-experts"
+                alt="Danielle Bryant"
+              />
+            </div>
+            <div class="experts-info">
+              <h4>Danielle Bryant</h4>
+              <p>DENTAL TECHNICIAN</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="request_form">
-        <div class="request_img none"><img src="./assets/images/section5.png"></div>
+        <div class="request_img none">
+          <img src="./assets/images/section5.png" />
+        </div>
         <div class="request_right">
           <div class="request_right_wrap">
             <b>Request an Appointment</b>
             <p>Proin gravida nibh vel velit auctor aliquet justo.</p>
             <form>
               <div class="request_ipt">
-                <input placeholder="First Name" /><input placeholder="First Name" />
+                <input placeholder="First Name" /><input
+                  placeholder="First Name"
+                />
               </div>
               <div class="request_ipt">
-                <input placeholder="First Name" /><input placeholder="First Name" />
+                <input placeholder="First Name" /><input
+                  placeholder="First Name"
+                />
               </div>
-                <textarea placeholder="First Name">
-              </textarea>
+              <textarea placeholder="First Name"> </textarea>
               <button class="request_form_btn">Send Request</button>
             </form>
           </div>
         </div>
       </section>
     </div>
-    <!-- footer 공통 사용 -->
+
     <footer></footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".peopleSwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        slidesPerView: 2,
+        spaceBetween: 20,
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
