@@ -1471,41 +1471,39 @@ a {
   max-width: 100%;
   border-radius: 8px;
 }
-.container.home .experts {
+.container.home .section-experts {
   padding: 60px 20px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
-.container.home .experts h3 {
+.container.home .section-experts h3 {
   color: #f4572e;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
-.container.home .experts h2 {
+.container.home .section-experts h2 {
   color: #2e3192;
   margin-bottom: 10px;
   font-size: 3rem;
 }
-.container.home .experts p {
+.container.home .section-experts p {
   padding-bottom: 5rem;
 }
-.container.home .experts .experts-grid {
+.container.home .section-experts .experts-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
   margin: 0px auto;
 }
-.container.home .experts .experts-grid .experts-grid-member {
+.container.home .section-experts .experts-grid .experts-grid-member {
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.container.home .experts .experts-grid .experts-grid-member .experts-image .share-icon {
+.container.home .section-experts .experts-grid .experts-grid-member .experts-image .share-icon {
   width: 20%;
   position: absolute;
   top: 5%;
@@ -1515,23 +1513,23 @@ a {
   border-radius: 5px;
   font-size: 300;
 }
-.container.home .experts .experts-grid .experts-grid-member .experts-image .share-experts {
+.container.home .section-experts .experts-grid .experts-grid-member .experts-image .share-experts {
   width: 100%;
   border-radius: 8px;
 }
-.container.home .experts .experts-grid .experts-info {
+.container.home .section-experts .experts-grid .experts-info {
   margin-top: 15px;
 }
-.container.home .experts .experts-grid .experts-info h4 {
+.container.home .section-experts .experts-grid .experts-info h4 {
   color: #2e3192;
   margin-bottom: 5px;
 }
-.container.home .experts .experts-grid .experts-info p {
+.container.home .section-experts .experts-grid .experts-info p {
   color: #666;
   font-size: 300;
 }
 @media (width < 1024px) {
-  .container.home .experts .experts-grid {
+  .container.home .section-experts .experts-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1595,7 +1593,7 @@ a {
   bottom: 0;
   width: 10rem;
   height: 121%;
-  background: #EEF7FF;
+  background: #eef7ff;
   -webkit-transform: rotate(6deg);
   -ms-transform: rotate(6deg);
   transform: rotate(6deg);
@@ -1603,7 +1601,7 @@ a {
 }
 .container.home .request_form .request_right {
   width: 50%;
-  background: #EEF7FF;
+  background: #eef7ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1648,7 +1646,7 @@ a {
 }
 .container.home .request_form .request_right form input {
   padding: 1.5rem 2.2rem;
-  border: 2px solid #BFD9FF;
+  border: 2px solid #bfd9ff;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1662,7 +1660,7 @@ a {
 }
 .container.home .request_form .request_right form textarea {
   resize: none;
-  border: 2px solid #BFD9FF;
+  border: 2px solid #bfd9ff;
   border-radius: 5px;
   width: 100%;
   -webkit-box-sizing: border-box;
