@@ -447,7 +447,7 @@ a {
 
 .wrapper {
   width: 100%;
-  max-width: 124rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -459,6 +459,11 @@ a {
 }
 .footer .footer_top {
   padding: 10rem 0;
+}
+@media (max-width: 1024px) {
+  .footer .footer_top {
+    padding: 10rem 2rem;
+  }
 }
 .footer .footer_top .footer_top_inner {
   display: -webkit-box;
@@ -502,6 +507,9 @@ a {
   .footer .footer_top .footer_top_inner .work_info {
     display: block;
     text-align: center;
+  }
+  .footer .footer_top .footer_top_inner .work_info li.none {
+    display: none;
   }
 }
 .footer .footer_top .footer_top_inner .footer_item b {
@@ -571,7 +579,7 @@ a {
 .footer .footer_top .footer_top_inner .social_ico span:nth-child(3) {
   background: url(./../images/ico-facebook.svg) no-repeat;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .footer .footer_top .footer_top_inner .contact_info {
     margin-top: 2rem;
   }
@@ -589,7 +597,7 @@ a {
   padding-left: 2.7rem;
   position: relative;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .footer .footer_top .footer_top_inner .contact_info ul .work_phone span,
   .footer .footer_top .footer_top_inner .contact_info ul .work_addr span {
     padding: 0;
@@ -620,7 +628,7 @@ a {
   top: 0.3rem;
   left: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .footer .footer_top .footer_top_inner .contact_info ul .work_phone span:first-child:before,
   .footer .footer_top .footer_top_inner .contact_info ul .work_addr span:first-child:before {
     left: -2.5rem;
@@ -631,6 +639,11 @@ a {
 }
 .footer .footer_top .footer_top_inner .contact_info li:nth-child(2) {
   margin-left: 2.7rem;
+}
+@media (max-width: 767px) {
+  .footer .footer_top .footer_top_inner .contact_info li:nth-child(2) {
+    margin-left: 0;
+  }
 }
 .footer .footer_top .footer_top_inner .our_location .footer_map iframe {
   width: 100%;
@@ -1402,6 +1415,11 @@ a {
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 2rem;
+  }
 }
 
 .about_title h2 {
