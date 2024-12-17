@@ -193,7 +193,7 @@ a {
 
 .wrapper {
   width: 100%;
-  max-width: 120rem;
+  max-width: 124rem;
   margin: 0 auto;
   padding: 0 2rem;
  
@@ -207,28 +207,29 @@ a {
   background: $primary1;
   color: $white;
   .footer_top {
-    padding: 10rem 0;
-    @media (max-width: 1024px) {
-        padding: 10rem 2rem;
-      }
+    padding: 10rem 2rem;
     .footer_top_inner {
       display: flex;
-      justify-content: center;
-      gap: 5rem;
-      @media (max-width: 1024px) {
-        justify-content: space-between;
-      }
-      @media (max-width: 767px) {
+      justify-content: space-between;
+      @media (width < 768px) {
         display: block;
       }
       .work_info {
         display: flex;
-        justify-content: space-between;
-        flex-grow: 3;
-        @media (max-width: 1024px) {
-          justify-content: space-around;
+        gap: 2.8rem;
+        .m-work {
+          display: none;
         }
-        @media (max-width: 480px) {
+        @media (width < 1024px) {
+          display: block;
+          .pc-work {
+            display: none;
+          }
+          .m-work {
+            display: block;
+          }
+        }
+        @media (width < 480px) {
           display: block;
           text-align: center;
           li.none{
@@ -238,8 +239,6 @@ a {
 
       }
       .footer_item {
-        // width: 25%;
-
         & b {
           font-size: 1.6rem;
           font-weight: $fontBold;
@@ -263,7 +262,7 @@ a {
         p {
           word-wrap: break-word;
         }
-        @media (max-width: 767px) {
+        @media (width < 768px) {
           align-items: center;
           margin-bottom: 4rem;
         }
@@ -277,6 +276,17 @@ a {
 
         ul {
           margin: 0;
+          &.pc-work {
+            @media (width < 1024px) {
+              display: none;
+            }
+          }
+          &.m-work {
+            display: none;
+            @media (width < 1024px) {
+              display: block;
+            }
+          }
         }
 
         li:not(:last-child) {
@@ -304,7 +314,7 @@ a {
         }
       }
       .contact_info {
-        @media (max-width: 767px) {
+        @media (width < 768px) {
           margin-top: 2rem;
         }
         b {
@@ -319,7 +329,7 @@ a {
           .work_addr span {
             padding-left: 2.7rem;
             position: relative;
-            @media (max-width: 767px) {
+            @media (width < 768px) {
               padding: 0;
             }
           }
@@ -349,7 +359,7 @@ a {
             top: 0.3rem;
             left: 0;
           }
-          @media (max-width: 767px) {
+          @media (width < 768px) {
             .work_phone span:first-child:before,
             .work_addr span:first-child:before {
               left: -2.5rem;
@@ -380,10 +390,9 @@ a {
           margin-bottom: 1.2rem;
         }
       }
-      @media (max-width: 1024px) {
+      @media (width < 1024px) {
         .our_location.none {
-          border: 1px solid #000;
-          display: none;
+          // display: none;
         }
       }
     }
