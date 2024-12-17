@@ -58,7 +58,7 @@
      top: 0;
      border-right:2px solid #CCCAFF;
     height: 100%;
-    @media (max-width:600px) {
+    @media (max-width:767px) {
      content: none;
     }
  }
@@ -76,7 +76,7 @@
     @media (max-width:1024px) {
         font-size: 1.8rem;
     }
-    @media (max-width:600px) {
+    @media (max-width:767px) {
         font-size: 1.2rem;
     }
 }
@@ -88,49 +88,26 @@
       text-align: center;
       color: $text2;
       position: relative;
-      @media (max-width:600px) {
+      @media (max-width:767px) {
             font-size:4rem;
         }
     b{
         font-size: 4rem;
         margin-left: .5rem;
-        @media (max-width:600px) {
+        color: #132ABE;
+        @media (max-width:767px) {
                 font-size: 2rem;
                 margin-left: 0.5rem;
             }
     }
-    //   &::after {
-    //         content: "✚";
-    //         position: absolute;
-    //         font-size: 3.2rem;
-    //         right: -4rem;
-    //         top: 50%;
-    //         color: #132ABE;
-    //         transform: translate(0, -45%);
-    //   }
-    //   @media (max-width:1024px) {
-    //     font-size: 5rem;
-    //     &::after {
-    //             font-size: 2.8rem;
-    //             right: -3.5rem;
-    //     }
-    //   }
-    //     @media (max-width:600px) {
-    //     font-size: 4rem;
-    //         &::after {
-    //             font-size: 2rem;
-    //             right: -2.4rem;
-    //         }
-    //     }
   }
   .hospital_inner:nth-child(2) div:first-child span {
    b{
-       font-size: 5rem;
-   
-       @media (max-width:600px) {
-               font-size: 3rem;
-               margin-left: 0.5rem;
-           }
+        font-size: 5rem;
+        @media (max-width:767px) {
+                font-size: 3rem;
+                margin-left: 0.5rem;
+            }
 
    }
     }
@@ -191,7 +168,7 @@
     @media (max-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
     }
-    @media (max-width: 600px) {
+    @media (max-width: 767px) {
         grid-template-columns: 1fr;
         gap: 4rem;
     }

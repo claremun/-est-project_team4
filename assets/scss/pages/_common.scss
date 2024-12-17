@@ -207,7 +207,7 @@ a {
   background: $primary1;
   color: $white;
   .footer_top {
-    padding: 10rem 2rem;
+    padding-top: 10rem ;padding-bottom: 10rem;
     .footer_top_inner {
       display: flex;
       justify-content: space-between;
@@ -216,12 +216,13 @@ a {
       }
       .work_info {
         display: flex;
-        gap: 2.8rem;
+        gap: 6rem;
         .m-work {
           display: none;
         }
         @media (width < 1024px) {
           display: block;
+          text-align: center;
           .pc-work {
             display: none;
           }
@@ -314,7 +315,8 @@ a {
         }
       }
       .contact_info {
-        @media (width < 768px) {
+        
+        @media (width < 1024px) {
           margin-top: 2rem;
         }
         b {
@@ -329,7 +331,7 @@ a {
           .work_addr span {
             padding-left: 2.7rem;
             position: relative;
-            @media (width < 768px) {
+            @media (width < 1024px) {
               padding: 0;
             }
           }
@@ -359,7 +361,7 @@ a {
             top: 0.3rem;
             left: 0;
           }
-          @media (width < 768px) {
+          @media (width < 1024px) {
             .work_phone span:first-child:before,
             .work_addr span:first-child:before {
               left: -2.5rem;
@@ -379,6 +381,13 @@ a {
       }
 
       .our_location {
+        @media (max-width:767px) {
+            margin-top: 2rem;
+            text-align: center;
+            .footer_map{
+              margin-top: 1.2rem;
+            }
+          }
         .footer_map {
           iframe {
             width: 100%;

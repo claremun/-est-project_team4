@@ -458,7 +458,8 @@ a {
   color: #fff;
 }
 .footer .footer_top {
-  padding: 10rem 2rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 .footer .footer_top .footer_top_inner {
   display: -webkit-box;
@@ -477,7 +478,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2.8rem;
+  gap: 6rem;
 }
 .footer .footer_top .footer_top_inner .work_info .m-work {
   display: none;
@@ -485,6 +486,7 @@ a {
 @media (width < 1024px) {
   .footer .footer_top .footer_top_inner .work_info {
     display: block;
+    text-align: center;
   }
   .footer .footer_top .footer_top_inner .work_info .pc-work {
     display: none;
@@ -582,7 +584,7 @@ a {
 .footer .footer_top .footer_top_inner .social_ico span:nth-child(3) {
   background: url(./../images/ico-facebook.svg) no-repeat;
 }
-@media (width < 768px) {
+@media (width < 1024px) {
   .footer .footer_top .footer_top_inner .contact_info {
     margin-top: 2rem;
   }
@@ -600,7 +602,7 @@ a {
   padding-left: 2.7rem;
   position: relative;
 }
-@media (width < 768px) {
+@media (width < 1024px) {
   .footer .footer_top .footer_top_inner .contact_info ul .work_phone span,
   .footer .footer_top .footer_top_inner .contact_info ul .work_addr span {
     padding: 0;
@@ -631,7 +633,7 @@ a {
   top: 0.3rem;
   left: 0;
 }
-@media (width < 768px) {
+@media (width < 1024px) {
   .footer .footer_top .footer_top_inner .contact_info ul .work_phone span:first-child:before,
   .footer .footer_top .footer_top_inner .contact_info ul .work_addr span:first-child:before {
     left: -2.5rem;
@@ -646,6 +648,15 @@ a {
 @media (max-width: 767px) {
   .footer .footer_top .footer_top_inner .contact_info li:nth-child(2) {
     margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer .footer_top .footer_top_inner .our_location {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .footer .footer_top .footer_top_inner .our_location .footer_map {
+    margin-top: 1.2rem;
   }
 }
 .footer .footer_top .footer_top_inner .our_location .footer_map iframe {
@@ -1727,7 +1738,7 @@ a {
   border-right: 2px solid #CCCAFF;
   height: 100%;
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .hospital_inner div:first-child::after {
     content: none;
   }
@@ -1750,7 +1761,7 @@ a {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .hospital_inner div {
     font-size: 1.2rem;
   }
@@ -1765,7 +1776,7 @@ a {
   color: #1e2d78;
   position: relative;
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .hospital_inner div:first-child span {
     font-size: 4rem;
   }
@@ -1773,8 +1784,9 @@ a {
 .hospital_inner div:first-child span b {
   font-size: 4rem;
   margin-left: 0.5rem;
+  color: #132ABE;
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .hospital_inner div:first-child span b {
     font-size: 2rem;
     margin-left: 0.5rem;
@@ -1784,7 +1796,7 @@ a {
 .hospital_inner:nth-child(2) div:first-child span b {
   font-size: 5rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .hospital_inner:nth-child(2) div:first-child span b {
     font-size: 3rem;
     margin-left: 0.5rem;
@@ -1849,7 +1861,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .our_list {
     grid-template-columns: 1fr;
     gap: 4rem;
