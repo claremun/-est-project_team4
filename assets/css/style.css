@@ -272,6 +272,12 @@ a {
 .header {
   position: fixed;
   inset: 0 0 0 0;
+  width: 100%;
+  height: 10rem;
+  background-color: #fff;
+  z-index: 1000;
+}
+.header .header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,21 +289,20 @@ a {
           align-items: center;
   width: 100%;
   max-width: 192rem;
-  height: 10rem;
+  margin: 0 auto;
   padding: 0 3.2rem;
   background-color: #fff;
-  z-index: 1000;
 }
-.header .gnb-pc ul {
+.header .header-inner .gnb-pc ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 2.8rem;
 }
-.header .gnb-pc ul li {
+.header .header-inner .gnb-pc ul li {
   width: 12.2rem;
 }
-.header .gnb-pc ul li a {
+.header .header-inner .gnb-pc ul li a {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -305,7 +310,7 @@ a {
   font-size: 1.4rem;
   text-align: center;
 }
-.header .gnb-pc ul li a::after {
+.header .header-inner .gnb-pc ul li a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -317,14 +322,14 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.header .gnb-pc ul li a:hover::after {
+.header .header-inner .gnb-pc ul li a:hover::after {
   opacity: 1;
 }
-.header .gnb-pc ul li.active a::after {
+.header .header-inner .gnb-pc ul li.active a::after {
   opacity: 1;
 }
-.header a,
-.header .btn-search {
+.header .header-inner a,
+.header .header-inner .btn-search {
   color: #2e3192;
   letter-spacing: 0.26rem;
   font-weight: 600;
@@ -332,22 +337,22 @@ a {
           box-sizing: border-box;
   text-transform: uppercase;
 }
-.header .utility {
+.header .header-inner .utility {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.header .utility .btn-search {
+.header .header-inner .utility .btn-search {
   font-size: 1.4rem;
   line-height: 10rem;
 }
-.header .btn-hamburger {
+.header .header-inner .btn-hamburger {
   display: none;
   width: 3.6rem;
   aspect-ratio: 1;
   background: url(./../images/ico_hamburger_primary.svg) no-repeat center/cover;
 }
-.header .moblie-menu {
+.header .header-inner .moblie-menu {
   display: none;
   position: fixed;
   left: 100%;
@@ -359,28 +364,28 @@ a {
   transition: 0.3s;
   z-index: 1000;
 }
-.header .moblie-menu .btn-mobile-menu-close {
+.header .header-inner .moblie-menu .btn-mobile-menu-close {
   width: 3.6rem;
   margin: 3.2rem 2rem 2rem;
   aspect-ratio: 1;
   background: url(./../images/ico_close_primary.svg) no-repeat center/cover;
 }
-.header .moblie-menu .input-wrap {
+.header .header-inner .moblie-menu .input-wrap {
   margin: 2rem;
 }
-.header .moblie-menu .gnb-m ul li a {
+.header .header-inner .moblie-menu .gnb-m ul li a {
   display: block;
   padding: 2rem;
   font-size: 2rem;
   letter-spacing: 0.18rem;
 }
-.header .moblie-menu .gnb-m ul li:hover a {
+.header .header-inner .moblie-menu .gnb-m ul li:hover a {
   background-color: #eef7ff;
 }
-.header .moblie-menu .gnb-m ul li.active a {
+.header .header-inner .moblie-menu .gnb-m ul li.active a {
   background-color: #eef7ff;
 }
-.header .moblie-menu.active {
+.header .header-inner .moblie-menu.active {
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateX(-100%);
@@ -391,37 +396,40 @@ a {
   .header {
     height: 8rem;
   }
-  .header .gnb-pc {
+  .header .header-inner {
+    height: 100%;
+  }
+  .header .header-inner .gnb-pc {
     display: none;
   }
-  .header .utility {
+  .header .header-inner .utility {
     margin-left: auto;
     margin-right: 1.2rem;
   }
-  .header .utility .btn-search {
+  .header .header-inner .utility .btn-search {
     line-height: 1;
     width: 2.4rem;
     aspect-ratio: 1;
     background: url(./../images/ico_search_primary.svg) no-repeat center/cover;
   }
-  .header .utility .btn-search span {
+  .header .header-inner .utility .btn-search span {
     overflow: hidden;
     position: absolute;
     width: 1px;
     height: 1px;
     clip: rect(1px, 1px, 1px, 1px);
   }
-  .header .btn-hamburger {
+  .header .header-inner .btn-hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header .moblie-menu {
+  .header .header-inner .moblie-menu {
     display: block;
   }
 }
 @media (width < 768px) {
-  .header .moblie-menu {
+  .header .header-inner .moblie-menu {
     display: block;
     width: 100%;
   }
