@@ -75,8 +75,23 @@ a {
     .utility {
       display: flex;
       .btn-search {
+        position: relative;
         font-size: 1.4rem;
         line-height: 10rem;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 0.3rem;
+          background-color: $secondary1;
+          left: 0;
+          bottom: 0;
+          opacity: 0;
+          transition: 0.3s;
+        }
+        &:hover::after {
+          opacity: 1;
+        }
       }
     }
 
@@ -162,6 +177,9 @@ a {
           span {
             @include a11y-hidden;
           }
+          &::after {
+            display: none;
+          }
         }
       }
       .btn-hamburger {
@@ -188,6 +206,7 @@ a {
   padding-bottom: 20rem !important;
   @media (width < 1024px) {
     padding-top: 8rem !important;
+    padding-bottom: 10rem !important;
   }
 }
 
@@ -196,27 +215,26 @@ a {
   max-width: 124rem;
   margin: 0 auto;
   padding: 0 2rem;
- 
+
 }
 
 // footer
 .footer {
-  // bottom: 0px;
-  // position: absolute;
   width: 100%;
   background: $primary1;
   color: $white;
-  .footer_top {
+  .footer-top {
     padding-top: 10rem ;padding-bottom: 10rem;
-    .footer_top_inner {
+    .footer-top-inner {
       display: flex;
-      justify-content: space-between;
+      gap: 1.4rem;
       @media (width < 768px) {
         display: block;
       }
-      .work_info {
+      .work-info {
         display: flex;
-        gap: 6rem;
+        flex: 1;
+        justify-content: space-around;
         .m-work {
           display: none;
         }
@@ -239,7 +257,7 @@ a {
         }
 
       }
-      .footer_item {
+      .footer-item {
         & b {
           font-size: 1.6rem;
           font-weight: $fontBold;
@@ -269,7 +287,7 @@ a {
         }
       }
 
-      .work_hours {
+      .work-hours {
         b {
           margin-bottom: 1.2rem;
           display: block;
@@ -295,11 +313,10 @@ a {
         }
       }
 
-      .social_ico {
+      .social-ico {
         display: flex;
         gap: 1rem;
-        span {
-          display: inline-block;
+        a {
           width: 3.8rem;
           height: 3.8rem;
           border-radius: 0.5rem;
@@ -314,7 +331,7 @@ a {
           }
         }
       }
-      .contact_info {
+      .contact-info {
         
         @media (width < 1024px) {
           margin-top: 2rem;
@@ -327,20 +344,20 @@ a {
         ul {
           margin: 0;
           position: relative;
-          .work_phone span,
-          .work_addr span {
+          .work-phone span,
+          .work-addr span {
             padding-left: 2.7rem;
             position: relative;
             @media (width < 1024px) {
               padding: 0;
             }
           }
-          .work_phone,
-          .work_addr {
+          .work-phone,
+          .work-addr {
             position: relative;
           }
 
-          .work_phone span:first-child:before {
+          .work-phone span:first-child:before {
             content: "";
             display: inline-block;
             width: 1.6rem;
@@ -350,7 +367,7 @@ a {
             top: 0.3rem;
             left: 0;
           }
-          .work_addr span:first-child:before {
+          .work-addr span:first-child:before {
             content: "";
             display: inline-block;
             width: 1.6rem;
@@ -362,8 +379,8 @@ a {
             left: 0;
           }
           @media (width < 1024px) {
-            .work_phone span:first-child:before,
-            .work_addr span:first-child:before {
+            .work-phone span:first-child:before,
+            .work-addr span:first-child:before {
               left: -2.5rem;
             }
           }
@@ -380,15 +397,15 @@ a {
         }
       }
 
-      .our_location {
+      .our-location {
         @media (max-width:767px) {
             margin-top: 2rem;
             text-align: center;
-            .footer_map{
+            .footer-map{
               margin-top: 1.2rem;
             }
           }
-        .footer_map {
+        .footer-map {
           iframe {
             width: 100%;
             max-width: 30rem;
@@ -399,14 +416,12 @@ a {
           margin-bottom: 1.2rem;
         }
       }
-      @media (width < 1024px) {
-        .our_location.none {
-          // display: none;
-        }
-      }
+    }
+    @media (width < 768px) {
+      padding: 6rem 0;
     }
   }
-  .footer_bottom {
+  .footer-bottom {
     text-align: center;
     background-color: #1c1e74;
     padding: 1rem 0;

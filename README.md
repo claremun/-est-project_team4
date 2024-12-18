@@ -49,3 +49,7 @@ https://github.com/HanEunHyuck/-est-project_team4.git
 
 ### 프로젝트 피그마 주소
 https://www.figma.com/design/ffG8Md7NTz6zZ9rxZ80leH/Web-UI-designs?node-id=0-1&node-type=canvas&t=pdKdGA3gakIjC6CT-0
+
+### 프로젝트 링크 및 QR코드
+https://m.site.naver.com/1zpsI  
+<img src="https://github.com/user-attachments/assets/5b83ede9-5a84-4cce-aeb1-9622e7372c62" width="250">
