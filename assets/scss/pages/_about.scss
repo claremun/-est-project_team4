@@ -2,18 +2,12 @@
 // 순욱
 
 .container.about {
-
+    .sub-top {
+        margin: 16rem auto 14rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
 }
-
-// .wrapper{
-//     width: 100%;
-//     max-width: 120rem;
-//     margin: 0 auto;
-//     @media (max-width: 1024px) {
-//         padding: 0 2rem;
-//     }
-// }
-
 
 
 .about-visu{
@@ -126,6 +120,10 @@
         text-align: center;
         line-height: 2.5rem;
         font-family: $fontOpen;
+        @media (max-width : 768px) {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+        }
     }
     .practice{
         font-size: 1.4rem;
@@ -136,9 +134,11 @@
         text-transform: uppercase;
     }
     .practice:last-child {
-        font-size: 1.4rem;
+        font-size: 2rem;
         text-transform: none;
         font-family: $fontCata;
+        margin-top: 1.6rem;
+        
     }
     h2{
         font-family: $fontCata;
@@ -147,6 +147,11 @@
         line-height: 6.7rem;
         text-align: center;
         color: $primary1;
+        @media (max-width : 768px) {
+            margin-top: 1.8rem;
+            font-size: 4.2rem;
+            line-height: 5rem !important;
+        }
     }
   }
 .our-list-wrap{
@@ -205,19 +210,22 @@
     position: relative;
     @media (max-width:1024px) {
             padding: 0 2rem;
+            margin-top: 6rem;
         }
   }
 .dental-wrap{
     position: relative;
-    .wrapper{
-        margin-bottom: 6rem;
+    p:nth-of-type(2){
+        line-height: 3rem;
+    }
+    h2{
+        line-height: 6rem;
     }
    .dental-video{
     width: 100%;
     max-width: 100%;
     object-fit: cover;
    }
-      
 }
 .play-btn{
     position: absolute;

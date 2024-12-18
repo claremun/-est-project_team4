@@ -374,7 +374,7 @@ a {
             top: 0.3rem;
             left: 0;
           }
-          .work-addr a:first-child:before {
+          .work-addr span:first-child:before {
             content: "";
             display: inline-block;
             width: 1.6rem;
@@ -387,7 +387,7 @@ a {
           }
           @media (width < 1024px) {
             .work-phone a:first-child:before,
-            .work-addr a:first-child:before {
+            .work-addr span:first-child:before {
               left: -2.5rem;
             }
           }
@@ -405,12 +405,12 @@ a {
       }
 
       .our-location {
+        .footer-map{
+            margin-top: 1.2rem;
+          }
         @media (max-width:767px) {
-            margin-top: 2rem;
-            text-align: center;
-            .footer-map{
-              margin-top: 1.2rem;
-            }
+          margin-top: 2rem;
+          text-align: center;
           }
         .footer-map {
           iframe {
