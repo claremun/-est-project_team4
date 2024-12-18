@@ -1137,6 +1137,13 @@ a {
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 2.4rem;
 }
+.container.home .section-intro .intro-schedule .intro-call a {
+  color: #fff;
+  font-family: "Catamaran", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
 @media (width < 1024px) {
   .container.home .section-intro {
     margin-bottom: 10rem;
