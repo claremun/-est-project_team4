@@ -347,7 +347,7 @@ a {
           .work-phone a{
             color: #fff;
           }
-          .work-phone span,
+          .work-phone a,
           .work-addr span {
             padding-left: 2.7rem;
             position: relative;
@@ -355,15 +355,16 @@ a {
               padding: 0;
             }
           }
+        
           .work-phone,
           .work-addr {
             position: relative;
           }
-          .work-phone a:last-child span::before{
+          .work-phone a:last-child a::before{
             content: none;
           }
 
-          .work-phone span:first-child:before {
+          .work-phone a:first-child:before {
             content: "";
             display: inline-block;
             width: 1.6rem;
@@ -373,7 +374,7 @@ a {
             top: 0.3rem;
             left: 0;
           }
-          .work-addr span:first-child:before {
+          .work-addr a:first-child:before {
             content: "";
             display: inline-block;
             width: 1.6rem;
@@ -385,8 +386,8 @@ a {
             left: 0;
           }
           @media (width < 1024px) {
-            .work-phone span:first-child:before,
-            .work-addr span:first-child:before {
+            .work-phone a:first-child:before,
+            .work-addr a:first-child:before {
               left: -2.5rem;
             }
           }
