@@ -631,9 +631,9 @@ a {
   display: inline-block;
   background: url(./../images/ico-chat.svg) no-repeat center center;
   background-size: contain;
-  /* 아이콘 크기 맞춤 */
   width: 1.8rem;
   height: 1.8rem;
+  margin-right: 0.8rem;
 }
 
 @media (max-width: 767px) {
