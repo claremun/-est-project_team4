@@ -2,7 +2,11 @@
 // 순욱
 
 .container.about {
-
+    .sub-top {
+        margin: 16rem auto 14rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
 }
 
 // .wrapper{
@@ -136,9 +140,11 @@
         text-transform: uppercase;
     }
     .practice:last-child {
-        font-size: 1.4rem;
+        font-size: 2rem;
         text-transform: none;
         font-family: $fontCata;
+        margin-top: 1.6rem;
+        
     }
     h2{
         font-family: $fontCata;
@@ -209,15 +215,17 @@
   }
 .dental-wrap{
     position: relative;
-    .wrapper{
-        margin-bottom: 6rem;
+    p:nth-of-type(2){
+        line-height: 3rem;
+    }
+    h2{
+        line-height: 6rem;
     }
    .dental-video{
     width: 100%;
     max-width: 100%;
     object-fit: cover;
    }
-      
 }
 .play-btn{
     position: absolute;

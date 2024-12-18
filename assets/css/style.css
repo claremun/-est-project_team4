@@ -650,7 +650,7 @@ a {
   top: 0.3rem;
   left: 0;
 }
-.footer .footer-top .footer-top-inner .contact-info ul .work-addr a:first-child:before {
+.footer .footer-top .footer-top-inner .contact-info ul .work-addr span:first-child:before {
   content: "";
   display: inline-block;
   width: 1.6rem;
@@ -663,7 +663,7 @@ a {
 }
 @media (width < 1024px) {
   .footer .footer-top .footer-top-inner .contact-info ul .work-phone a:first-child:before,
-  .footer .footer-top .footer-top-inner .contact-info ul .work-addr a:first-child:before {
+  .footer .footer-top .footer-top-inner .contact-info ul .work-addr span:first-child:before {
     left: -2.5rem;
   }
 }
@@ -678,13 +678,13 @@ a {
     margin-left: 0;
   }
 }
+.footer .footer-top .footer-top-inner .our-location .footer-map {
+  margin-top: 1.2rem;
+}
 @media (max-width: 767px) {
   .footer .footer-top .footer-top-inner .our-location {
     margin-top: 2rem;
     text-align: center;
-  }
-  .footer .footer-top .footer-top-inner .our-location .footer-map {
-    margin-top: 1.2rem;
   }
 }
 .footer .footer-top .footer-top-inner .our-location .footer-map iframe {
@@ -1741,6 +1741,12 @@ a {
   color: #fff;
 }
 
+.container.about .sub-top {
+  margin: 16rem auto 14rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
 .about-visu {
   height: 65rem;
 }
@@ -1874,9 +1880,10 @@ a {
   text-transform: uppercase;
 }
 .sub-text .practice:last-child {
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-transform: none;
   font-family: "Catamaran", sans-serif;
+  margin-top: 1.6rem;
 }
 .sub-text h2 {
   font-family: "Catamaran", sans-serif;
@@ -1957,8 +1964,11 @@ a {
 .dental-wrap {
   position: relative;
 }
-.dental-wrap .wrapper {
-  margin-bottom: 6rem;
+.dental-wrap p:nth-of-type(2) {
+  line-height: 3rem;
+}
+.dental-wrap h2 {
+  line-height: 6rem;
 }
 .dental-wrap .dental-video {
   width: 100%;
