@@ -611,7 +611,7 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 1.5rem 3rem 1.5rem 4.5rem;
+  padding: 1.5rem 2rem;
   background-color: #EE2852;
   color: white;
   border: none;
@@ -620,27 +620,32 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 9999;
-  @media (max-width : 767px) {
-  font-size: 1.4rem;
-  padding: 1.5rem 2rem 1.5rem 2rem;
-
-  }
 }
+
 .chat-button::before {
   content: "";
-  position: absolute;
-  top:50%;
-  left: 2rem;
+  display: inline-block;
   background: url(./../images/ico-chat.svg) no-repeat center center;
+  background-size: contain;
   width: 1.8rem;
   height: 1.8rem;
-  transform: translate(0 ,-50%);
-  @media (max-width : 767px) {
-      content: none;
-    }
+  margin-right: 0.8rem;
 }
 
+@media (max-width: 767px) {
+  .chat-button {
+    font-size: 0;
+    padding: 1.5rem;
+  }
+
+  .chat-button::before {
+    margin: 0;
+  }
+}
 .chat-button:hover {
   // background-color: #0056cc;
 }
