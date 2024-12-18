@@ -414,6 +414,7 @@ a {
   }
   .header .header-inner {
     height: 100%;
+    padding: 0 2rem;
   }
   .header .header-inner .gnb-pc {
     display: none;

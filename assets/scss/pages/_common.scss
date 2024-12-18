@@ -6,7 +6,6 @@ a {
 
 /* layout */
 // header
-
 .header {
   position: fixed;
   inset: 0 0 0 0;
@@ -161,6 +160,7 @@ a {
     height: 8rem;
     .header-inner {
       height: 100%;
+      padding: 0 2rem;
 
       .gnb-pc {
         display: none;
