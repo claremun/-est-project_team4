@@ -120,6 +120,10 @@
         text-align: center;
         line-height: 2.5rem;
         font-family: $fontOpen;
+        @media (max-width : 768px) {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+        }
     }
     .practice{
         font-size: 1.4rem;
@@ -143,6 +147,11 @@
         line-height: 6.7rem;
         text-align: center;
         color: $primary1;
+        @media (max-width : 768px) {
+            margin-top: 1.8rem;
+            font-size: 4.2rem;
+            line-height: 5rem !important;
+        }
     }
   }
 .our-list-wrap{
@@ -201,6 +210,7 @@
     position: relative;
     @media (max-width:1024px) {
             padding: 0 2rem;
+            margin-top: 6rem;
         }
   }
 .dental-wrap{

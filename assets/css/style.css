@@ -1871,6 +1871,12 @@ a {
   line-height: 2.5rem;
   font-family: "Open sans", sans-serif;
 }
+@media (max-width: 768px) {
+  .sub-text p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
 .sub-text .practice {
   font-size: 1.4rem;
   font-weight: 600;
@@ -1892,6 +1898,13 @@ a {
   line-height: 6.7rem;
   text-align: center;
   color: #2e3192;
+}
+@media (max-width: 768px) {
+  .sub-text h2 {
+    margin-top: 1.8rem;
+    font-size: 4.2rem;
+    line-height: 5rem !important;
+  }
 }
 
 .our-list-wrap {
@@ -1958,6 +1971,7 @@ a {
 @media (max-width: 1024px) {
   .dental-video-wrapper {
     padding: 0 2rem;
+    margin-top: 6rem;
   }
 }
 
