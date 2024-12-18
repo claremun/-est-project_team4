@@ -239,6 +239,13 @@
                 background-color: $primary1;
                 border-radius: 0 0 .5rem .5rem;
                 padding: 2.4rem;
+                a {
+                    color: $white;
+                    font-family: $fontCata;
+                    font-size: 2rem;
+                    font-weight: $fontSemiBold;
+                    line-height: 2.5rem;
+                }
             }
         }
         @media (width < 1024px) {
