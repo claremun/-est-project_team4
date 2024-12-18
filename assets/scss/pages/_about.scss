@@ -14,18 +14,9 @@
 //     }
 // }
 
-.about_title{
-    h2{
-        font-size: 7.2rem;
-        font-weight: $fontSemiBold;
-        color: $primary1;
-    }
-    p{
-        color: $text1;
-    }
-}
 
-.about_visu{
+
+.about-visu{
     height: 65rem;
     img{
         display: block;
@@ -35,7 +26,7 @@
     }
 }
 
-.hospital_info{
+.hospital-info{
         width: 100%;
         max-width: 120rem;
         margin: 0 auto;
@@ -44,18 +35,18 @@
     
 }
 
-  .hospital_wrap {
+  .hospital-wrap {
       display: flex;
       justify-content: space-around;
   }
 
 
-.hospital_inner{
+.hospital-inner{
     position: relative;
     width: 100%;
 }
 
- .hospital_inner div:first-child::after {
+ .hospital-inner div:first-child::after {
      content: "";
      position: absolute;
      right: 0;
@@ -66,11 +57,11 @@
      content: none;
     }
  }
-  .hospital_inner:last-child div:first-child::after {
+  .hospital-inner:last-child div:first-child::after {
       content: none;
   }
 
-.hospital_inner div{
+.hospital-inner div{
     text-align: center;
     font-family: $fontCata;
     font-size: 2.2rem;
@@ -84,7 +75,7 @@
         font-size: 1.2rem;
     }
 }
-  .hospital_inner div:first-child span {
+  .hospital-inner div:first-child span {
       font-family: $fontCata;
       font-size: 6rem;
       font-weight: 600;
@@ -105,7 +96,7 @@
             }
     }
   }
-  .hospital_inner:nth-child(2) div:first-child span {
+  .hospital-inner:nth-child(2) div:first-child span {
    b{
         font-size: 5rem;
         @media (max-width:767px) {
@@ -116,20 +107,20 @@
    }
     }
 
-  .hospital_inner div:last-child span {
+  .hospital-inner div:last-child span {
       font-family: $fontCata;
       font-size: 2.4rem;
       font-weight: 600;
       line-height: 6.0rem;
       text-align: center;
   }
-  .our_core{
+  .our-core{
     @media (max-width:1024px) {
             padding: 0 2rem;
         }
   }
 
-  .sub_text{
+  .sub-text{
     p{
         color: $text1;
         text-align: center;
@@ -158,13 +149,13 @@
         color: $primary1;
     }
   }
-.our_list_wrap{
+.our-list-wrap{
     max-width: 120rem;
     margin: 0 auto;
   
 }
 
-  .our_list {
+  .our-list {
       display: grid;
     grid-template-columns: repeat(3, 1fr);
       gap: 6rem 0;
@@ -178,35 +169,35 @@
     }
   }
 
-  .list_item {
+  .list-item {
       display: flex;
   }
 
-   .list_item h3{
+   .list-item h3{
     font-family: $fontOpen;
     font-size: 2.0rem;
     font-weight: 600;
    }
 
-  .list_item img {
+  .list-item img {
       width: 10rem;
       height: 10rem;
       object-fit: contain;
       margin-right: 3.5rem;
   }
 
-  .list_item h3 {
+  .list-item h3 {
       font-size: 2.0rem;
       margin: 10px 0;
   }
 
-  .list_item p {
+  .list-item p {
       font-size: 1.6rem;
       color: #666;
       text-align: left;
   }
 
-  .dental_video_wrapper{
+  .dental-video-wrapper{
     width: 100%;
     max-width: 192rem;
     margin: 0 auto;
@@ -216,19 +207,19 @@
             padding: 0 2rem;
         }
   }
-.dental_wrap{
+.dental-wrap{
     position: relative;
     .wrapper{
         margin-bottom: 6rem;
     }
-   .dental_video{
+   .dental-video{
     width: 100%;
     max-width: 100%;
     object-fit: cover;
    }
       
 }
-.play_btn{
+.play-btn{
     position: absolute;
     top: 50%;
     left: 50%;
