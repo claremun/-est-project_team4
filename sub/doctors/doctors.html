@@ -81,7 +81,7 @@
       css 작업 시 중복 클래스 작성방법
       ex) .container.home 띄어쓰기 없이 붙여서 사용하면 됨
     -->
-    <div class="container doctors">
+    <div class="container doctors wrapper">
       <!-- doctors title -->
       <section>
         <div class="sub-top">
@@ -95,7 +95,7 @@
       </section>
 
       <!-- specialists -->
-      <section>
+      <section class="section-doctors-specialists">
         <div class="specialists-services">
           <div class="specialists-services-item">
             <h3>Root Canal Specialist</h3>
@@ -117,108 +117,66 @@
         <div class="experts">
           <div class="experts-grid">
             <div class="experts-grid-member">
-              <div class="experts-image">
-                <img
-                  src="./../../assets/images/ico_share.svg"
-                  class="share-icon"
-                  alt=""
-                />
-                <img
-                  src="./../../assets/images/experts1.png"
-                  class="share-experts"
-                  alt="Howard Holmes"
-                />
-              </div>
+              <img
+                src="./../../assets/images/experts1.png"
+                class="share-experts"
+                alt="Howard Holmes"
+              />
               <div class="experts-info">
                 <h4>Howard Holmes</h4>
                 <p>EXOTIC DENTIST</p>
               </div>
             </div>
             <div class="experts-grid-member">
-              <div class="experts-image">
-                <img
-                  src="./../../assets/images/ico_share.svg"
-                  class="share-icon"
-                  alt=""
-                />
-                <img
-                  src="./../../assets/images/experts2.png"
-                  class="share-experts"
-                  alt="Ella Thompson"
-                />
-              </div>
+              <img
+                src="./../../assets/images/experts2.png"
+                class="share-experts"
+                alt="Ella Thompson"
+              />
               <div class="experts-info">
                 <h4>Ella Thompson</h4>
                 <p>DENTAL TECHNICIAN</p>
               </div>
             </div>
             <div class="experts-grid-member">
-              <div class="experts-image">
-                <img
-                  src="./../../assets/images/ico_share.svg"
-                  class="share-icon"
-                  alt=""
-                />
-                <img
-                  src="./../../assets/images/experts3.png"
-                  class="share-experts"
-                  alt="Vincent Cooper"
-                />
-              </div>
+              <img
+                src="./../../assets/images/experts3.png"
+                class="share-experts"
+                alt="Vincent Cooper"
+              />
               <div class="experts-info">
                 <h4>Vincent Cooper</h4>
                 <p>ESTHETIC DENTIST</p>
               </div>
             </div>
             <div class="experts-grid-member">
-              <div class="experts-image">
-                <img
-                  src="./../../assets/images/ico_share.svg"
-                  class="share-icon"
-                  alt=""
-                />
-                <img
-                  src="./../../assets/images/experts1.png"
-                  class="share-experts"
-                  alt="Howard Holmes"
-                />
-              </div>
+              <img
+                src="./../../assets/images/experts4.png"
+                class="share-experts"
+                alt="Howard Holmes"
+              />
               <div class="experts-info">
                 <h4>Howard Holmes</h4>
                 <p>EXOTIC DENTIST</p>
               </div>
             </div>
             <div class="experts-grid-member">
-              <div class="experts-image">
-                <img
-                  src="./../../assets/images/ico_share.svg"
-                  class="share-icon"
-                  alt=""
-                />
-                <img
-                  src="./../../assets/images/experts2.png"
-                  class="share-experts"
-                  alt="Ella Thompson"
-                />
-              </div>
+              <img
+                src="./../../assets/images/experts5.png"
+                class="share-experts"
+                alt="Ella Thompson"
+              />
               <div class="experts-info">
                 <h4>Ella Thompson</h4>
                 <p>DENTAL TECHNICIAN</p>
               </div>
             </div>
             <div class="experts-grid-member">
-              <div class="experts-image">
-                <img
-                  src="./../../assets/images/ico_share.svg"
-                  class="share-icon"
-                  alt=""
-                />
-                <img
-                  src="./../../assets/images/experts3.png"
-                  class="share-experts"
-                  alt="Vincent Cooper"
-                />
-              </div>
+              <img
+                src="./../../assets/images/experts6.png"
+                class="share-experts"
+                alt="Vincent Cooper"
+              />
               <div class="experts-info">
                 <h4>Vincent Cooper</h4>
                 <p>ESTHETIC DENTIST</p>
@@ -235,7 +193,10 @@
       <div class="footer-top wrapper">
         <div class="footer-top-inner">
           <div class="footer-item social">
-            <img src="./../../assets/images/footer-logo.png" alt="all samiles" />
+            <img
+              src="./../../assets/images/footer-logo.png"
+              alt="all samiles"
+            />
             <p>
               This is AllSmiles, a place dedicated <br />
               to clear, white & perfect smiles.

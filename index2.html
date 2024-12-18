@@ -19,10 +19,10 @@
 
       <!-- section 별로 나눠서 작업 -->
       <!-- Swiper -->
-      <section>
+      <section class="section-reveiws wrapper">
         <div class="reviews">
-          <h2>What People Say</h2>
-          <p>
+          <h2 class="reviews-title">What People Say</h2>
+          <p class="reviews-description">
             In sea viderer delicatissimi, urbanitas sententiae quo blandit
             maiorum euripidis.
           </p>
@@ -140,9 +140,9 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
         </div>
 
         <!-- Swiper -->
@@ -165,8 +165,8 @@
       </section>
 
       <!-- banner-->
-      <section>
-        <div class="banner">
+      <section class="section-banner wrapper">
+        <div class="banner-area">
           <div class="banner-text">
             <h2>Discount dental plans save you <span>up to 60%</span></h2>
             <p>
@@ -179,7 +179,7 @@
       </section>
 
       <!-- specialists -->
-      <section>
+      <section class="section-specialists wrapper">
         <div class="specialists-services">
           <div class="specialists-services-item">
             <h3>Root Canal Specialist</h3>
@@ -198,10 +198,10 @@
         <div class="specialists-content">
           <div class="specialists-content-text">
             <h2>Fast & professional treatments for every patient</h2>
-            <p>
+            <h3>
               Proin gravida nibh vel velit auctor aliquet ert. Est vel sum
               sollicitudin, sed ultrices nisi bibh et sit augue.
-            </p>
+            </h3>
             <p>
               Nunc non orci ex amet velt vulputate cursus a sit amet lorem.
               Morbi cursus sed ipsum sed. Nam nec tellus a odio tincidunt auctor
@@ -217,82 +217,56 @@
 
       <!-- experts -->
       <section class="section-experts wrapper">
-        <h3>THE ALLSMILES TEAM</h3>
-        <h2>Meet Our Experts</h2>
-        <p>
-          An tristique intrudas sea, vis equidem oporteat concludam mundi at.
-          Neo-nulla dolor labefacta ex, cu nec falli suavae. Per stet
-          eloquentiam an esse.
-        </p>
+        <div class="experts-top">
+          <span class="experts-practice">THE ALLSMILES TEAM</span>
+          <h2 class="experts-title">Meet Our Experts</h2>
+          <p class="experts-description">
+            An tristique intrudas sea, vis equidem oporteat concludam mundi at.
+            Neo-nulla dolor labefacta ex, cu nec falli suavae. Per stet
+            eloquentiam an esse.
+          </p>
+        </div>
 
         <div class="experts-grid">
           <div class="experts-grid-member">
-            <div class="experts-image">
-              <img
-                src="./assets/images/ico_share.svg"
-                class="share-icon"
-                alt=""
-              />
-              <img
-                src="./assets/images/experts1.png"
-                class="share-experts"
-                alt="Howard Holmes"
-              />
-            </div>
+            <img
+              src="./assets/images/experts1.png"
+              class="share-experts"
+              alt="Howard Holmes"
+            />
             <div class="experts-info">
               <h4>Howard Holmes</h4>
               <p>EXOTIC DENTIST</p>
             </div>
           </div>
           <div class="experts-grid-member">
-            <div class="experts-image">
-              <img
-                src="./assets/images/ico_share.svg"
-                class="share-icon"
-                alt=""
-              />
-              <img
-                src="./assets/images/experts2.png"
-                class="share-experts"
-                alt="Ella Thompson"
-              />
-            </div>
+            <img
+              src="./assets/images/experts2.png"
+              class="share-experts"
+              alt="Ella Thompson"
+            />
             <div class="experts-info">
               <h4>Ella Thompson</h4>
               <p>DENTAL TECHNICIAN</p>
             </div>
           </div>
           <div class="experts-grid-member">
-            <div class="experts-image">
-              <img
-                src="./assets/images/ico_share.svg"
-                class="share-icon"
-                alt=""
-              />
-              <img
-                src="./assets/images/experts3.png"
-                class="share-experts"
-                alt="Vincent Cooper"
-              />
-            </div>
+            <img
+              src="./assets/images/experts3.png"
+              class="share-experts"
+              alt="Vincent Cooper"
+            />
             <div class="experts-info">
               <h4>Vincent Cooper</h4>
               <p>ESTHETIC DENTIST</p>
             </div>
           </div>
           <div class="experts-grid-member">
-            <div class="experts-image">
-              <img
-                src="./assets/images/ico_share.svg"
-                class="share-icon"
-                alt=""
-              />
-              <img
-                src="./assets/images/experts4.png"
-                class="share-experts"
-                alt="Danielle Bryant"
-              />
-            </div>
+            <img
+              src="./assets/images/experts4.png"
+              class="share-experts"
+              alt="Danielle Bryant"
+            />
             <div class="experts-info">
               <h4>Danielle Bryant</h4>
               <p>DENTAL TECHNICIAN</p>
@@ -300,27 +274,27 @@
           </div>
         </div>
       </section>
-      <section class="request_form">
-        <div class="request_img none">
+
+      <!-- request -->
+      <section class="request-form">
+        <div class="request-img">
           <img src="./assets/images/section5.png" />
         </div>
-        <div class="request_right">
-          <div class="request_right_wrap">
-            <b>Request an Appointment</b>
+        <div class="request-right">
+          <div class="request-right-wrap">
+            <h2>Request an Appointment</h2>
             <p>Proin gravida nibh vel velit auctor aliquet justo.</p>
             <form>
-              <div class="request_ipt">
-                <input placeholder="First Name" /><input
-                  placeholder="First Name"
-                />
+              <div class="request-ipt">
+                <input placeholder="First Name" />
+                <input placeholder="Last Name" />
               </div>
-              <div class="request_ipt">
-                <input placeholder="First Name" /><input
-                  placeholder="First Name"
-                />
+              <div class="request-ipt">
+                <input placeholder="E-Mail Adress" />
+                <input placeholder="Phone Number" />
               </div>
-              <textarea placeholder="First Name"> </textarea>
-              <button class="request_form_btn">Send Request</button>
+              <textarea placeholder="Your Messages"> </textarea>
+              <button class="request-form-btn">Send Request</button>
             </form>
           </div>
         </div>
