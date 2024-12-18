@@ -344,6 +344,9 @@ a {
         ul {
           margin: 0;
           position: relative;
+          .work-phone a{
+            color: #fff;
+          }
           .work-phone span,
           .work-addr span {
             padding-left: 2.7rem;
@@ -355,6 +358,9 @@ a {
           .work-phone,
           .work-addr {
             position: relative;
+          }
+          .work-phone a:last-child span::before{
+            content: none;
           }
 
           .work-phone span:first-child:before {
