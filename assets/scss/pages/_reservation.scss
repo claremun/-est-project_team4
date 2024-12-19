@@ -28,16 +28,6 @@
                     font-size: 2rem;
                     transition: all .2s;
                 }
-                .label-focus-bg {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    background: $bg1;
-                    z-index: -1;
-                    transform: scaleX(0);
-                    transform-origin: left;
-                }
                 input, textarea {
                     color: $text1;
                     font-family: $fontOpen;
@@ -49,6 +39,9 @@
                     border: 0.2rem solid #BFD9FF;
                     outline: none;
                     transition: all .15s;
+                    &:focus {
+                        border: 0.2rem solid $primary1;
+                    }
                     &:not(:placeholder-shown) + .label {
                             color: $primary1;
                             transform: translate3d(-1rem,-2rem,0) scale(.75);
@@ -56,12 +49,8 @@
                     &:focus + .label {
                         transform: translate3d(-1rem,-2rem,0) scale(.75);
                     }
-                    &:focus + .label + .label-focus-bg {
-                        transform: scaleX(1);
-                        transition: all .1s;
-                    } 
                 }
-            }
+            } 
             .btn-primary {
                 letter-spacing: 0.24rem;
                 text-transform: uppercase;
