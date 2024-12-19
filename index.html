@@ -9,9 +9,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- 
@@ -501,18 +506,10 @@
       <!-- specialists -->
       <section class="section-specialists wrapper">
         <div class="specialists-services">
-          <button type="button" class="active">
-            Root Canal Specialist
-          </button>
-          <button type="button">
-            Alignment Specialist
-          </button>
-          <button type="button">
-            Cosmetic Dentistry
-          </button>
-          <button type="button">
-            Live Dental Advisory
-          </button>
+          <button type="button" class="active">Root Canal Specialist</button>
+          <button type="button">Alignment Specialist</button>
+          <button type="button">Cosmetic Dentistry</button>
+          <button type="button">Live Dental Advisory</button>
         </div>
 
         <div class="specialists-content">
@@ -601,22 +598,62 @@
           <img src="./assets/images/section5.png" />
         </div>
         <div class="request-right">
-          <div class="request-right-wrap">
-            <h2>Request an Appointment</h2>
-            <p>Proin gravida nibh vel velit auctor aliquet justo.</p>
-            <form>
-              <div class="request-ipt">
-                <input placeholder="First Name" />
-                <input placeholder="Last Name" />
-              </div>
-              <div class="request-ipt">
-                <input placeholder="E-Mail Adress" />
-                <input placeholder="Phone Number" />
-              </div>
-              <textarea placeholder="Your Messages"> </textarea>
-              <button class="request-form-btn">Send Request</button>
-            </form>
-          </div>
+          <h2>Request an Appointment</h2>
+          <p>Proin gravida nibh vel velit auctor aliquet justo.</p>
+          <form class="request-form">
+            <div class="request-ipt">
+              <label class="label-animation">
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">First Name</span>
+              </label>
+              <label class="label-animation">
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Last Name</span>
+              </label>
+            </div>
+            <div class="request-ipt">
+              <label class="label-animation">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">E-Mail Address</span>
+              </label>
+              <label class="label-animation">
+                <input
+                  type="tel"
+                  name="phonenumber"
+                  id="phonenumber"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Phone Number</span>
+              </label>
+            </div>
+            <div class="request-ipt">
+              <label class="label-animation">
+                <textarea
+                  name="message"
+                  rows="4"
+                  id="message"
+                  placeholder="&nbsp;"
+                ></textarea>
+                <span class="label">Your Message</span>
+              </label>
+            </div>
+            <button class="btn btn-primary">Send Request</button>
+          </form>
         </div>
       </section>
 

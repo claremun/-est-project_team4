@@ -1315,6 +1315,9 @@ a {
   }
 }
 
+.container.home {
+  /* request section 종료*/
+}
 .container.home .swiper-area {
   position: relative;
 }
@@ -1618,49 +1621,17 @@ a {
   transform: rotate(6deg);
   overflow: hidden;
 }
-@media (width < 1024px) {
-  .container.home .section-request .request-img::before {
-    content: none;
-  }
-  .container.home .section-request .request-img img {
-    display: block;
-    width: 100%; /* 이미지가 부모 요소에 꽉 차게 하기 */
-    height: auto; /* 비율 유지 */
-  }
-}
-@media (width < 1024px) {
-  .container.home .section-request .request-img {
-    width: 100%;
-  }
-}
 .container.home .section-request .request-right {
   width: 50%;
-  background: #eef7ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media (width < 1024px) {
-  .container.home .section-request .request-right {
-    width: 100%;
-    padding: 0 2rem;
-  }
-}
-.container.home .section-request .request-right .request-right-wrap {
-  padding: 5rem 0 16rem 0;
-}
-@media (width < 1024px) {
-  .container.home .section-request .request-right .request-right-wrap {
-    max-width: 80rem;
-    width: 100%;
-    padding: 5rem 0;
-  }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #eef7ff;
+  padding: 10rem 10% 10rem 4rem;
 }
 .container.home .section-request .request-right h2 {
   color: #2e3192;
@@ -1675,54 +1646,66 @@ a {
   color: #656565;
   margin-bottom: 3.5rem;
 }
-.container.home .section-request .request-right form .request-ipt {
-  margin-bottom: 3rem;
-}
-@media (width < 1024px) {
-  .container.home .section-request .request-right form .request-ipt {
-    margin-bottom: 0;
-  }
-}
-.container.home .section-request .request-right form input {
-  padding: 1.5rem 2.2rem;
-  border: 2px solid #bfd9ff;
-  border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-@media (width < 1024px) {
-  .container.home .section-request .request-right form input {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 3rem;
-  }
-}
-.container.home .section-request .request-right form textarea {
-  resize: none;
-  border: 2px solid #bfd9ff;
-  border-radius: 5px;
+.container.home .section-request .request-right .request-form {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 1.5rem 2.2rem;
+}
+.container.home .section-request .request-right .request-form .request-ipt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 3rem;
+  gap: 3.5rem;
 }
-.container.home .section-request .request-right form input:first-child {
-  margin-right: 3.5rem;
-}
-@media (width < 1024px) {
-  .container.home .section-request .request-right form input:first-child {
-    margin-right: 0;
-  }
-}
-.container.home .section-request .request-right form .request-form-btn {
-  text-align: center;
-  padding: 1.5rem 0;
-  background: #2e3192;
-  border-radius: 5px;
+.container.home .section-request .request-right .request-form .request-ipt .label-animation {
+  display: block;
+  position: relative;
   width: 100%;
-  max-width: 21.5rem;
-  color: #fff;
+}
+.container.home .section-request .request-right .request-form .request-ipt .label-animation .label {
+  position: absolute;
+  top: 2.2rem;
+  left: 2rem;
+  font-size: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea {
+  color: #8a8a8a;
+  font-family: "Open sans", sans-serif;
+  font-size: 2rem;
+  padding: 2.8rem 2rem 1.2rem 2rem;
+  border-radius: 0.4rem;
+  border: 0.2rem solid #BFD9FF;
+  outline: none;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  background-color: #eef7ff;
+  width: calc(100% - 4.8rem);
+}
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input:focus, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:focus {
+  border: 0.2rem solid #2e3192;
+  background-color: #fff;
+}
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input:not(:-moz-placeholder-shown) + .label, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:not(:-moz-placeholder-shown) + .label {
+  color: #2e3192;
+  transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+}
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input:not(:-ms-input-placeholder) + .label, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:not(:-ms-input-placeholder) + .label {
+  color: #2e3192;
+  transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+}
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input:not(:placeholder-shown) + .label, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:not(:placeholder-shown) + .label {
+  color: #2e3192;
+  -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+          transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+}
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input:focus + .label, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:focus + .label {
+  -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+          transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+}
+.container.home .section-request .request-right .request-form .btn-primary {
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
 }
 @media (width < 1024px) {
   .container.home .section-request {
@@ -1731,8 +1714,49 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .container.home .section-request .request-img {
+    width: 100%;
+  }
+  .container.home .section-request .request-img::before {
+    content: none;
+  }
+  .container.home .section-request .request-img img {
+    display: block;
+    width: 100%; /* 이미지가 부모 요소에 꽉 차게 하기 */
+    height: auto; /* 비율 유지 */
+  }
+  .container.home .section-request .request-right {
+    width: 100%;
+    padding: 6rem 10rem;
+  }
+  .container.home .section-request .request-right .request-form .btn-primary {
+    width: calc(100% - 0.4rem);
+  }
+}
+@media (width < 768px) {
+  .container.home .section-request .request-right {
+    padding: 6rem 2rem;
+  }
+  .container.home .section-request .request-right .request-form .request-ipt {
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+  .container.home .section-request .request-right .request-form .request-ipt:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc(100% - 0.2rem);
+  }
+  .container.home .section-request .request-right .request-form .btn-primary {
+    width: calc(100% - 0.4rem);
+  }
 }
 
+/* container 종료*/
 .container.about .sub-top {
   padding: 0 2rem;
 }
@@ -2283,20 +2307,6 @@ a {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.container.reservation .section-reservation .reservation-form .label-animation .label-focus-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #eef7ff;
-  z-index: -1;
-  -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-      -ms-transform-origin: left;
-          transform-origin: left;
-}
 .container.reservation .section-reservation .reservation-form .label-animation input, .container.reservation .section-reservation .reservation-form .label-animation textarea {
   color: #8a8a8a;
   font-family: "Open sans", sans-serif;
@@ -2309,6 +2319,9 @@ a {
   outline: none;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
+}
+.container.reservation .section-reservation .reservation-form .label-animation input:focus, .container.reservation .section-reservation .reservation-form .label-animation textarea:focus {
+  border: 0.2rem solid #2e3192;
 }
 .container.reservation .section-reservation .reservation-form .label-animation input:not(:-moz-placeholder-shown) + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:not(:-moz-placeholder-shown) + .label {
   color: #2e3192;
@@ -2326,13 +2339,6 @@ a {
 .container.reservation .section-reservation .reservation-form .label-animation input:focus + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:focus + .label {
   -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
           transform: translate3d(-1rem, -2rem, 0) scale(0.75);
-}
-.container.reservation .section-reservation .reservation-form .label-animation input:focus + .label + .label-focus-bg, .container.reservation .section-reservation .reservation-form .label-animation textarea:focus + .label + .label-focus-bg {
-  -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
 }
 .container.reservation .section-reservation .reservation-form .btn-primary {
   letter-spacing: 0.24rem;

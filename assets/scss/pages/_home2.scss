@@ -296,44 +296,16 @@
         transform: rotate(6deg);
         overflow: hidden;
       }
-      @media (width< 1024px) {
-        &::before {
-          content: none;
-        }
-
-        img {
-          display: block;
-          width: 100%; /* 이미지가 부모 요소에 꽉 차게 하기 */
-          height: auto; /* 비율 유지 */
-        }
-      }
-      @media (width < 1024px) {
-        width: 100%;
-      }
     }
-
     .request-right {
       width: 50%;
-      background: #eef7ff;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      @media (width < 1024px) {
-        width: 100%;
-        padding: 0 2rem;
-      }
-
-      .request-right-wrap {
-        padding: 5rem 0 16rem 0;
-        @media (width < 1024px) {
-          max-width: 80rem;
-          width: 100%;
-          padding: 5rem 0;
-        }
-      }
+      flex-direction: column;
+      background: $bg1;
+      padding: 10rem 10% 10rem 4rem ;
       h2 {
         color: $primary1;
-        font-family: "Catamaran", sans-serif;
+        font-family: $fontCata;
         font-size: 4.2rem;
         font-weight: 600;
         line-height: 4.7rem;
@@ -344,52 +316,95 @@
         color: $text5;
         margin-bottom: 3.5rem;
       }
-      form {
+      .request-form {
+        width: 100%;
         .request-ipt {
+          display: flex;
           margin-bottom: 3rem;
-          @media (width < 1024px) {
-            margin-bottom: 0;
+          gap: 3.5rem;
+          .label-animation {
+            display: block;
+            position: relative;
+            width: 100%;  
+            .label {
+              position: absolute;
+              top: 2.2rem;
+              left: 2rem;
+              font-size: 2rem;
+              transition: all .2s;
+            }
+            input, textarea {
+              color: $text1;
+              font-family: $fontOpen;
+              font-size: 2rem;
+              padding: 2.8rem 2rem 1.2rem 2rem;
+              border-radius: 0.4rem;
+              border: 0.2rem solid #BFD9FF;
+              outline: none;
+              transition: all .15s;
+              background-color: $bg1;
+              width: calc(100% - 4.8rem);
+              &:focus {
+                border: 0.2rem solid $primary1;
+                background-color: $white;
+              }
+              &:not(:placeholder-shown) + .label {
+                color: $primary1;
+                transform: translate3d(-1rem,-2rem,0) scale(.75);
+              }
+              &:focus + .label {
+                transform: translate3d(-1rem,-2rem,0) scale(.75);
+              }
+            }
           }
         }
-        input {
-          padding: 1.5rem 2.2rem;
-          border: 2px solid #bfd9ff;
-          border-radius: 5px;
-          box-sizing: border-box;
-          @media (width < 1024px) {
-            width: 100%;
-            margin-right: 0;
-            margin-bottom: 3rem;
-          }
-        }
-        textarea {
-          resize: none;
-          border: 2px solid #bfd9ff;
-          border-radius: 5px;
-          width: 100%;
-          box-sizing: border-box;
-          padding: 1.5rem 2.2rem;
-          margin-bottom: 3rem;
-        }
-        input:first-child {
-          margin-right: 3.5rem;
-          @media (width < 1024px) {
-            margin-right: 0;
-          }
-        }
-        .request-form-btn {
-          text-align: center;
-          padding: 1.5rem 0;
-          background: $primary1;
-          border-radius: 5px;
-          width: 100%;
-          max-width: 21.5rem;
-          color: $white;
+        .btn-primary {
+          letter-spacing: 0.24rem;
+          text-transform: uppercase;
         }
       }
     }
-    @media (width < 1024px) {
+    @media (width< 1024px) {
       flex-direction: column;
+      .request-img {
+        width: 100%;
+        &::before {
+          content: none;
+        }
+        img {
+          display: block;
+          width: 100%; /* 이미지가 부모 요소에 꽉 차게 하기 */
+          height: auto; /* 비율 유지 */
+        }
+      }
+      .request-right {
+        width: 100%;
+        padding: 6rem 10rem;
+        .request-form {
+          .btn-primary {
+            width: calc(100% - 0.4rem);
+          }
+        }
+      }
     }
-  }
-}
+    @media (width < 768px) {
+      .request-right {
+        padding: 6rem 2rem;
+        .request-form {
+          .request-ipt {
+            margin-bottom: 1.5rem;
+            gap: 1rem;
+            &:nth-child(2) {
+              display: flex;
+              flex-direction: column;
+              width: calc(100% - 0.2rem);
+            }
+          }
+          .btn-primary {
+            width: calc(100% - 0.4rem);
+          }
+        }
+      }
+    }
+  } /* request section 종료*/
+} /* container 종료*/
