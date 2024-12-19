@@ -44,12 +44,12 @@
 
     .swiper-button-prev {
       position: absolute;
-      left: -1.5%;
+      left: -2%;
     }
 
     .swiper-button-next {
       position: absolute;
-      right: -1.5%;
+      right: -2%;
     }
 
     .swiper-button-next:after,
@@ -125,35 +125,6 @@
 
   //specialists
   .section-specialists {
-    .specialists-services {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      max-width: 1200px;
-      margin: 0 auto;
-      margin-bottom: 3rem;
-      button {
-        color: $primary1;
-        padding: 2rem 0;
-        border-bottom: 2px solid $border1;
-        font-size: 1.6rem;
-        font-weight: 600;
-
-        &.active {
-          border-bottom-color: $secondary1;
-        }
-        &:hover {
-          border-bottom-color: $secondary1;
-        }
-      }
-      @media (max-width: 1023px) {
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 5rem;
-      }
-      @media (max-width: 767px) {
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 0rem;
-      }
-    }
     .specialists-content {
       display: flex;
       gap: 40px;
@@ -229,8 +200,21 @@
       .experts-grid-member {
         position: relative;
         justify-content: center;
+        padding-left: 2.4rem;
+
         .share-experts {
           width: 100%;
+        }
+        .btn-share {
+          position: absolute;
+          left: 0;
+          top: 5%;
+          width: 5.5rem;
+          aspect-ratio: 1;
+          img {
+            display: block;
+            width: 100%;
+          }
         }
       }
 
@@ -242,7 +226,6 @@
           font-family: $fontCata;
           font-size: 2.5rem;
           font-weight: 600;
-          padding: 0 0 0 2rem;
         }
 
         p {
@@ -253,7 +236,6 @@
           letter-spacing: 0.17rem;
           text-transform: uppercase;
           margin-bottom: 0.4rem;
-          padding: 0 0 0 2.3rem;
         }
       }
 
@@ -302,7 +284,7 @@
       display: flex;
       flex-direction: column;
       background: $bg1;
-      padding: 10rem 10% 10rem 4rem ;
+      padding: 10rem 10% 10rem 4rem;
       h2 {
         color: $primary1;
         font-family: $fontCata;
@@ -325,23 +307,24 @@
           .label-animation {
             display: block;
             position: relative;
-            width: 100%;  
+            width: 100%;
             .label {
               position: absolute;
               top: 2.2rem;
               left: 2rem;
               font-size: 2rem;
-              transition: all .2s;
+              transition: all 0.2s;
             }
-            input, textarea {
+            input,
+            textarea {
               color: $text1;
               font-family: $fontOpen;
               font-size: 2rem;
               padding: 2.8rem 2rem 1.2rem 2rem;
               border-radius: 0.4rem;
-              border: 0.2rem solid #BFD9FF;
+              border: 0.2rem solid #bfd9ff;
               outline: none;
-              transition: all .15s;
+              transition: all 0.15s;
               background-color: $bg1;
               width: calc(100% - 4.8rem);
               &:focus {
@@ -350,10 +333,10 @@
               }
               &:not(:placeholder-shown) + .label {
                 color: $primary1;
-                transform: translate3d(-1rem,-2rem,0) scale(.75);
+                transform: translate3d(-1rem, -2rem, 0) scale(0.75);
               }
               &:focus + .label {
-                transform: translate3d(-1rem,-2rem,0) scale(.75);
+                transform: translate3d(-1rem, -2rem, 0) scale(0.75);
               }
             }
           }
@@ -408,3 +391,33 @@
     }
   } /* request section 종료*/
 } /* container 종료*/
+
+.specialists-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  button {
+    color: $primary1;
+    padding: 2rem 0;
+    border-bottom: 2px solid $border1;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    &.active {
+      border-bottom-color: $secondary1;
+    }
+    &:hover {
+      border-bottom-color: $secondary1;
+    }
+  }
+  @media (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5rem;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 0rem;
+  }
+}

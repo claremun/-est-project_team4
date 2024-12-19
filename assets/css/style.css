@@ -1352,11 +1352,11 @@ a {
 }
 .container.home .swiper-area .swiper-button-prev {
   position: absolute;
-  left: -1.5%;
+  left: -2%;
 }
 .container.home .swiper-area .swiper-button-next {
   position: absolute;
-  right: -1.5%;
+  right: -2%;
 }
 .container.home .swiper-area .swiper-button-next:after,
 .container.home .swiper-area .swiper-button-prev:after {
@@ -1434,38 +1434,6 @@ a {
 @media (width < 768px) {
   .container.home .section-banner {
     margin-bottom: 10rem;
-  }
-}
-.container.home .section-specialists .specialists-services {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
-.container.home .section-specialists .specialists-services button {
-  color: #2e3192;
-  padding: 2rem 0;
-  border-bottom: 2px solid #ddd;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-.container.home .section-specialists .specialists-services button.active {
-  border-bottom-color: #f4572e;
-}
-.container.home .section-specialists .specialists-services button:hover {
-  border-bottom-color: #f4572e;
-}
-@media (max-width: 1023px) {
-  .container.home .section-specialists .specialists-services {
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 5rem;
-  }
-}
-@media (max-width: 767px) {
-  .container.home .section-specialists .specialists-services {
-    grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 0rem;
   }
 }
 .container.home .section-specialists .specialists-content {
@@ -1551,8 +1519,20 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 2.4rem;
 }
 .container.home .section-experts .experts-grid .experts-grid-member .share-experts {
+  width: 100%;
+}
+.container.home .section-experts .experts-grid .experts-grid-member .btn-share {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  width: 5.5rem;
+  aspect-ratio: 1;
+}
+.container.home .section-experts .experts-grid .experts-grid-member .btn-share img {
+  display: block;
   width: 100%;
 }
 .container.home .section-experts .experts-grid .experts-info {
@@ -1563,7 +1543,6 @@ a {
   font-family: "Catamaran", sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
-  padding: 0 0 0 2rem;
 }
 .container.home .section-experts .experts-grid .experts-info p {
   color: #dd3333;
@@ -1573,7 +1552,6 @@ a {
   letter-spacing: 0.17rem;
   text-transform: uppercase;
   margin-bottom: 0.4rem;
-  padding: 0 0 0 2.3rem;
 }
 @media (width < 1024px) {
   .container.home .section-experts .experts-grid {
@@ -1669,20 +1647,22 @@ a {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.container.home .section-request .request-right .request-form .request-ipt .label-animation input, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea {
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input,
+.container.home .section-request .request-right .request-form .request-ipt .label-animation textarea {
   color: #8a8a8a;
   font-family: "Open sans", sans-serif;
   font-size: 2rem;
   padding: 2.8rem 2rem 1.2rem 2rem;
   border-radius: 0.4rem;
-  border: 0.2rem solid #BFD9FF;
+  border: 0.2rem solid #bfd9ff;
   outline: none;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
   background-color: #eef7ff;
   width: calc(100% - 4.8rem);
 }
-.container.home .section-request .request-right .request-form .request-ipt .label-animation input:focus, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:focus {
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input:focus,
+.container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:focus {
   border: 0.2rem solid #2e3192;
   background-color: #fff;
 }
@@ -1694,12 +1674,14 @@ a {
   color: #2e3192;
   transform: translate3d(-1rem, -2rem, 0) scale(0.75);
 }
-.container.home .section-request .request-right .request-form .request-ipt .label-animation input:not(:placeholder-shown) + .label, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:not(:placeholder-shown) + .label {
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input:not(:placeholder-shown) + .label,
+.container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:not(:placeholder-shown) + .label {
   color: #2e3192;
   -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
           transform: translate3d(-1rem, -2rem, 0) scale(0.75);
 }
-.container.home .section-request .request-right .request-form .request-ipt .label-animation input:focus + .label, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:focus + .label {
+.container.home .section-request .request-right .request-form .request-ipt .label-animation input:focus + .label,
+.container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:focus + .label {
   -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
           transform: translate3d(-1rem, -2rem, 0) scale(0.75);
 }
@@ -1757,6 +1739,39 @@ a {
 }
 
 /* container 종료*/
+.specialists-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.specialists-services button {
+  color: #2e3192;
+  padding: 2rem 0;
+  border-bottom: 2px solid #ddd;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.specialists-services button.active {
+  border-bottom-color: #f4572e;
+}
+.specialists-services button:hover {
+  border-bottom-color: #f4572e;
+}
+@media (max-width: 1023px) {
+  .specialists-services {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .specialists-services {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 0rem;
+  }
+}
+
 .container.about .sub-top {
   padding: 0 2rem;
 }
@@ -2130,7 +2145,7 @@ a {
   border-radius: 8px;
 }
 .container.doctors .experts {
-  padding: 60px 20px;
+  padding: 60px 0;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2162,20 +2177,70 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 2.4rem;
 }
 .container.doctors .experts .experts-grid .experts-grid-member .share-experts {
+  display: block;
   width: 100%;
 }
-.container.doctors .experts .experts-grid .experts-info {
+.container.doctors .experts .experts-grid .experts-grid-member:hover .experts-hover {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.container.doctors .experts .experts-grid .experts-grid-member .experts-img-area {
+  position: relative;
+  overflow: hidden;
+}
+.container.doctors .experts .experts-grid .experts-grid-member .btn-share {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  width: 6rem;
+  aspect-ratio: 1;
+}
+.container.doctors .experts .experts-grid .experts-grid-member .btn-share img {
+  display: block;
+  width: 100%;
+}
+.container.doctors .experts .experts-grid .experts-grid-member .experts-hover {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(101%);
+      -ms-transform: translateY(101%);
+          transform: translateY(101%);
+  max-height: 100%;
+  overflow-y: auto;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container.doctors .experts .experts-grid .experts-grid-member .experts-hover h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.container.doctors .experts .experts-grid .experts-grid-member .experts-hover h3 {
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.container.doctors .experts .experts-grid .experts-grid-member .experts-info {
   margin-top: 15px;
 }
-.container.doctors .experts .experts-grid .experts-info h4 {
+.container.doctors .experts .experts-grid .experts-grid-member .experts-info h4 {
   color: #2e3192;
   font-family: "Catamaran", sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
 }
-.container.doctors .experts .experts-grid .experts-info p {
+.container.doctors .experts .experts-grid .experts-grid-member .experts-info p {
   color: #dd3333;
   font-size: 1.4rem;
   font-weight: 600;
