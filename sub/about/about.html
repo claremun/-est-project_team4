@@ -11,50 +11,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <!-- 
+  <body>
+    <!-- 
       class 명은 케밥케이스 작업 ex) btn-primary
       id 명은 카멜 케이스로 작업 ex) userName
     -->
-  <!-- header 공통 사용 -->
-  <header class="header">
-    <div class="header-inner">
-      <h1>
-        <a href="./../../index.html"><img src="./../../assets/images/logo.svg" alt="ALLSMILES" /></a>
-      </h1>
-      <h2 class="a11y-hidden">메뉴</h2>
-      <nav class="gnb-pc">
-        <ul>
-          <li>
-            <a href="./../../index.html">HOME</a>
-          </li>
-          <li>
-            <a href="./../doctors/doctors.html">DOCTORS</a>
-          </li>
-          <li class="active">
-            <a href="./../about/about.html">ABOUT</a>
-          </li>
-          <li>
-            <a href="./../blog/blog.html">BLOG</a>
-          </li>
-          <li>
-            <a href="./../reservation/reservation.html">RESERVATION</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="utility">
-        <button type="button" class="btn-search"><span>Search</span></button>
-      </div>
-      <button type="button" class="btn-hamburger">
-        <span class="a11y-hidden">사이드 메뉴 보기</span>
-      </button>
-      <div class="moblie-menu">
-        <button type="button" class="btn-mobile-menu-close">
-          <span class="a11y-hidden">닫기</span>
-        </button>
-
+    <!-- header 공통 사용 -->
+    <header class="header">
+      <div class="header-inner">
+        <h1>
+          <a href="./../../index.html"
+            ><img src="./../../assets/images/logo.svg" alt="ALLSMILES"
+          /></a>
+        </h1>
         <h2 class="a11y-hidden">메뉴</h2>
-        <nav class="gnb-m">
+        <nav class="gnb-pc">
           <ul>
             <li>
               <a href="./../../index.html">HOME</a>
@@ -73,10 +44,41 @@
             </li>
           </ul>
         </nav>
+        <div class="utility">
+          <button type="button" class="btn-search"><span>Search</span></button>
+        </div>
+        <button type="button" class="btn-hamburger">
+          <span class="a11y-hidden">사이드 메뉴 보기</span>
+        </button>
+        <div class="moblie-menu">
+          <button type="button" class="btn-mobile-menu-close">
+            <span class="a11y-hidden">닫기</span>
+          </button>
+
+          <h2 class="a11y-hidden">메뉴</h2>
+          <nav class="gnb-m">
+            <ul>
+              <li>
+                <a href="./../../index.html">HOME</a>
+              </li>
+              <li>
+                <a href="./../doctors/doctors.html">DOCTORS</a>
+              </li>
+              <li class="active">
+                <a href="./../about/about.html">ABOUT</a>
+              </li>
+              <li>
+                <a href="./../blog/blog.html">BLOG</a>
+              </li>
+              <li>
+                <a href="./../reservation/reservation.html">RESERVATION</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
-  <!-- 
+    </header>
+    <!-- 
       페이지별 container 옆에 페이지 클래스 작성해서 작업
       ex) home 페이지 경우 <div class="container home">
       ex) shop 페이지 경우 <div class="container shop">
@@ -84,124 +86,159 @@
       css 작업 시 중복 클래스 작성방법
       ex) .container.home 띄어쓰기 없이 붙여서 사용하면 됨
     -->
-  <div class="container about">
-    <section>
-      <div class="sub-top">
-        <h2 class="sub-title">About</h2>
-        <p class="sub-description">We are a team of passionate dental professionals dedicated to
-          offering care and enjoyable experience for our patients</p>
-      </div>
-      <div class="about-visu">
-        <img src="../../assets/images/about_visu.png" alt="병원 내부이미지지" />
-      </div>
-      <div class="hospital-info">
-        <div class="hospital-wrap">
-          <div class="hospital-inner doctors">
-            <div><span>50<b>✚</b></span></div>
-            <div>Dentist Doctors</div>
-          </div>
-          <div class="hospital-inner  treatment">
-            <div><span>100<b>K</b></span></div>
-            <div>Patient Treatment</div>
-          </div>
-          <div class="hospital-inner wards">
-            <div><span>50<b>✚</b></span></div>
-            <div>Winning Awards</div>
-          </div>
+    <div class="container about">
+      <section>
+        <div class="sub-top">
+          <h2 class="sub-title">About</h2>
+          <p class="sub-description">
+            We are a team of passionate dental professionals dedicated to
+            offering care and enjoyable experience for our patients
+          </p>
         </div>
-      </div>
-      <div class="sub-text our-core">
-        <p class="practice">dental practice</p>
-        <h2>Explore Our Core Values</h2>
-        <p>Oure dedication to advanced dental technology allows us to deliver exceptional care to our patients.</p>
-        <!-- <div class="our_list">
-        <div>
-          <img src="">
-          <div>
-            <h3>Root Canal Specialist</h3>
-            <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p></div>
+        <div class="about-visu">
+          <img
+            src="../../assets/images/about_visu.png"
+            alt="병원 내부이미지지"
+          />
         </div>
-        </div> -->
-        <div class="our-list-wrap">
-
-          <div class="our-list">
-            <div class="list-item">
-              <img src="../../assets/images/about_root1.png" alt="">
-              <div>
-                <h3>Root Canal Specialist</h3>
-                <p>Vix nibh iudicabit necessitus et, quam inermis voluptatus.</p>
-              </div>
+        <div class="hospital-info">
+          <div class="hospital-wrap">
+            <div class="hospital-inner">
+              <div class="num">50<span class="plus"></span></div>
+              <div>Dentist Doctors</div>
             </div>
-            <div class="list-item">
-              <img src="../../assets/images/about_alignment2.png" alt="">
-
-              <div>
-                <h3>Orthodontist</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
+            <div class="hospital-inner">
+              <div class="num">100<span>K</span></div>
+              <div>Patient Treatment</div>
             </div>
-
-            <div class="list-item">
-              <img src="../../assets/images/about_cosmetic3.png" alt="" />
-
-              <div>
-                <h3>Oral Surgeon</h3>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-              </div>
-            </div>
-            <div class="list-item">
-              <img src="../../assets/images/about_oral4.png" alt="">
-              <div>
-                <h3>Periodontist</h3>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-              </div>
-            </div>
-            <div class="list-item">
-              <img src="../../assets/images/about_live5.png" alt="">
-              <div>
-                <h3>General Dentist</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-              </div>
-            </div>
-            <div class="list-item">
-              <img src="../../assets/images/about_canvity6.png" alt="">
-              <div>
-                <h3>General Dentist</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-              </div>
+            <div class="hospital-inner">
+              <div class="num">50<span class="plus"></span></div>
+              <div>Winning Awards</div>
             </div>
           </div>
         </div>
-
-      </div>
-      <div class="sub-text dental-wrap">
-        <div class="wrapper">
-          <p class="practice">dental practice</p>
-          <h2>Fully dedicated to your dental health</h2>
-          <p>Te veritus tractatos delicatissimi qui, justo diceret mentitum ut sit. Qui sed reque dicam, qui veri nullam
-            vituperatoribus in. Tibique maiestatis sum quod sum ut alienum nec et, summo possim persequeris vix mea. Adhuc quodsi
-            qui, sit no tale essent electram. Mei sum prodesset in pro, quo scripta feugait vidisse.</p>
+        <section class="wrapper">
+          <div class="section-title-area">
+            <span class="section-sub-title">dental practice</span>
+            <h3 class="section-title">Explore Our Core Values</h3>
+            <p class="section-description">
+              Oure dedication to advanced dental technology allows us to deliver
+              exceptional care to our patients.
+            </p>
+          </div>
+          <div class="section-inspection wrapper">
+            <div class="inspection-item">
+              <img
+                src="./../../assets/images/main_inspection1.svg"
+                alt="Root Canal Specialist"
+              />
+              <div class="inspection-item-content">
+                <h5 class="inspection-title">Root Canal Specialist</h5>
+                <p class="inspection-description">
+                  Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+                </p>
+              </div>
+            </div>
+            <div class="inspection-item">
+              <img
+                src="./../../assets/images/main_inspection2.svg"
+                alt="Alignment Specialist"
+              />
+              <div class="inspection-item-content">
+                <h5 class="inspection-title">Alignment Specialist</h5>
+                <p class="inspection-description">
+                  Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+                </p>
+              </div>
+            </div>
+            <div class="inspection-item">
+              <img
+                src="./../../assets/images/main_inspection3.svg"
+                alt="Cosmetic Dentistry"
+              />
+              <div class="inspection-item-content">
+                <h5 class="inspection-title">Cosmetic Dentistry</h5>
+                <p class="inspection-description">
+                  Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+                </p>
+              </div>
+            </div>
+            <div class="inspection-item">
+              <img
+                src="./../../assets/images/main_inspection4.svg"
+                alt="Oral Hygiene Experts"
+              />
+              <div class="inspection-item-content">
+                <h5 class="inspection-title">Oral Hygiene Experts</h5>
+                <p class="inspection-description">
+                  Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+                </p>
+              </div>
+            </div>
+            <div class="inspection-item">
+              <img
+                src="./../../assets/images/main_inspection5.svg"
+                alt="Live Dental Advisory"
+              />
+              <div class="inspection-item-content">
+                <h5 class="inspection-title">Live Dental Advisory</h5>
+                <p class="inspection-description">
+                  Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+                </p>
+              </div>
+            </div>
+            <div class="inspection-item">
+              <img
+                src="./../../assets/images/main_inspection6.svg"
+                alt="Cavity Inspection"
+              />
+              <div class="inspection-item-content">
+                <h5 class="inspection-title">Cavity Inspection</h5>
+                <p class="inspection-description">
+                  Vix nibh iudicabit necessitus et, quam inermis voluptatus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="sub-text dental-wrap">
+          <div class="wrapper">
+            <p class="practice">dental practice</p>
+            <h2>Fully dedicated to your dental health</h2>
+            <p>
+              Te veritus tractatos delicatissimi qui, justo diceret mentitum ut
+              sit. Qui sed reque dicam, qui veri nullam vituperatoribus in.
+              Tibique maiestatis sum quod sum ut alienum nec et, summo possim
+              persequeris vix mea. Adhuc quodsi qui, sit no tale essent
+              electram. Mei sum prodesset in pro, quo scripta feugait vidisse.
+            </p>
             <p class="practice">Andrea McCollins</p>
           </div>
-        <div class="dental-video-wrapper">
-          <video class="dental-video">
-            <source src="../../assets/images/dental_health.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play-btn">
-            <img src="../../assets/images/ico-video.svg" alt="영상 실행">
-            <span class="a11y-hidden">동영상 재생</span>
-          </button>
+          <div class="dental-video-wrapper">
+            <video class="dental-video">
+              <source
+                src="../../assets/images/dental_health.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <button type="button" class="play-btn">
+              <img src="../../assets/images/ico-video.svg" alt="영상 실행" />
+              <span class="a11y-hidden">동영상 재생</span>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-    <button class="chat-button">Chat</button>
-  </div>
-  <!-- footer 공통 사용 -->
+      </section>
+      <button class="chat-button">Chat</button>
+    </div>
+    <!-- footer 공통 사용 -->
     <footer class="footer">
       <div class="footer-top wrapper">
         <div class="footer-top-inner">
           <div class="footer-item social">
-            <img src="./../../assets/images/footer-logo.png" alt="all samiles" />
+            <img
+              src="./../../assets/images/footer-logo.png"
+              alt="all samiles"
+            />
             <p>
               This is AllSmiles, a place dedicated <br />
               to clear, white & perfect smiles.
@@ -249,7 +286,11 @@
             <div class="footer-map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.232654163779!2d126.9778709!3d37.5731389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eafa23602f%3A0x6eef5535fad5db7d!2z7KO87ZWcIOuvuOq1rSDrjIDsgqzqtIA!5e0!3m2!1sko!2skr!4v1734067989916!5m2!1sko!2skr"
-                style="border: 0" dallowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                style="border: 0"
+                dallowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -258,6 +299,6 @@
         <p>© 2021 Qode Interactive, All Rights Reserved</p>
       </div>
     </footer>
-  <script src="./../../assets/js/script.js"></script>
-</body>
+    <script src="./../../assets/js/script.js"></script>
+  </body>
 </html>

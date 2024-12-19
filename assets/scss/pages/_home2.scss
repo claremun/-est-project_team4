@@ -2,39 +2,16 @@
 // 보영
 
 .container.home {
-  //reviews
-  .section-reveiws {
-    .reviews {
-      justify-content: center;
-      text-align: center;
-      margin-bottom: 10rem;
-
-      .reviews-title {
-        color: $text2;
-        font-family: $fontCata;
-        font-size: 5.2rem;
-        font-weight: $fontSemiBold;
-        line-height: 6rem;
-      }
-      .reviews-description {
-        font-size: 2rem;
-        line-height: 3rem;
-      }
-    }
-  }
-
   //swiper
   .swiper-area {
     position: relative;
-    margin-bottom: 20rem;
     .swiper.peopleSwiper {
       max-width: 1200px;
       margin: 0 auto;
       .swiper-wrapper {
-        margin-bottom: 8rem;
         .home-review-card {
           text-align: center;
-          padding: 0 2rem;
+          padding: 8rem 2rem 9rem;
           .home-review-image {
             img {
               width: 100px;
@@ -108,7 +85,6 @@
     color: $white;
     max-width: 1920px;
     padding: 5rem 0;
-    margin-bottom: 20rem;
 
     .banner-area {
       display: flex;
@@ -126,12 +102,10 @@
           color: $text4;
           font-weight: $fontSemiBold;
         }
-
-        .btn-white {
-          letter-spacing: 0.24rem;
-          text-transform: uppercase;
-          margin-left: 1.6rem;
-        }
+      }
+      .btn-white {
+        letter-spacing: 0.24rem;
+        text-transform: uppercase;
       }
       @media (width<768px) {
         flex-direction: column;
@@ -141,6 +115,7 @@
       }
     }
     @media (width < 1024px) {
+      padding: 2.8rem 0;
       margin-bottom: 12rem;
     }
     @media (width < 768px) {
@@ -156,18 +131,16 @@
       max-width: 1200px;
       margin: 0 auto;
       margin-bottom: 3rem;
-      .specialists-services-item {
+      button {
         color: $primary1;
-        text-align: center;
+        padding: 2rem 0;
         border-bottom: 2px solid $border1;
-        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        font-weight: 600;
 
-        h3 {
-          margin-bottom: 1rem;
-          font-weight: 600;
-          font-size: 1.6rem;
+        &.active {
+          border-bottom-color: $secondary1;
         }
-
         &:hover {
           border-bottom-color: $secondary1;
         }
@@ -186,7 +159,6 @@
       gap: 40px;
       margin: 0 auto;
       align-items: center;
-      margin-bottom: 20rem;
 
       .specialists-content-text {
         h2 {
@@ -200,7 +172,6 @@
         h3 {
           font-family: $fontCata;
           font-size: 2.3rem;
-          font-weight: 200;
           line-height: 3.2rem;
           margin-bottom: 1.2rem;
         }
@@ -210,20 +181,31 @@
         }
         @media (width < 1024px) {
           margin-bottom: 3rem;
+          h2 {
+            font-size: 3.8rem;
+            line-height: 4.2rem;
+          }
+          h3 {
+            font-size: 2rem;
+            line-height: 2.6rem;
+          }
+          p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+          }
         }
       }
 
       .specialists-content-image {
         img {
-          max-width: 100%;
+          display: block;
+          width: 100%;
           border-radius: 8px;
         }
       }
       @media (width< 1024px) {
         width: 100%;
         margin: 0 auto;
-        flex-direction: column;
-        padding: 0 10rem 10rem 10rem;
       }
 
       @media (width< 768px) {
@@ -237,38 +219,12 @@
   .section-experts {
     text-align: center;
     justify-content: center;
-    margin-bottom: 20rem;
-
-    .experts-top {
-      text-align: center;
-      margin-bottom: 10rem;
-
-      .experts-practice {
-        color: $text3;
-        font-size: 1.4rem;
-        font-weight: $fontSemiBold;
-        line-height: 2.5rem;
-        letter-spacing: 0.1rem;
-        text-transform: uppercase;
-      }
-      .experts-title {
-        color: $text2;
-        font-family: $fontCata;
-        font-size: 5.2rem;
-        font-weight: $fontSemiBold;
-        line-height: 6rem;
-      }
-      .experts-description {
-        font-size: 2rem;
-        line-height: 3rem;
-      }
-    }
 
     .experts-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 5rem;
-      margin: 0px auto;
+      margin: 5rem auto 0;
 
       .experts-grid-member {
         position: relative;
@@ -304,6 +260,9 @@
       @media (width< 1024px) {
         grid-template-columns: repeat(2, 1fr);
       }
+      @media (width< 768px) {
+        grid-template-columns: 1fr;
+      }
     }
     @media (width< 1024px) {
       margin-bottom: 10rem;
@@ -311,7 +270,7 @@
   }
 
   //request
-  .request-form {
+  .section-request {
     display: flex;
     .request-img {
       width: 50%;
@@ -343,6 +302,7 @@
         }
 
         img {
+          display: block;
           width: 100%; /* 이미지가 부모 요소에 꽉 차게 하기 */
           height: auto; /* 비율 유지 */
         }
@@ -360,7 +320,7 @@
       align-items: center;
       @media (width < 1024px) {
         width: 100%;
-        padding: 0 1rem;
+        padding: 0 2rem;
       }
 
       .request-right-wrap {
@@ -368,6 +328,7 @@
         @media (width < 1024px) {
           max-width: 80rem;
           width: 100%;
+          padding: 5rem 0;
         }
       }
       h2 {
