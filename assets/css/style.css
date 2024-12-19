@@ -1349,11 +1349,11 @@ a {
 }
 .container.home .swiper-area .swiper-button-prev {
   position: absolute;
-  left: -2%;
+  left: -1.5%;
 }
 .container.home .swiper-area .swiper-button-next {
   position: absolute;
-  right: -2%;
+  right: -1.5%;
 }
 .container.home .swiper-area .swiper-button-next:after,
 .container.home .swiper-area .swiper-button-prev:after {
@@ -1780,7 +1780,7 @@ a {
   width: 100%;
 }
 
-.hospital-inner div:first-child::after {
+.hospital-inner::after {
   content: "";
   position: absolute;
   right: 0;
@@ -1789,12 +1789,12 @@ a {
   height: 100%;
 }
 @media (max-width: 767px) {
-  .hospital-inner div:first-child::after {
+  .hospital-inner::after {
     content: none;
   }
 }
 
-.hospital-inner:last-child div:first-child::after {
+.hospital-inner:last-child::after {
   content: none;
 }
 
@@ -1861,6 +1861,20 @@ a {
   left: calc(50% - 4px);
 }
 @media (max-width: 767px) {
+  .hospital-inner div.num .plus {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .hospital-inner div.num .plus::before {
+    height: 6px;
+    top: calc(50% - 4px);
+  }
+  .hospital-inner div.num .plus::after {
+    width: 6px;
+    left: calc(50% - 3px);
+  }
+}
+@media (max-width: 767px) {
   .hospital-inner div.num {
     font-size: 4rem;
   }
@@ -1877,13 +1891,13 @@ a {
   }
 }
 
-.hospital-inner:nth-child(2) div:first-child span b {
+.hospital-wrap .hospital-inner:nth-child(2) .num span {
   font-size: 5rem;
+  /* 굵게 설정 */
 }
 @media (max-width: 767px) {
-  .hospital-inner:nth-child(2) div:first-child span b {
-    font-size: 3rem;
-    margin-left: 0.5rem;
+  .hospital-wrap .hospital-inner:nth-child(2) .num span {
+    font-size: 3.3rem;
   }
 }
 
