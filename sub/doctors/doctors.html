@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-    <title>doctors</title>
-  </head>
-  <body>
-    <!-- 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <title>doctors</title>
+</head>
+
+<body>
+  <!-- 
       class 명은 케밥케이스 작업 ex) btn-primary
       id 명은 카멜 케이스로 작업 ex) userName
     -->
-    <!-- header 공통 사용 -->
-    <header class="header">
-      <div class="header-inner">
-        <h1>
-          <a href="./../../index.html"
-            ><img src="./../../assets/images/logo.svg" alt="ALLSMILES"
-          /></a>
-        </h1>
+  <!-- header 공통 사용 -->
+  <header class="header">
+    <div class="header-inner">
+      <h1>
+        <a href="./../../index.html"><img src="./../../assets/images/logo.svg" alt="ALLSMILES" /></a>
+      </h1>
+      <h2 class="a11y-hidden">메뉴</h2>
+      <nav class="gnb-pc">
+        <ul>
+          <li>
+            <a href="./../../index.html">HOME</a>
+          </li>
+          <li class="active">
+            <a href="./../doctors/doctors.html">DOCTORS</a>
+          </li>
+          <li>
+            <a href="./../about/about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="./../blog/blog.html">BLOG</a>
+          </li>
+          <li>
+            <a href="./../reservation/reservation.html">RESERVATION</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="utility">
+        <button type="button" class="btn-search"><span>Search</span></button>
+      </div>
+      <button type="button" class="btn-hamburger">
+        <span class="a11y-hidden">사이드 메뉴 보기</span>
+      </button>
+      <div class="moblie-menu">
+        <button type="button" class="btn-mobile-menu-close">
+          <span class="a11y-hidden">닫기</span>
+        </button>
+
         <h2 class="a11y-hidden">메뉴</h2>
-        <nav class="gnb-pc">
+        <nav class="gnb-m">
           <ul>
             <li>
               <a href="./../../index.html">HOME</a>
@@ -39,41 +70,10 @@
             </li>
           </ul>
         </nav>
-        <div class="utility">
-          <button type="button" class="btn-search"><span>Search</span></button>
-        </div>
-        <button type="button" class="btn-hamburger">
-          <span class="a11y-hidden">사이드 메뉴 보기</span>
-        </button>
-        <div class="moblie-menu">
-          <button type="button" class="btn-mobile-menu-close">
-            <span class="a11y-hidden">닫기</span>
-          </button>
-
-          <h2 class="a11y-hidden">메뉴</h2>
-          <nav class="gnb-m">
-            <ul>
-              <li>
-                <a href="./../../index.html">HOME</a>
-              </li>
-              <li class="active">
-                <a href="./../doctors/doctors.html">DOCTORS</a>
-              </li>
-              <li>
-                <a href="./../about/about.html">ABOUT</a>
-              </li>
-              <li>
-                <a href="./../blog/blog.html">BLOG</a>
-              </li>
-              <li>
-                <a href="./../reservation/reservation.html">RESERVATION</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
       </div>
-    </header>
-    <!-- 
+    </div>
+  </header>
+  <!-- 
       페이지별 container 옆에 페이지 클래스 작성해서 작업
       ex) home 페이지 경우 <div class="container home">
       ex) shop 페이지 경우 <div class="container shop">
@@ -81,182 +81,152 @@
       css 작업 시 중복 클래스 작성방법
       ex) .container.home 띄어쓰기 없이 붙여서 사용하면 됨
     -->
-    <div class="container doctors wrapper">
-      <!-- doctors title -->
-      <section>
-        <div class="sub-top">
-          <h2 class="sub-title">Doctors</h2>
-          <p class="sub-description">
-            Meet our professionals, our team of dental exports is devoted to
-            delivering outstanding care and ensuring every patient has a
-            positive experience.
+  <div class="container doctors wrapper">
+    <!-- doctors title -->
+    <section>
+      <div class="sub-top">
+        <h2 class="sub-title">Doctors</h2>
+        <p class="sub-description">
+          Meet our professionals, our team of dental exports is devoted to
+          delivering outstanding care and ensuring every patient has a
+          positive experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- specialists -->
+    <section class="section-doctors-specialists">
+      <div class="specialists-services">
+        <div class="specialists-services-item">
+          <h3>Root Canal Specialist</h3>
+        </div>
+        <div class="specialists-services-item">
+          <h3>Alignment Specialist</h3>
+        </div>
+        <div class="specialists-services-item">
+          <h3>Cosmetic Dentistry</h3>
+        </div>
+        <div class="specialists-services-item">
+          <h3>Live Dental Advisory</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- experts -->
+    <section>
+      <div class="experts">
+        <div class="experts-grid">
+          <div class="experts-grid-member">
+            <img src="./../../assets/images/experts1.png" class="share-experts" alt="Howard Holmes" />
+            <div class="experts-info">
+              <h4>Howard Holmes</h4>
+              <p>EXOTIC DENTIST</p>
+            </div>
+          </div>
+          <div class="experts-grid-member">
+            <img src="./../../assets/images/experts2.png" class="share-experts" alt="Ella Thompson" />
+            <div class="experts-info">
+              <h4>Ella Thompson</h4>
+              <p>DENTAL TECHNICIAN</p>
+            </div>
+          </div>
+          <div class="experts-grid-member">
+            <img src="./../../assets/images/experts3.png" class="share-experts" alt="Vincent Cooper" />
+            <div class="experts-info">
+              <h4>Vincent Cooper</h4>
+              <p>ESTHETIC DENTIST</p>
+            </div>
+          </div>
+          <div class="experts-grid-member">
+            <img src="./../../assets/images/experts4.png" class="share-experts" alt="Howard Holmes" />
+            <div class="experts-info">
+              <h4>Howard Holmes</h4>
+              <p>EXOTIC DENTIST</p>
+            </div>
+          </div>
+          <div class="experts-grid-member">
+            <img src="./../../assets/images/experts5.png" class="share-experts" alt="Ella Thompson" />
+            <div class="experts-info">
+              <h4>Ella Thompson</h4>
+              <p>DENTAL TECHNICIAN</p>
+            </div>
+          </div>
+          <div class="experts-grid-member">
+            <img src="./../../assets/images/experts6.png" class="share-experts" alt="Vincent Cooper" />
+            <div class="experts-info">
+              <h4>Vincent Cooper</h4>
+              <p>ESTHETIC DENTIST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button class="chat-button">Chat</button>
+  </div>
+  <!-- footer 공통 사용 -->
+  <footer class="footer">
+    <div class="footer-top wrapper">
+      <div class="footer-top-inner">
+        <div class="footer-item social">
+          <img src="./../../assets/images/footer-logo.png" alt="all samiles" />
+          <p>
+            This is AllSmiles, a place dedicated <br />
+            to clear, white & perfect smiles.
           </p>
-        </div>
-      </section>
-
-      <!-- specialists -->
-      <section class="section-doctors-specialists">
-        <div class="specialists-services">
-          <div class="specialists-services-item">
-            <h3>Root Canal Specialist</h3>
-          </div>
-          <div class="specialists-services-item">
-            <h3>Alignment Specialist</h3>
-          </div>
-          <div class="specialists-services-item">
-            <h3>Cosmetic Dentistry</h3>
-          </div>
-          <div class="specialists-services-item">
-            <h3>Live Dental Advisory</h3>
+          <div class="social-ico">
+            <a href="#"><span></span></a>
+            <a href="#"><span></span></a>
+            <a href="#"><span></span></a>
           </div>
         </div>
-      </section>
-
-      <!-- experts -->
-      <section>
-        <div class="experts">
-          <div class="experts-grid">
-            <div class="experts-grid-member">
-              <img
-                src="./../../assets/images/experts1.png"
-                class="share-experts"
-                alt="Howard Holmes"
-              />
-              <div class="experts-info">
-                <h4>Howard Holmes</h4>
-                <p>EXOTIC DENTIST</p>
-              </div>
-            </div>
-            <div class="experts-grid-member">
-              <img
-                src="./../../assets/images/experts2.png"
-                class="share-experts"
-                alt="Ella Thompson"
-              />
-              <div class="experts-info">
-                <h4>Ella Thompson</h4>
-                <p>DENTAL TECHNICIAN</p>
-              </div>
-            </div>
-            <div class="experts-grid-member">
-              <img
-                src="./../../assets/images/experts3.png"
-                class="share-experts"
-                alt="Vincent Cooper"
-              />
-              <div class="experts-info">
-                <h4>Vincent Cooper</h4>
-                <p>ESTHETIC DENTIST</p>
-              </div>
-            </div>
-            <div class="experts-grid-member">
-              <img
-                src="./../../assets/images/experts4.png"
-                class="share-experts"
-                alt="Howard Holmes"
-              />
-              <div class="experts-info">
-                <h4>Howard Holmes</h4>
-                <p>EXOTIC DENTIST</p>
-              </div>
-            </div>
-            <div class="experts-grid-member">
-              <img
-                src="./../../assets/images/experts5.png"
-                class="share-experts"
-                alt="Ella Thompson"
-              />
-              <div class="experts-info">
-                <h4>Ella Thompson</h4>
-                <p>DENTAL TECHNICIAN</p>
-              </div>
-            </div>
-            <div class="experts-grid-member">
-              <img
-                src="./../../assets/images/experts6.png"
-                class="share-experts"
-                alt="Vincent Cooper"
-              />
-              <div class="experts-info">
-                <h4>Vincent Cooper</h4>
-                <p>ESTHETIC DENTIST</p>
-              </div>
-            </div>
+        <div class="work-info">
+          <div class="footer-item work-hours">
+            <b>Work Hours</b>
+            <ul class="pc-work">
+              <li>Monday : 8am-7pm</li>
+              <li>Tuesday : 8am-7pm</li>
+              <li>Wednesday : 8am-7pm</li>
+              <li>Thursday : 8am-7pm</li>
+              <li>Friday : 8am-7pm</li>
+              <li>Saturday : 8am-7pm</li>
+              <li>Sunday : closed</li>
+            </ul>
+            <ul class="m-work">
+              <li>Monday ~ Saturday : 8am-7pm</li>
+              <li>Sunday : closed</li>
+            </ul>
+          </div>
+          <div class="footer-item contact-info">
+            <b>Contact Info</b>
+            <ul>
+              <li class="work-phone">
+                <a href="tel:+654/4715-167">+654/4715-167</a><br />
+                <a href="tel:+654/4715-167">+654/4715-167</a>
+              </li>
+              <li>allsmiles@qodeinteractive.com</li>
+              <li class="work-addr">
+                <span>63 Wall St, New York,</span><br />
+                <span>New York 10005</span>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-
-      <button class="chat-button">Chat</button>
+        <div class="footer-item our-location none">
+          <b>Our Location</b>
+          <div class="footer-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.232654163779!2d126.9778709!3d37.5731389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eafa23602f%3A0x6eef5535fad5db7d!2z7KO87ZWcIOuvuOq1rSDrjIDsgqzqtIA!5e0!3m2!1sko!2skr!4v1734067989916!5m2!1sko!2skr"
+              style="border: 0" dallowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- footer 공통 사용 -->
-    <footer class="footer">
-      <div class="footer-top wrapper">
-        <div class="footer-top-inner">
-          <div class="footer-item social">
-            <img
-              src="./../../assets/images/footer-logo.png"
-              alt="all samiles"
-            />
-            <p>
-              This is AllSmiles, a place dedicated <br />
-              to clear, white & perfect smiles.
-            </p>
-            <div class="social-ico">
-              <a href="#"><span></span></a>
-              <a href="#"><span></span></a>
-              <a href="#"><span></span></a>
-            </div>
-          </div>
-          <div class="work-info">
-            <div class="footer-item work-hours">
-              <b>Work Hours</b>
-              <ul class="pc-work">
-                <li>Monday : 8am-7pm</li>
-                <li>Tuesday : 8am-7pm</li>
-                <li>Wednesday : 8am-7pm</li>
-                <li>Thursday : 8am-7pm</li>
-                <li>Friday : 8am-7pm</li>
-                <li>Saturday : 8am-7pm</li>
-                <li>Sunday : closed</li>
-              </ul>
-              <ul class="m-work">
-                <li>Monday ~ Saturday : 8am-7pm</li>
-                <li>Sunday : closed</li>
-              </ul>
-            </div>
-            <div class="footer-item contact-info">
-              <b>Contact Info</b>
-              <ul>
-                <li class="work-phone">
-                  <a href="tel:+654/4715-167">+654/4715-167</a><br />
-                  <a href="tel:+654/4715-167">+654/4715-167</a>
-                </li>
-                <li>allsmiles@qodeinteractive.com</li>
-                <li class="work-addr">
-                  <span>63 Wall St, New York,</span><br />
-                  <span>New York 10005</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-item our-location none">
-            <b>Our Location</b>
-            <div class="footer-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.232654163779!2d126.9778709!3d37.5731389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eafa23602f%3A0x6eef5535fad5db7d!2z7KO87ZWcIOuvuOq1rSDrjIDsgqzqtIA!5e0!3m2!1sko!2skr!4v1734067989916!5m2!1sko!2skr"
-                style="border: 0"
-                dallowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2021 Qode Interactive, All Rights Reserved</p>
-      </div>
-    </footer>
-    <script src="./../../assets/js/script.js"></script>
-  </body>
+    <div class="footer-bottom">
+      <p>© 2021 Qode Interactive, All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="./../../assets/js/script.js"></script>
+</body>
+
 </html>
