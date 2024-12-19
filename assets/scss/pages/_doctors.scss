@@ -2,134 +2,139 @@
 // 보영
 
 .container.doctors {
-  //specialists
-  .section-doctors-specialists {
-    .specialists-services {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      max-width: 1200px;
-      margin: 0 auto;
-      margin-bottom: 3rem;
-      .specialists-services-item {
-        color: $primary1;
+
+    //specialists
+    .section-doctors-specialists {
+        .specialists-services {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+
+            .specialists-services-item {
+                color: $primary1;
+                text-align: center;
+                border-bottom: 2px solid $border1;
+                margin-bottom: 2rem;
+
+                h3 {
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                }
+
+                &:hover {
+                    border-bottom-color: $secondary1;
+                }
+            }
+
+            @media (max-width: 1023px) {
+                grid-template-columns: repeat(2, 1fr);
+                margin-bottom: 0rem;
+            }
+
+            @media (max-width: 767px) {
+                grid-template-columns: repeat(1, 1fr);
+                margin-bottom: 0rem;
+            }
+        }
+
+        .specialists-content {
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            padding: 40px 20px;
+            gap: 40px;
+            margin: 0 auto;
+
+            .specialists-content-text {
+                h2 {
+                    color: $primary1;
+                    margin-bottom: 20px;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+            }
+
+            .specialists-content-image {
+                img {
+                    max-width: 100%;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    //experts
+    .experts {
+        padding: 60px 20px;
         text-align: center;
-        border-bottom: 2px solid $border1;
-        margin-bottom: 2rem;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
 
         h3 {
-          margin-bottom: 1rem;
-          font-weight: 600;
-          font-size: 1.6rem;
+            color: $secondary1;
+            margin-bottom: 1rem;
+            font-size: 1rem;
         }
 
-        &:hover {
-          border-bottom-color: $secondary1;
-        }
-      }
-      @media (max-width: 1023px) {
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 0rem;
-      }
-      @media (max-width: 767px) {
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 0rem;
-      }
-    }
-
-    .specialists-content {
-      display: flex;
-      justify-content: center;
-      max-width: 1200px;
-      padding: 40px 20px;
-      gap: 40px;
-      margin: 0 auto;
-
-      .specialists-content-text {
         h2 {
-          color: $primary1;
-          margin-bottom: 20px;
-          font-size: 2.5rem;
-          font-weight: 600;
-        }
-      }
-
-      .specialists-content-image {
-        img {
-          max-width: 100%;
-          border-radius: 8px;
-        }
-      }
-    }
-  }
-
-  //experts
-  .experts {
-    padding: 60px 20px;
-    text-align: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    h3 {
-      color: $secondary1;
-      margin-bottom: 1rem;
-      font-size: 1rem;
-    }
-
-    h2 {
-      color: $primary1;
-      margin-bottom: 10px;
-      font-size: 3rem;
-    }
-
-    p {
-      padding-bottom: 5rem;
-    }
-
-    .experts-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 5rem;
-      margin: 0px auto;
-
-      .experts-grid-member {
-        position: relative;
-        justify-content: center;
-
-        .share-experts {
-          width: 100%;
-        }
-      }
-
-      .experts-info {
-        margin-top: 15px;
-
-        h4 {
-          color: $primary1;
-          font-family: $fontCata;
-          font-size: 2.5rem;
-          font-weight: 600;
+            color: $primary1;
+            margin-bottom: 10px;
+            font-size: 3rem;
         }
 
         p {
-          color: $text3;
-          font-size: 1.4rem;
-          font-weight: 600;
-          line-height: 2.5rem;
-          letter-spacing: 0.1rem;
-          text-transform: uppercase;
-          margin-bottom: 0.4rem;
+            padding-bottom: 5rem;
         }
-      }
-      @media (width < 1024px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
 
-      @media (width < 768px) {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-      }
+        .experts-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
+            margin: 0px auto;
+
+            .experts-grid-member {
+                position: relative;
+                justify-content: center;
+
+                .share-experts {
+                    width: 100%;
+                }
+            }
+
+            .experts-info {
+                margin-top: 15px;
+
+                h4 {
+                    color: $primary1;
+                    font-family: $fontCata;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: $text3;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    line-height: 2.5rem;
+                    letter-spacing: 0.1rem;
+                    text-transform: uppercase;
+                    margin-bottom: 0.4rem;
+                }
+            }
+
+            @media (width < 1024px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (width < 768px) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
     }
-  }
 }

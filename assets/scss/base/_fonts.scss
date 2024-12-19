@@ -1,51 +1,69 @@
 @use '../helpers' as *;
 
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/OpenSans/OpenSans-Medium.woff') format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/OpenSans/OpenSans-SemiBold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('https: //fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// }
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url('https: //fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// }
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url('https: //fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// }
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url('https: //fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// }
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url('../fonts/OpenSans/OpenSans-Medium.woff') format('woff');
+// }
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url('../fonts/OpenSans/OpenSans-SemiBold.woff') format('woff');
+// }
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff');
+// }
 
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/Catamaran/Catamaran-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/Catamaran/Catamaran-Medium.woff') format('woff');
-}
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/Catamaran/Catamaran-SemiBold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/Catamaran/Catamaran-Bold.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'Catamaran';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('https: //fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') format('woff');
+// }
+// @font-face {
+//   font-family: 'Catamaran';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url('../fonts/Catamaran/Catamaran-Medium.woff') format('woff');
+// }
+// @font-face {
+//   font-family: 'Catamaran';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url('../fonts/Catamaran/Catamaran-SemiBold.woff') format('woff');
+// }
+// @font-face {
+//   font-family: 'Catamaran';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url('../fonts/Catamaran/Catamaran-Bold.woff') format('woff');
+// }
