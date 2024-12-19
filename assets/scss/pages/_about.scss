@@ -42,7 +42,7 @@
   width: 100%;
 }
 
-.hospital-inner div:first-child::after {
+.hospital-inner::after {
   content: "";
   position: absolute;
   right: 0;
@@ -53,7 +53,7 @@
     content: none;
   }
 }
-.hospital-inner:last-child div:first-child::after {
+.hospital-inner:last-child::after {
   content: none;
 }
 
@@ -107,6 +107,20 @@
       top: 0;
       left: calc(50% - 4px);
     }
+    @media (max-width: 767px) {
+      &{
+        width: 2.2rem;
+        height: 2.2rem;
+      }
+      &::before {
+        height: 6px;
+        top: calc(50% - 4px);
+      }
+      &::after {
+        width: 6px;
+        left: calc(50% - 3px);
+      }
+    }
   }
   @media (max-width: 767px) {
     font-size: 4rem;
@@ -121,15 +135,15 @@
     }
   }
 }
-.hospital-inner:nth-child(2) div:first-child span {
-  b {
-    font-size: 5rem;
-    @media (max-width: 767px) {
-      font-size: 3rem;
-      margin-left: 0.5rem;
-    }
+
+.hospital-wrap .hospital-inner:nth-child(2) .num span {
+  font-size: 5rem;
+  @media (max-width: 767px) {
+    font-size: 3.3rem;
   }
+  /* 굵게 설정 */
 }
+
 
 .hospital-inner div:last-child span {
   font-family: $fontCata;
