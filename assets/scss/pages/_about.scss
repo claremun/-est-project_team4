@@ -20,6 +20,9 @@
   }
   .section-inspection {
     margin: 8rem auto 20rem;
+    @media (width < 1024px) {
+      margin-bottom: 10rem;
+    }
   }
 }
 

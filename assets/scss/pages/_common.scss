@@ -222,7 +222,8 @@ a {
   background: $primary1;
   color: $white;
   .footer-top {
-    padding-top: 10rem ;padding-bottom: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     .footer-top-inner {
       display: flex;
       gap: 1.4rem;
@@ -249,11 +250,10 @@ a {
         @media (width < 480px) {
           display: block;
           text-align: center;
-          li.none{
+          li.none {
             display: none;
           }
         }
-
       }
       .footer-item {
         & b {
@@ -330,7 +330,6 @@ a {
         }
       }
       .contact-info {
-        
         @media (width < 1024px) {
           margin-top: 2rem;
         }
@@ -342,7 +341,7 @@ a {
         ul {
           margin: 0;
           position: relative;
-          .work-phone a{
+          .work-phone a {
             color: #fff;
           }
           .work-phone a,
@@ -353,12 +352,12 @@ a {
               padding: 0;
             }
           }
-        
+
           .work-phone,
           .work-addr {
             position: relative;
           }
-          .work-phone a:last-child a::before{
+          .work-phone a:last-child a::before {
             content: none;
           }
 
@@ -396,20 +395,20 @@ a {
         }
         li:nth-child(2) {
           margin-left: 2.7rem;
-          @media (max-width:767px) {
+          @media (max-width: 767px) {
             margin-left: 0;
           }
         }
       }
 
       .our-location {
-        .footer-map{
-            margin-top: 1.2rem;
-          }
-        @media (max-width:767px) {
+        .footer-map {
+          margin-top: 1.2rem;
+        }
+        @media (max-width: 767px) {
           margin-top: 2rem;
           text-align: center;
-          }
+        }
         .footer-map {
           iframe {
             width: 100%;
@@ -613,7 +612,7 @@ a {
   bottom: 2rem;
   right: 2rem;
   padding: 1.5rem 2rem;
-  background-color: #EE2852;
+  background-color: #ee2852;
   color: white;
   border: none;
   border-radius: 5rem;

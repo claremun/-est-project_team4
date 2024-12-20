@@ -811,7 +811,7 @@ a {
   bottom: 2rem;
   right: 2rem;
   padding: 1.5rem 2rem;
-  background-color: #EE2852;
+  background-color: #ee2852;
   color: white;
   border: none;
   border-radius: 5rem;
@@ -1796,6 +1796,11 @@ a {
 }
 .container.about .section-inspection {
   margin: 8rem auto 20rem;
+}
+@media (width < 1024px) {
+  .container.about .section-inspection {
+    margin-bottom: 10rem;
+  }
 }
 
 .hospital-info {
