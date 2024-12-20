@@ -1794,6 +1794,9 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.container.about .section-inspection {
+  margin: 8rem auto 10rem;
+}
 
 .hospital-info {
   width: 100%;
