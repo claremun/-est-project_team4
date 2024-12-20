@@ -7,14 +7,14 @@
     .specialists-services {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      max-width: 1200px;
+      max-width: 120rem;
       margin: 0 auto;
       margin-bottom: 3rem;
 
       .specialists-services-item {
         color: $primary1;
         text-align: center;
-        border-bottom: 2px solid $border1;
+        border-bottom: 0.2rem solid $border1;
         margin-bottom: 2rem;
 
         h3 {
@@ -42,15 +42,15 @@
     .specialists-content {
       display: flex;
       justify-content: center;
-      max-width: 1200px;
-      padding: 40px 20px;
-      gap: 40px;
+      max-width: 120rem;
+      padding: 4rem 2rem;
+      gap: 4rem;
       margin: 0 auto;
 
       .specialists-content-text {
         h2 {
           color: $primary1;
-          margin-bottom: 20px;
+          margin-bottom: 2rem;
           font-size: 2.5rem;
           font-weight: 600;
         }
@@ -59,7 +59,7 @@
       .specialists-content-image {
         img {
           max-width: 100%;
-          border-radius: 8px;
+          border-radius: 0.8rem;
         }
       }
     }
@@ -67,10 +67,10 @@
 
   //experts
   .experts {
-    padding: 60px 0;
+    padding-top: 6rem;
     text-align: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 
     h3 {
@@ -81,7 +81,7 @@
 
     h2 {
       color: $primary1;
-      margin-bottom: 10px;
+      margin-bottom: 1rem;
       font-size: 3rem;
     }
 
@@ -137,20 +137,20 @@
 
           h2 {
             color: $gray333;
-            margin-bottom: 15px;
-            font-size: 24px;
+            margin-bottom: 1.6rem;
+            font-size: 2.4rem;
             font-weight: 500;
           }
 
           h3 {
             color: $gray666;
             line-height: 1.6;
-            font-size: 14px;
+            font-size: 1.4rem;
           }
         }
 
         .experts-info {
-          margin-top: 15px;
+          margin-top: 1.6rem;
 
           h4 {
             color: $primary1;

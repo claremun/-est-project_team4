@@ -808,13 +808,13 @@ a {
 
 .chat-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 2rem;
+  right: 2rem;
   padding: 1.5rem 2rem;
   background-color: #EE2852;
   color: white;
   border: none;
-  border-radius: 50px;
+  border-radius: 5rem;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -913,7 +913,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1320px;
+  max-width: 132rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -1319,10 +1319,12 @@ a {
   /* request section 종료*/
 }
 .container.home .swiper-area {
+  max-width: 160rem;
+  margin: 0 auto;
   position: relative;
 }
 .container.home .swiper-area .swiper.peopleSwiper {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .container.home .swiper-area .swiper.peopleSwiper .swiper-wrapper .home-review-card {
@@ -1330,18 +1332,20 @@ a {
   padding: 8rem 2rem 9rem;
 }
 .container.home .swiper-area .swiper.peopleSwiper .swiper-wrapper .home-review-card .home-review-image img {
-  width: 100px;
+  width: 14rem;
 }
 .container.home .swiper-area .swiper.peopleSwiper .swiper-wrapper .home-review-card h3 {
   font-size: 2.5rem;
   font-weight: 600;
   color: #2e3192;
-  padding: 20px 0;
+  padding: 2rem 0;
   font-family: "Catamaran", sans-serif;
 }
 .container.home .swiper-area .swiper.peopleSwiper .swiper-wrapper .home-review-card p {
   font-size: 1.3rem;
   padding-bottom: 1.3rem;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 .container.home .swiper-area .swiper.peopleSwiper .swiper-wrapper .home-review-card span {
   font-family: "Open sans", sans-serif;
@@ -1352,11 +1356,9 @@ a {
 }
 .container.home .swiper-area .swiper-button-prev {
   position: absolute;
-  left: -2%;
 }
 .container.home .swiper-area .swiper-button-next {
   position: absolute;
-  right: -2%;
 }
 .container.home .swiper-area .swiper-button-next:after,
 .container.home .swiper-area .swiper-button-prev:after {
@@ -1389,7 +1391,7 @@ a {
 .container.home .section-banner {
   background-color: #2e3192;
   color: #fff;
-  max-width: 1920px;
+  max-width: 192rem;
   padding: 5rem 0;
 }
 .container.home .section-banner .banner-area {
@@ -1440,7 +1442,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 40px;
+  gap: 4rem;
   margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1484,7 +1486,7 @@ a {
 .container.home .section-specialists .specialists-content .specialists-content-image img {
   display: block;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 @media (width < 1024px) {
   .container.home .section-specialists .specialists-content {
@@ -1536,7 +1538,7 @@ a {
   width: 100%;
 }
 .container.home .section-experts .experts-grid .experts-info {
-  margin-top: 15px;
+  margin-top: 1.6rem;
 }
 .container.home .section-experts .experts-grid .experts-info h4 {
   color: #2e3192;
@@ -1589,7 +1591,7 @@ a {
   position: absolute;
   top: 0;
   /* left: 0; */
-  right: -60px;
+  right: -6rem;
   bottom: 0;
   width: 10rem;
   height: 121%;
@@ -1649,7 +1651,7 @@ a {
 }
 .container.home .section-request .request-right .request-form .request-ipt .label-animation input,
 .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea {
-  color: #8a8a8a;
+  color: #000;
   font-family: "Open sans", sans-serif;
   font-size: 2rem;
   padding: 2.8rem 2rem 1.2rem 2rem;
@@ -1664,26 +1666,27 @@ a {
 .container.home .section-request .request-right .request-form .request-ipt .label-animation input:focus,
 .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:focus {
   border: 0.2rem solid #2e3192;
-  background-color: #fff;
 }
 .container.home .section-request .request-right .request-form .request-ipt .label-animation input:not(:-moz-placeholder-shown) + .label, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:not(:-moz-placeholder-shown) + .label {
   color: #2e3192;
-  transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+  top: 0.6rem;
+  font-size: 1.4rem;
 }
 .container.home .section-request .request-right .request-form .request-ipt .label-animation input:not(:-ms-input-placeholder) + .label, .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:not(:-ms-input-placeholder) + .label {
   color: #2e3192;
-  transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+  top: 0.6rem;
+  font-size: 1.4rem;
 }
 .container.home .section-request .request-right .request-form .request-ipt .label-animation input:not(:placeholder-shown) + .label,
 .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:not(:placeholder-shown) + .label {
   color: #2e3192;
-  -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
-          transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+  top: 0.6rem;
+  font-size: 1.4rem;
 }
 .container.home .section-request .request-right .request-form .request-ipt .label-animation input:focus + .label,
 .container.home .section-request .request-right .request-form .request-ipt .label-animation textarea:focus + .label {
-  -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
-          transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+  top: 0.6rem;
+  font-size: 1.4rem;
 }
 .container.home .section-request .request-right .request-form .btn-primary {
   letter-spacing: 0.24rem;
@@ -1742,7 +1745,7 @@ a {
 .specialists-services {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
@@ -1781,7 +1784,8 @@ a {
   }
 }
 .container.about .about-visu {
-  height: 65rem;
+  overflow: hidden;
+  max-height: 65rem;
 }
 .container.about .about-visu img {
   display: block;
@@ -1789,9 +1793,6 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.container.about .section-inspection {
-  margin: 5rem 0 20rem;
 }
 
 .hospital-info {
@@ -1824,7 +1825,7 @@ a {
   position: absolute;
   right: 0;
   top: 0;
-  border-right: 2px solid #cccaff;
+  border-right: 0.2rem solid #cccaff;
   height: 100%;
 }
 @media (max-width: 767px) {
@@ -1875,42 +1876,42 @@ a {
   color: #1e2d78;
   position: relative;
 }
-.hospital-inner div.num .plus {
+.hospital-inner div.num span.plus {
   display: inline-block;
   position: relative;
   width: 3.2rem;
   height: 3.2rem;
 }
-.hospital-inner div.num .plus::before, .hospital-inner div.num .plus::after {
+.hospital-inner div.num span.plus::before, .hospital-inner div.num span.plus::after {
   content: "";
   position: absolute;
 }
-.hospital-inner div.num .plus::before {
+.hospital-inner div.num span.plus::before {
   width: 100%;
-  height: 8px;
-  background-color: #2e3192;
+  height: 0.8rem;
+  background-color: #132abe;
   left: 0;
-  top: calc(50% - 4px);
+  top: calc(50% - 0.4rem);
 }
-.hospital-inner div.num .plus::after {
-  width: 8px;
+.hospital-inner div.num span.plus::after {
+  width: 0.8rem;
   height: 100%;
-  background-color: #2e3192;
+  background-color: #132abe;
   top: 0;
-  left: calc(50% - 4px);
+  left: calc(50% - 0.4rem);
 }
 @media (max-width: 767px) {
-  .hospital-inner div.num .plus {
-    width: 2.2rem;
-    height: 2.2rem;
+  .hospital-inner div.num span.plus {
+    width: 2rem;
+    height: 2rem;
   }
-  .hospital-inner div.num .plus::before {
-    height: 6px;
-    top: calc(50% - 4px);
+  .hospital-inner div.num span.plus::before {
+    height: 0.4rem;
+    top: calc(50% - 0.2rem);
   }
-  .hospital-inner div.num .plus::after {
-    width: 6px;
-    left: calc(50% - 3px);
+  .hospital-inner div.num span.plus::after {
+    width: 0.4rem;
+    left: calc(50% - 0.2rem);
   }
 }
 @media (max-width: 767px) {
@@ -1932,6 +1933,7 @@ a {
 
 .hospital-wrap .hospital-inner:nth-child(2) .num span {
   font-size: 5rem;
+  color: #132abe;
   /* 굵게 설정 */
 }
 @media (max-width: 767px) {
@@ -2041,7 +2043,7 @@ a {
 
 .list-item h3 {
   font-size: 2rem;
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 
 .list-item p {
@@ -2092,14 +2094,14 @@ a {
 .container.doctors .section-doctors-specialists .specialists-services {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
 .container.doctors .section-doctors-specialists .specialists-services .specialists-services-item {
   color: #2e3192;
   text-align: center;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 0.2rem solid #ddd;
   margin-bottom: 2rem;
 }
 .container.doctors .section-doctors-specialists .specialists-services .specialists-services-item h3 {
@@ -2129,28 +2131,28 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1200px;
-  padding: 40px 20px;
-  gap: 40px;
+  max-width: 120rem;
+  padding: 4rem 2rem;
+  gap: 4rem;
   margin: 0 auto;
 }
 .container.doctors .section-doctors-specialists .specialists-content .specialists-content-text h2 {
   color: #2e3192;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   font-size: 2.5rem;
   font-weight: 600;
 }
 .container.doctors .section-doctors-specialists .specialists-content .specialists-content-image img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 .container.doctors .experts {
-  padding: 60px 0;
+  padding-top: 6rem;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .container.doctors .experts h3 {
@@ -2160,7 +2162,7 @@ a {
 }
 .container.doctors .experts h2 {
   color: #2e3192;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   font-size: 3rem;
 }
 .container.doctors .experts p {
@@ -2222,17 +2224,17 @@ a {
 }
 .container.doctors .experts .experts-grid .experts-grid-member .experts-hover h2 {
   color: #333;
-  margin-bottom: 15px;
-  font-size: 24px;
+  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 .container.doctors .experts .experts-grid .experts-grid-member .experts-hover h3 {
   color: #666;
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 .container.doctors .experts .experts-grid .experts-grid-member .experts-info {
-  margin-top: 15px;
+  margin-top: 1.6rem;
 }
 .container.doctors .experts .experts-grid .experts-grid-member .experts-info h4 {
   color: #2e3192;
@@ -2372,38 +2374,44 @@ a {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.container.reservation .section-reservation .reservation-form .label-animation input, .container.reservation .section-reservation .reservation-form .label-animation textarea {
-  color: #8a8a8a;
+.container.reservation .section-reservation .reservation-form .label-animation input,
+.container.reservation .section-reservation .reservation-form .label-animation textarea {
+  color: #000;
   font-family: "Open sans", sans-serif;
   font-size: 2rem;
   width: calc(100% - 4.8rem);
   padding: 2.8rem 2rem 1.2rem 2rem;
   margin-bottom: 1.6rem;
   border-radius: 0.4rem;
-  border: 0.2rem solid #BFD9FF;
+  border: 0.2rem solid #bfd9ff;
   outline: none;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
-.container.reservation .section-reservation .reservation-form .label-animation input:focus, .container.reservation .section-reservation .reservation-form .label-animation textarea:focus {
+.container.reservation .section-reservation .reservation-form .label-animation input:focus,
+.container.reservation .section-reservation .reservation-form .label-animation textarea:focus {
   border: 0.2rem solid #2e3192;
 }
 .container.reservation .section-reservation .reservation-form .label-animation input:not(:-moz-placeholder-shown) + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:not(:-moz-placeholder-shown) + .label {
   color: #2e3192;
-  transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+  top: 0.6rem;
+  font-size: 1.4rem;
 }
 .container.reservation .section-reservation .reservation-form .label-animation input:not(:-ms-input-placeholder) + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:not(:-ms-input-placeholder) + .label {
   color: #2e3192;
-  transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+  top: 0.6rem;
+  font-size: 1.4rem;
 }
-.container.reservation .section-reservation .reservation-form .label-animation input:not(:placeholder-shown) + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:not(:placeholder-shown) + .label {
+.container.reservation .section-reservation .reservation-form .label-animation input:not(:placeholder-shown) + .label,
+.container.reservation .section-reservation .reservation-form .label-animation textarea:not(:placeholder-shown) + .label {
   color: #2e3192;
-  -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
-          transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+  top: 0.6rem;
+  font-size: 1.4rem;
 }
-.container.reservation .section-reservation .reservation-form .label-animation input:focus + .label, .container.reservation .section-reservation .reservation-form .label-animation textarea:focus + .label {
-  -webkit-transform: translate3d(-1rem, -2rem, 0) scale(0.75);
-          transform: translate3d(-1rem, -2rem, 0) scale(0.75);
+.container.reservation .section-reservation .reservation-form .label-animation input:focus + .label,
+.container.reservation .section-reservation .reservation-form .label-animation textarea:focus + .label {
+  top: 0.6rem;
+  font-size: 1.4rem;
 }
 .container.reservation .section-reservation .reservation-form .btn-primary {
   letter-spacing: 0.24rem;

@@ -9,16 +9,14 @@
     }
   }
   .about-visu {
-    height: 65rem;
+    overflow: hidden;
+    max-height: 65rem;
     img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-  }
-  .section-inspection {
-    margin: 5rem 0 20rem;
   }
 }
 
@@ -47,7 +45,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  border-right: 2px solid #cccaff;
+  border-right: 0.2rem solid #cccaff;
   height: 100%;
   @media (max-width: 767px) {
     content: none;
@@ -83,7 +81,7 @@
   text-align: center;
   color: $text2;
   position: relative;
-  .plus {
+  span.plus {
     display: inline-block;
     position: relative;
     width: 3.2rem;
@@ -95,30 +93,30 @@
     }
     &::before {
       width: 100%;
-      height: 8px;
-      background-color: $primary1;
+      height: 0.8rem;
+      background-color: #132abe;
       left: 0;
-      top: calc(50% - 4px);
+      top: calc(50% - 0.4rem);
     }
     &::after {
-      width: 8px;
+      width: 0.8rem;
       height: 100%;
-      background-color: $primary1;
+      background-color: #132abe;
       top: 0;
-      left: calc(50% - 4px);
+      left: calc(50% - 0.4rem);
     }
     @media (max-width: 767px) {
-      &{
-        width: 2.2rem;
-        height: 2.2rem;
+      & {
+        width: 2rem;
+        height: 2rem;
       }
       &::before {
-        height: 6px;
-        top: calc(50% - 4px);
+        height: 0.4rem;
+        top: calc(50% - 0.2rem);
       }
       &::after {
-        width: 6px;
-        left: calc(50% - 3px);
+        width: 0.4rem;
+        left: calc(50% - 0.2rem);
       }
     }
   }
@@ -138,12 +136,12 @@
 
 .hospital-wrap .hospital-inner:nth-child(2) .num span {
   font-size: 5rem;
+  color: #132abe;
   @media (max-width: 767px) {
     font-size: 3.3rem;
   }
   /* 굵게 설정 */
 }
-
 
 .hospital-inner div:last-child span {
   font-family: $fontCata;
@@ -236,7 +234,7 @@
 
 .list-item h3 {
   font-size: 2rem;
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 
 .list-item p {
