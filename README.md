@@ -26,7 +26,7 @@
 - RESERVATION - sub ( 서혜원 )
 
 ### 사용 언어
-HTML5, SCSS, CSS3, JS
+HTML5, SCSS, CSS3
 
 ### 프로젝트 작업 시 준수 사항
 - 매일 작업 전 메인 브랜치와 로컬 브랜치 싱크 맞추기
@@ -46,15 +46,5 @@ HTML5, SCSS, CSS3, JS
  -각 조의 비전공자가 페이지 주 작업자가 되고 문제점이 생길 시 전공자가 방법을 설명하며 문제점을 해결하는 방법으로 작업  
  -각 조에서 문제점 생길 시 다른 조에도 공유하며 소통
 
-### 프로젝트 깃 주소
-https://github.com/HanEunHyuck/-est-project_team4.git
-
-### 프로젝트 피그마 주소
-https://www.figma.com/design/ffG8Md7NTz6zZ9rxZ80leH/Web-UI-designs?node-id=0-1&node-type=canvas&t=pdKdGA3gakIjC6CT-0
-
-### 프로젝트 링크 및 QR코드
-https://m.site.naver.com/1zpsI  
-<img src="https://github.com/user-attachments/assets/5b83ede9-5a84-4cce-aeb1-9622e7372c62" width="250">
-
 ### 프로젝트 URL
-https://haneunhyuck.github.io/-est-project_team4/
+https://claremun.github.io/-est-project_team4
